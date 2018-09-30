@@ -99,7 +99,7 @@ cd ~/.ssh/id_rsa.pub
 复制id_rsa.pub的内容到github中
 
 
-基本使用方法
+基本使用方法 k
 
 git pull  #更新到远
 git add . #本地修改和增加
