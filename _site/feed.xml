@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-25T04:03:29-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-09-23T07:13:57-07:00</published><updated>2018-09-23T07:13:57-07:00</updated><id>http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-29T22:53:41-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</subtitle><entry><title type="html">关于第一次搭建Jekyll的总结</title><link href="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html" rel="alternate" type="text/html" title="关于第一次搭建Jekyll的总结" /><published>2018-09-25T00:00:00-07:00</published><updated>2018-09-25T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html">&lt;h1 id=&quot;从零开始搭建jekyll&quot;&gt;从零开始搭建Jekyll&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;距离搭建完成Jekyll已经有很多天了，然后今天来总结一下当时的做法和想法。和当时记下的一点笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;安装过程&quot;&gt;安装过程&lt;/h2&gt;
+
+&lt;p&gt;首先安装Ruby20，却发现Ruby主要流行在Linux社区，在window社区对新手很不友好，网上如是说，所以我听从了建议，不安装window版本，但是自己也没有linux的电脑，除了vps服务器。但是用来做git托管网站，还是放在自己电&amp;gt;脑更好了。于是我首先安装了VMware Workstation14,下载地址：搜简书CSDN很多，下载Ubuntu18.04,Ubuntu中文网，官网都有，简略安装方式–ubuntu安装。只是因为Ubuntu18好像硬件需求2G以上让我考虑了一会，自己电脑能带动不，但是一直找不到16.04的&amp;gt;需求，最后还是选择了18.04版本。在2或者3个小时内，边学习其他，边下载和安装，搞定后开始学习安装jekyll。&lt;/p&gt;
+
+&lt;p&gt;第一步：安装 Ruby和RubyGems.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install Rubu RubyGems
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第二步：安装jekyll,安装需要前置依赖，g++，gcc，make；如果没有自己安装（&lt;code class=&quot;highlighter-rouge&quot;&gt;apt install g++ gcc make&lt;/code&gt;)&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第三步：安装bundler&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install jekyll bundler
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第四步：创建自己的博客，进入博客根目录并初始化和本地化服务&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll new myblog
+bundler install
+bundle exec jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;第五步：克隆自己name.github.io的项目（安装设置git&lt;a href=&quot;#git简略设置&quot;&gt;方法&lt;/a&gt;)&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone git@github.com:abearxiong.github.io.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;复制博客中的内容到自己设置的项目中
+第六步：提交自己更改的内容&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
+git commit -m &quot;提交备注名&quot;
+git push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;到自己的name.github.io查找自己的结果。安装完全结束。之后的内容就是对自己的托管博客进行自定义操作。进行修改自己的主题设置。&lt;/p&gt;
+
+&lt;h2 id=&quot;安装原因&quot;&gt;安装原因&lt;/h2&gt;
+
+&lt;p&gt;突然间有点无聊了，然后就想到了我的abearxiong.io的小托管什么的网站，我过去什么都没有做，因为什么联想到了这个，于是去关注了hexo，jekyll和hugo。应该最先看到的是hexo，看到有个github.io的网站，然后看到他托管了三个网站，同一个类容，突然就很想去了解这些东西。然后了解hexo和jekyll的区别，再知道hugo。百度和google到的内容全都是hexo和从jekyll，很奇怪，看到github中star的还是jekyll多，我也不知道为什么。
+&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538282254/github/images/2018-9-30.png&quot; alt=&quot;github比较图&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;对这几门而言，在Google的过程中，自己也不知道该选jekyll还是选择hexo，然后突然发现一个真实情况，github中推的jekyll，相当于jekyll是github推荐的，那么何不必在github中使用jekyll呢，如果还有兴趣，在码云和coding中各种搭建一个不同类型的呢。也许还是挺有趣的。&lt;/p&gt;
+
+&lt;p&gt;说动就动的旅行开始了，开始了解更深入的jekyll，发现他是一门我从没有接触的Ruby语言而来的，了解Ruby的过程中，很多人赞扬他的语法糖，对于我来说，也许我接触这个，也是接触了一门新的语言了，又可以玩耍一门新的语&amp;gt;言就是很好玩的一件事情了。毕竟在学校此刻的我就是一种奇怪的人，如果交计算机作业，项目什么的，我就在想，我是不是能交一个新的作业，新的不同的没有学过的语言来编写的作业，java，c#，c，mfc，nodejs，php等等。都
+是很有趣的语言。&lt;/p&gt;
+
+&lt;h2 id=&quot;扩展阅读&quot;&gt;扩展阅读&lt;/h2&gt;
+
+&lt;h3 id=&quot;ubutu安装&quot;&gt;ubutu安装&lt;/h3&gt;
+
+&lt;p&gt;安装ubuntu 快速版
+可以使用软件&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Universal USB Installer&lt;/li&gt;
+  &lt;li&gt;rufus
+两个都是刻录U盘的工具。把下载下来的ios格式的Ubuntu刻录到U盘
+直接U盘启动，也不需要去看什么教程。
+直接下一步，下一步，然后就完成了。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;如果安装window也是类似的，在window下可以直接点开window的ios安装包安装window或者更新windows。&lt;/p&gt;
+
+&lt;p&gt;如果安装到虚拟机，只是不需要使用这个软件罢了。&lt;/p&gt;
+
+&lt;h3 id=&quot;git简略设置-安装过程&quot;&gt;git简略设置 &lt;a href=&quot;#安装过程&quot;&gt;安装过程&lt;/a&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;这里主要讲一点git的基础配置问题
+在Ubuntu内，需要远程github，然后才能进行操作其他的必要的内容。&lt;/p&gt;
+  &lt;ol&gt;
+    &lt;li&gt;第一配置邮箱等信息&lt;/li&gt;
+    &lt;li&gt;第二设置rsa配置问题&lt;/li&gt;
+    &lt;li&gt;拷贝内容到github网站。&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;配置全局姓名和邮箱&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git config --global user.name &quot;abearxiong&quot;
+
+git config --global user.email &quot;xiongxiao1012@outlook.com&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;配置rsa&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen -t rsa -C &quot;xiongxiao1012@outlook.com&quot;
+cd ~/.ssh/id_rsa.pub 
+
+#复制内容到github中
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;复制id_rsa.pub的内容到github中&lt;/p&gt;
+
+&lt;p&gt;基本使用方法&lt;/p&gt;
+
+&lt;p&gt;git pull  #更新到远
+git add . #本地修改和增加
+git push  #推送
+git status #状态&lt;/p&gt;</content><author><name></name></author><summary type="html">从零开始搭建Jekyll</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-09-23T07:13:57-07:00</published><updated>2018-09-23T07:13:57-07:00</updated><id>http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 

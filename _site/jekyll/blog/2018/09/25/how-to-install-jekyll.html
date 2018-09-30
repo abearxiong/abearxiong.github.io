@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>关于第一次搭建Jekyll的总结 | Abear</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="关于第一次搭建Jekyll的总结" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="从零开始搭建Jekyll" />
+<meta property="og:description" content="从零开始搭建Jekyll" />
+<link rel="canonical" href="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html" />
+<meta property="og:site_name" content="Abear" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-25T00:00:00-07:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"关于第一次搭建Jekyll的总结","dateModified":"2018-09-25T00:00:00-07:00","datePublished":"2018-09-25T00:00:00-07:00","url":"http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html"},"description":"从零开始搭建Jekyll","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abear" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Abear</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">关于第一次搭建Jekyll的总结</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-09-25T00:00:00-07:00" itemprop="datePublished">Sep 25, 2018
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="从零开始搭建jekyll">从零开始搭建Jekyll</h1>
+
+<blockquote>
+  <p>距离搭建完成Jekyll已经有很多天了，然后今天来总结一下当时的做法和想法。和当时记下的一点笔记。</p>
+</blockquote>
+
+<h2 id="安装过程">安装过程</h2>
+
+<p>首先安装Ruby20，却发现Ruby主要流行在Linux社区，在window社区对新手很不友好，网上如是说，所以我听从了建议，不安装window版本，但是自己也没有linux的电脑，除了vps服务器。但是用来做git托管网站，还是放在自己电&gt;脑更好了。于是我首先安装了VMware Workstation14,下载地址：搜简书CSDN很多，下载Ubuntu18.04,Ubuntu中文网，官网都有，简略安装方式–ubuntu安装。只是因为Ubuntu18好像硬件需求2G以上让我考虑了一会，自己电脑能带动不，但是一直找不到16.04的&gt;需求，最后还是选择了18.04版本。在2或者3个小时内，边学习其他，边下载和安装，搞定后开始学习安装jekyll。</p>
+
+<p>第一步：安装 Ruby和RubyGems.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install Rubu RubyGems
+</code></pre></div></div>
+
+<p>第二步：安装jekyll,安装需要前置依赖，g++，gcc，make；如果没有自己安装（<code class="highlighter-rouge">apt install g++ gcc make</code>)</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll
+</code></pre></div></div>
+
+<p>第三步：安装bundler</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+</code></pre></div></div>
+
+<p>第四步：创建自己的博客，进入博客根目录并初始化和本地化服务</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new myblog
+bundler install
+bundle exec jekyll serve
+</code></pre></div></div>
+
+<p>第五步：克隆自己name.github.io的项目（安装设置git<a href="#git简略设置">方法</a>)</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:abearxiong.github.io.git
+</code></pre></div></div>
+<p>复制博客中的内容到自己设置的项目中
+第六步：提交自己更改的内容</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m "提交备注名"
+git push
+</code></pre></div></div>
+<p>到自己的name.github.io查找自己的结果。安装完全结束。之后的内容就是对自己的托管博客进行自定义操作。进行修改自己的主题设置。</p>
+
+<h2 id="安装原因">安装原因</h2>
+
+<p>突然间有点无聊了，然后就想到了我的abearxiong.io的小托管什么的网站，我过去什么都没有做，因为什么联想到了这个，于是去关注了hexo，jekyll和hugo。应该最先看到的是hexo，看到有个github.io的网站，然后看到他托管了三个网站，同一个类容，突然就很想去了解这些东西。然后了解hexo和jekyll的区别，再知道hugo。百度和google到的内容全都是hexo和从jekyll，很奇怪，看到github中star的还是jekyll多，我也不知道为什么。
+<img src="https://res.cloudinary.com/xiongxiao/image/upload/v1538282254/github/images/2018-9-30.png" alt="github比较图" /></p>
+
+<p>对这几门而言，在Google的过程中，自己也不知道该选jekyll还是选择hexo，然后突然发现一个真实情况，github中推的jekyll，相当于jekyll是github推荐的，那么何不必在github中使用jekyll呢，如果还有兴趣，在码云和coding中各种搭建一个不同类型的呢。也许还是挺有趣的。</p>
+
+<p>说动就动的旅行开始了，开始了解更深入的jekyll，发现他是一门我从没有接触的Ruby语言而来的，了解Ruby的过程中，很多人赞扬他的语法糖，对于我来说，也许我接触这个，也是接触了一门新的语言了，又可以玩耍一门新的语&gt;言就是很好玩的一件事情了。毕竟在学校此刻的我就是一种奇怪的人，如果交计算机作业，项目什么的，我就在想，我是不是能交一个新的作业，新的不同的没有学过的语言来编写的作业，java，c#，c，mfc，nodejs，php等等。都
+是很有趣的语言。</p>
+
+<h2 id="扩展阅读">扩展阅读</h2>
+
+<h3 id="ubutu安装">ubutu安装</h3>
+
+<p>安装ubuntu 快速版
+可以使用软件</p>
+<ol>
+  <li>Universal USB Installer</li>
+  <li>rufus
+两个都是刻录U盘的工具。把下载下来的ios格式的Ubuntu刻录到U盘
+直接U盘启动，也不需要去看什么教程。
+直接下一步，下一步，然后就完成了。</li>
+</ol>
+
+<p>如果安装window也是类似的，在window下可以直接点开window的ios安装包安装window或者更新windows。</p>
+
+<p>如果安装到虚拟机，只是不需要使用这个软件罢了。</p>
+
+<h3 id="git简略设置-安装过程">git简略设置 <a href="#安装过程">安装过程</a></h3>
+
+<blockquote>
+  <p>这里主要讲一点git的基础配置问题
+在Ubuntu内，需要远程github，然后才能进行操作其他的必要的内容。</p>
+  <ol>
+    <li>第一配置邮箱等信息</li>
+    <li>第二设置rsa配置问题</li>
+    <li>拷贝内容到github网站。</li>
+  </ol>
+</blockquote>
+
+<p>配置全局姓名和邮箱</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "abearxiong"
+
+git config --global user.email "xiongxiao1012@outlook.com"
+</code></pre></div></div>
+<p>配置rsa</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa -C "xiongxiao1012@outlook.com"
+cd ~/.ssh/id_rsa.pub 
+
+#复制内容到github中
+</code></pre></div></div>
+
+<p>复制id_rsa.pub的内容到github中</p>
+
+<p>基本使用方法</p>
+
+<p>git pull  #更新到远
+git add . #本地修改和增加
+git push  #推送
+git status #状态</p>
+
+  </div><a class="u-url" href="/jekyll/blog/2018/09/25/how-to-install-jekyll.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Abear</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Abear</li><li><a class="u-email" href="mailto:xiongxiao1012@outlook.com">xiongxiao1012@outlook.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/abearxiong"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">abearxiong</span></a></li><li><a href="https://www.twitter.com/abear"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">abear</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
