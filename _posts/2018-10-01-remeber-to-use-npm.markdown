@@ -1,10 +1,8 @@
-
 ---
 layout: post
-title: "使用npm"
-date: 2018-10-01 11:00:00 -0700
-categories: jekyll
-tags: [超级前端,node]
+title:  "使用npm"
+date:   2018-10-01 08:13:57 +0800
+categories: node
 ---
 # 使用npm
 
