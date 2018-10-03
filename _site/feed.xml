@@ -1,4 +1,159 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-30T21:35:17-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</subtitle><entry><title type="html">使用npm</title><link href="http://localhost:4000/node/2018/09/30/remeber-to-use-npm.html" rel="alternate" type="text/html" title="使用npm" /><published>2018-09-30T17:13:57-07:00</published><updated>2018-09-30T17:13:57-07:00</updated><id>http://localhost:4000/node/2018/09/30/remeber-to-use-npm</id><content type="html" xml:base="http://localhost:4000/node/2018/09/30/remeber-to-use-npm.html">&lt;h1 id=&quot;使用npm&quot;&gt;使用npm&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-03T08:19:01-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</subtitle><entry><title type="html">Https加密和Apache反向代理问题!</title><link href="http://localhost:4000/ubuntu/2018/10/03/install-https-for-vps.html" rel="alternate" type="text/html" title="Https加密和Apache反向代理问题!" /><published>2018-10-03T08:06:57-07:00</published><updated>2018-10-03T08:06:57-07:00</updated><id>http://localhost:4000/ubuntu/2018/10/03/install-https-for-vps</id><content type="html" xml:base="http://localhost:4000/ubuntu/2018/10/03/install-https-for-vps.html">&lt;h1 id=&quot;digitalocean-vps-加密服务器为https和反向代理&quot;&gt;DigitalOcean VPS 加密服务器为HTTPS和反向代理&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;因为有一些Token，登陆模块，想只放在一个自己常用的服务器，然后就使用了nodejs来作为一个登陆模块。在面对Microsoft outlook OAuth的时候发现一个问题，他的回调函数必须是https的样式的。于是，自己去找办法设置自己的网站的http进行加密。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;很多是网上找到的，自己只记下自己成功的步骤，不对过程做更多了解。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;在这过程自己去gandi网站买了个6元的域名，gnoixiong.qw；修改为了digitalOcean的dns，发现需要很久才能更新成功，可以访问。修改为DigitalOcean的DNS是为了测试他自带的均衡加载，最后弄了快差不多的时候发现需要每个月10美元，放弃。&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;digitalocean-vps-http-加密ubuntu170使用lets-encrypt&quot;&gt;DigitalOcean VPS http 加密（Ubuntu17.0）&lt;strong&gt;使用Let’s Encrypt&lt;/strong&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;第一次是Google到的，但是最后遇到的问题是不支持什么的错误，而且根据官网的解决办法无效，记得是&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo certbot --authenticator standalone --installer apache -d www.gnoixiong.pw --pre-hook &quot;service apache stop&quot; --post-hook &quot;service apache start&quot;
+&lt;/code&gt;，2019年1月什么之前。[此刻时间2018.10.2]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;根据url成功&quot;&gt;根据&lt;a href=&quot;https://devanswers.co/lets-encrypt-ssl-apache-ubuntu-18-04/&quot;&gt;url&lt;/a&gt;成功&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo add-apt-repository ppa:certbot/certbot&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;输入Enter&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt update&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install python-certbot-apache&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538577134/github/images/2018-10-03-01.png&quot; alt=&quot;图1&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Enter&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;suto certbot --apache -d gnoixiong.pw -d www.gnoixiong.pw
+xiongxiao1012@outlook.com&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Enter&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538577134/github/images/2018-10-03-02.png&quot; alt=&quot;图2&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538577134/github/images/2018-10-03-03.png&quot; alt=&quot;图3&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;检测是否成功&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538577134/github/images/2018-10-03-04.png&quot; alt=&quot;图4&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;如图类似的URL去检测
+https://www.ssllabs.com/ssltest/analyze.html?d=www.gnoixiong.pw
+https://www.ssllabs.com/ssltest/analyze.html?d=gnoixiong.pw
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo certbot renew --dry-run&lt;/code&gt; 执行自动申请证书&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;反向代理问题&quot;&gt;反向代理问题&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;当我的https弄好后，发现Microsoft需要https才行，而我弄好的只是php的，nodejs的3000端口还是http接口。所以需要反向代理，之前玩微信小程序的时候知道NGINX可以反向代理，而去了解资料知道Apache同样可以，并通过一系列查资料成功完成。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538577134/github/images/2018-10-03-05.png&quot; alt=&quot;图5&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;过程&quot;&gt;过程&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;加载apache模块，使用a2enmod命令加载模块&lt;/li&gt;
+  &lt;li&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a2enmod proxy proxy_balancer proxy_http
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;配置反向代理功能，进入sites_available(Ubuntu /etc/apache2/sites_available)，创建一个新的站点配置文件(新建文件），然后编辑内容如下：&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;VirtualHost *:80&amp;gt;
+        #配置站点的域名
+        ServerName xxx.com
+        #off表示开启反向代理，on表示开启正向代理
+        ProxyRequests Off
+        ProxyMaxForwards 100
+        ProxyPreserveHost On
+        ProxyPass / http://127.0.0.1:3000/
+        ProxyPassReverse / http://127.0.0.1:3000/
+        &amp;lt;Proxy *&amp;gt;
+            Order Deny,Allow
+            Allow from all
+        &amp;lt;/Proxy&amp;gt;
+&amp;lt;/VirtualHost&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a2ensite&lt;/code&gt;加载刚才那个文件，然后 &lt;code class=&quot;highlighter-rouge&quot;&gt;systemctl restart apache2&lt;/code&gt;  重启,即可。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;https的有东西&quot;&gt;https的有东西&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;在之前的http是可以已经算是完成了，然后代理也没毛病，然后却发现一个大的问题，https不行，仍旧是之前的443端口，而且没有代理。Google了一会，然后自己慢慢摸索已经是好的配置，关于443的配置。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;重复修改已经有的443的那个配置文件，发现一直不能成功。&lt;/li&gt;
+  &lt;li&gt;根据已经有的配置文件，复制出来，创建一个新的文件，通过&lt;code class=&quot;highlighter-rouge&quot;&gt;a2ensite&lt;/code&gt; 加载新的文件，等于默认一个域名，代理一个域名，后成功。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;配置文件在最下&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;参考文献:
+    简书&lt;a href=&quot;https://www.jianshu.com/p/47eca94680aa&quot;&gt;zhengyu4767&lt;/a&gt; |
+    CSDN&lt;a href=&quot;https://blog.csdn.net/aerchi/article/details/73605496&quot;&gt;乐意黎&lt;/a&gt; |
+    自己对已经好的配置的理解，保存之前配置好的文件，很重要。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#关于HTTPS的配置文件
+&amp;lt;IfModule mod_ssl.c&amp;gt;
+&amp;lt;VirtualHost *:443&amp;gt;
+ServerName www.gnoixiong.pw
+DocumentRoot /var/www/LoginApi
+SSLEngine On
+Include /etc/letsencrypt/options-ssl-apache.conf
+#ServerAlias www.gnoixiong.pw
+SSLCertificateFile /etc/letsencrypt/live/gnoixiong.pw/fullchain.pem
+SSLCertificateKeyFile /etc/letsencrypt/live/gnoixiong.pw/privkey.pem
+
+ProxyRequests Off
+ProxyMaxForwards 100
+ProxyPreserveHost On
+ProxyPass / http://127.0.0.1:3000/
+ProxyPassReverse / http://127.0.0.1:3000/
+&amp;lt;Proxy *&amp;gt;
+        Order Deny,Allow
+        Allow from all
+&amp;lt;/Proxy&amp;gt;
+
+&amp;lt;/VirtualHost&amp;gt;
+&amp;lt;/IfModule&amp;gt;
+
+#关于HTTP的配置文件
+
+&amp;lt;VirtualHost *:80&amp;gt;
+        #配置站点的域名
+        ServerName gnoixxiong.pw
+        #配置站点的管理员信息
+        ServerAdmin xiongxiao1012@outlook.com
+
+        #off表示开启反向代理，on表示开启正向代理
+        ProxyRequests Off
+        ProxyMaxForwards 100
+        ProxyPreserveHost On
+        #这里表示要将现在这个虚拟主机跳转到本机的4000端口
+        ProxyPass /var/www/LoginApi  http://127.0.0.1:3000/
+        ProxyPassReverse /var/www/LoginApi http://127.0.0.1:3000/
+
+        &amp;lt;Proxy *&amp;gt;
+            Order Deny,Allow
+            Allow from all
+        &amp;lt;/Proxy&amp;gt;
+
+&amp;lt;/VirtualHost&amp;gt;        
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">DigitalOcean VPS 加密服务器为HTTPS和反向代理</summary></entry><entry><title type="html">使用npm</title><link href="http://localhost:4000/node/2018/09/30/remeber-to-use-npm.html" rel="alternate" type="text/html" title="使用npm" /><published>2018-09-30T17:13:57-07:00</published><updated>2018-09-30T17:13:57-07:00</updated><id>http://localhost:4000/node/2018/09/30/remeber-to-use-npm</id><content type="html" xml:base="http://localhost:4000/node/2018/09/30/remeber-to-use-npm.html">&lt;h1 id=&quot;使用npm&quot;&gt;使用npm&lt;/h1&gt;
 
 &lt;h2 id=&quot;提出问题&quot;&gt;提出问题&lt;/h2&gt;
 
@@ -25,21 +180,22 @@ nvm安装后需要配置环境，其一，不要自己去帮他创建文件。�
 nvm npm_mirror https://npm.taobao.org/mirrors/npm/
 nvm root &amp;lt;path&amp;gt; 设置路径
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;下载好后，我的步骤。
-```
-nvm node_mirror  https://npm.taobao.org/mirrors/node/
-nvm npm_mirror https://npm.taobao.org/mirrors/npm/
-nvm install latest
-nvm use 10.11.0
-npm config set prefix “E:\node\npm”
-配置用户文件夹下 .npmrc
-npm install npm -g –registry=https://registry.npm.taobao.org&lt;/p&gt;
+    &lt;p&gt;下载好后，我的步骤。&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvm node_mirror  https://npm.taobao.org/mirrors/node/
+nvm npm_mirror https://npm.taobao.org/mirrors/npm/
+nvm install latest
+nvm use 10.11.0
+npm config set prefix &quot;E:\node\npm&quot;
+配置用户文件夹下 .npmrc
+npm install npm -g --registry=https://registry.npm.taobao.org
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;之后不重要 nrm是npm源管理器
-npm install -g cnpm –registry=http://r.cnpmjs.org
- npm install -g nrm&lt;/p&gt;
+npm install -g cnpm –registry=http://r.cnpmjs.org&lt;/p&gt;
+
+&lt;p&gt;npm install -g nrm&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 ## npm使用命令
 
@@ -74,8 +230,23 @@ prefix, profile, prune, publish, rb, rebuild, repo, restart,
 root, run, run-script, s, se, search, set, shrinkwrap, star,
 stars, start, stop, t, team, test, token, tst, un,
 uninstall, unpublish, unstar, up, update, v, version, view,
-whoami npm配置 folders package-lock.json package.json npmrc package-locks shrinkwrap.json ```
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">使用npm</summary></entry><entry><title type="html">关于第一次搭建Jekyll的总结</title><link href="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html" rel="alternate" type="text/html" title="关于第一次搭建Jekyll的总结" /><published>2018-09-25T00:00:00-07:00</published><updated>2018-09-25T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html">&lt;h1 id=&quot;从零开始搭建jekyll&quot;&gt;从零开始搭建Jekyll&lt;/h1&gt;
+whoami
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;npm配置&lt;/p&gt;
+
+&lt;p&gt;folders&lt;/p&gt;
+
+&lt;p&gt;package-lock.json&lt;/p&gt;
+
+&lt;p&gt;package.json&lt;/p&gt;
+
+&lt;p&gt;npmrc&lt;/p&gt;
+
+&lt;p&gt;package-locks&lt;/p&gt;
+
+&lt;p&gt;shrinkwrap.json
+```&lt;/p&gt;</content><author><name></name></author><summary type="html">使用npm</summary></entry><entry><title type="html">关于第一次搭建Jekyll的总结</title><link href="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html" rel="alternate" type="text/html" title="关于第一次搭建Jekyll的总结" /><published>2018-09-25T00:00:00-07:00</published><updated>2018-09-25T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html">&lt;h1 id=&quot;从零开始搭建jekyll&quot;&gt;从零开始搭建Jekyll&lt;/h1&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;距离搭建完成Jekyll已经有很多天了，然后今天来总结一下当时的做法和想法。和当时记下的一点笔记。&lt;/p&gt;
@@ -86,7 +257,7 @@ whoami npm配置 folders package-lock.json package.json npmrc package-locks shri
 &lt;p&gt;首先安装Ruby20，却发现Ruby主要流行在Linux社区，在window社区对新手很不友好，网上如是说，所以我听从了建议，不安装window版本，但是自己也没有linux的电脑，除了vps服务器。但是用来做git托管网站，还是放在自己电&amp;gt;脑更好了。于是我首先安装了VMware Workstation14,下载地址：搜简书CSDN很多，下载Ubuntu18.04,Ubuntu中文网，官网都有，简略安装方式–ubuntu安装。只是因为Ubuntu18好像硬件需求2G以上让我考虑了一会，自己电脑能带动不，但是一直找不到16.04的&amp;gt;需求，最后还是选择了18.04版本。在2或者3个小时内，边学习其他，边下载和安装，搞定后开始学习安装jekyll。&lt;/p&gt;
 
 &lt;p&gt;第一步：安装 Ruby和RubyGems.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install Rubu RubyGems
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install Ruby RubyGems
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;第二步：安装jekyll,安装需要前置依赖，g++，gcc，make；如果没有自己安装（&lt;code class=&quot;highlighter-rouge&quot;&gt;apt install g++ gcc make&lt;/code&gt;)&lt;/p&gt;
@@ -185,4 +356,4 @@ git status #状态&lt;/p&gt;</content><author><name></name></author><summary typ
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">The happy day</title><link href="http://localhost:4000/1995/10/12/Greate-Day.html" rel="alternate" type="text/html" title="The happy day" /><published>1995-10-12T00:00:00-07:00</published><updated>1995-10-12T00:00:00-07:00</updated><id>http://localhost:4000/1995/10/12/Greate-Day</id><content type="html" xml:base="http://localhost:4000/1995/10/12/Greate-Day.html">&lt;p&gt;In this day. My life is begin.&lt;/p&gt;</content><author><name></name></author><summary type="html">In this day. My life is begin.</summary></entry></feed>

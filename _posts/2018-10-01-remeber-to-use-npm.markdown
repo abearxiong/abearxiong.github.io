@@ -32,6 +32,7 @@ nvm npm_mirror https://npm.taobao.org/mirrors/npm/
 nvm root <path> 设置路径
 ```
 下载好后，我的步骤。
+
 ```
 nvm node_mirror  https://npm.taobao.org/mirrors/node/
 nvm npm_mirror https://npm.taobao.org/mirrors/npm/
@@ -40,10 +41,11 @@ nvm use 10.11.0
 npm config set prefix "E:\node\npm"
 配置用户文件夹下 .npmrc
 npm install npm -g --registry=https://registry.npm.taobao.org
-
+```
 之后不重要 nrm是npm源管理器
 npm install -g cnpm --registry=http://r.cnpmjs.org
- npm install -g nrm 
+
+npm install -g nrm 
 ```
 
 ## npm使用命令
@@ -80,11 +82,18 @@ npm install -g cnpm --registry=http://r.cnpmjs.org
     stars, start, stop, t, team, test, token, tst, un,
     uninstall, unpublish, unstar, up, update, v, version, view,
     whoami
+
 npm配置
+
 folders
+
 package-lock.json
+
 package.json
+
 npmrc
+
 package-locks
+
 shrinkwrap.json
 ```

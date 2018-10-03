@@ -15,7 +15,7 @@ categories: jekyll blog
 
 第一步：安装 Ruby和RubyGems.
 ```
-sudo apt install Rubu RubyGems
+sudo apt install Ruby RubyGems
 ```
 
 第二步：安装jekyll,安装需要前置依赖，g++，gcc，make；如果没有自己安装（`apt install g++ gcc make`)
