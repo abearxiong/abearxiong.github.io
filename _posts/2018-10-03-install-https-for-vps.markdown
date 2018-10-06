@@ -3,6 +3,7 @@ layout: post
 title:  "Https加密和Apache反向代理问题!"
 date:   2018-10-03 23:06:57 +0800
 categories: ubuntu
+comments: true
 ---
 
 # DigitalOcean VPS 加密服务器为HTTPS和反向代理

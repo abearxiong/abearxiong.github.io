@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-03T08:19:01-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</subtitle><entry><title type="html">Https加密和Apache反向代理问题!</title><link href="http://localhost:4000/ubuntu/2018/10/03/install-https-for-vps.html" rel="alternate" type="text/html" title="Https加密和Apache反向代理问题!" /><published>2018-10-03T08:06:57-07:00</published><updated>2018-10-03T08:06:57-07:00</updated><id>http://localhost:4000/ubuntu/2018/10/03/install-https-for-vps</id><content type="html" xml:base="http://localhost:4000/ubuntu/2018/10/03/install-https-for-vps.html">&lt;h1 id=&quot;digitalocean-vps-加密服务器为https和反向代理&quot;&gt;DigitalOcean VPS 加密服务器为HTTPS和反向代理&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-06T09:38:29+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</subtitle><entry><title type="html">Https加密和Apache反向代理问题!</title><link href="http://localhost:4000/ubuntu/2018/10/03/install-https-for-vps.html" rel="alternate" type="text/html" title="Https加密和Apache反向代理问题!" /><published>2018-10-03T15:06:57+00:00</published><updated>2018-10-03T15:06:57+00:00</updated><id>http://localhost:4000/ubuntu/2018/10/03/install-https-for-vps</id><content type="html" xml:base="http://localhost:4000/ubuntu/2018/10/03/install-https-for-vps.html">&lt;h1 id=&quot;digitalocean-vps-加密服务器为https和反向代理&quot;&gt;DigitalOcean VPS 加密服务器为HTTPS和反向代理&lt;/h1&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;因为有一些Token，登陆模块，想只放在一个自己常用的服务器，然后就使用了nodejs来作为一个登陆模块。在面对Microsoft outlook OAuth的时候发现一个问题，他的回调函数必须是https的样式的。于是，自己去找办法设置自己的网站的http进行加密。&lt;/p&gt;
@@ -153,7 +153,7 @@ ProxyPassReverse / http://127.0.0.1:3000/
         &amp;lt;/Proxy&amp;gt;
 
 &amp;lt;/VirtualHost&amp;gt;        
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">DigitalOcean VPS 加密服务器为HTTPS和反向代理</summary></entry><entry><title type="html">使用npm</title><link href="http://localhost:4000/node/2018/09/30/remeber-to-use-npm.html" rel="alternate" type="text/html" title="使用npm" /><published>2018-09-30T17:13:57-07:00</published><updated>2018-09-30T17:13:57-07:00</updated><id>http://localhost:4000/node/2018/09/30/remeber-to-use-npm</id><content type="html" xml:base="http://localhost:4000/node/2018/09/30/remeber-to-use-npm.html">&lt;h1 id=&quot;使用npm&quot;&gt;使用npm&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">DigitalOcean VPS 加密服务器为HTTPS和反向代理</summary></entry><entry><title type="html">使用npm</title><link href="http://localhost:4000/node/2018/10/01/remeber-to-use-npm.html" rel="alternate" type="text/html" title="使用npm" /><published>2018-10-01T00:13:57+00:00</published><updated>2018-10-01T00:13:57+00:00</updated><id>http://localhost:4000/node/2018/10/01/remeber-to-use-npm</id><content type="html" xml:base="http://localhost:4000/node/2018/10/01/remeber-to-use-npm.html">&lt;h1 id=&quot;使用npm&quot;&gt;使用npm&lt;/h1&gt;
 
 &lt;h2 id=&quot;提出问题&quot;&gt;提出问题&lt;/h2&gt;
 
@@ -246,7 +246,7 @@ whoami
 &lt;p&gt;package-locks&lt;/p&gt;
 
 &lt;p&gt;shrinkwrap.json
-```&lt;/p&gt;</content><author><name></name></author><summary type="html">使用npm</summary></entry><entry><title type="html">关于第一次搭建Jekyll的总结</title><link href="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html" rel="alternate" type="text/html" title="关于第一次搭建Jekyll的总结" /><published>2018-09-25T00:00:00-07:00</published><updated>2018-09-25T00:00:00-07:00</updated><id>http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html">&lt;h1 id=&quot;从零开始搭建jekyll&quot;&gt;从零开始搭建Jekyll&lt;/h1&gt;
+```&lt;/p&gt;</content><author><name></name></author><summary type="html">使用npm</summary></entry><entry><title type="html">关于第一次搭建Jekyll的总结</title><link href="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html" rel="alternate" type="text/html" title="关于第一次搭建Jekyll的总结" /><published>2018-09-25T07:00:00+00:00</published><updated>2018-09-25T07:00:00+00:00</updated><id>http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/blog/2018/09/25/how-to-install-jekyll.html">&lt;h1 id=&quot;从零开始搭建jekyll&quot;&gt;从零开始搭建Jekyll&lt;/h1&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;距离搭建完成Jekyll已经有很多天了，然后今天来总结一下当时的做法和想法。和当时记下的一点笔记。&lt;/p&gt;
@@ -344,7 +344,7 @@ cd ~/.ssh/id_rsa.pub
 &lt;p&gt;git pull  #更新到远
 git add . #本地修改和增加
 git push  #推送
-git status #状态&lt;/p&gt;</content><author><name></name></author><summary type="html">从零开始搭建Jekyll</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-09-23T07:13:57-07:00</published><updated>2018-09-23T07:13:57-07:00</updated><id>http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+git status #状态&lt;/p&gt;</content><author><name></name></author><summary type="html">从零开始搭建Jekyll</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-09-23T14:13:57+00:00</published><updated>2018-09-23T14:13:57+00:00</updated><id>http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/09/23/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -356,4 +356,25 @@ git status #状态&lt;/p&gt;</content><author><name></name></author><summary typ
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">The happy day</title><link href="http://localhost:4000/1995/10/12/Greate-Day.html" rel="alternate" type="text/html" title="The happy day" /><published>1995-10-12T00:00:00-07:00</published><updated>1995-10-12T00:00:00-07:00</updated><id>http://localhost:4000/1995/10/12/Greate-Day</id><content type="html" xml:base="http://localhost:4000/1995/10/12/Greate-Day.html">&lt;p&gt;In this day. My life is begin.&lt;/p&gt;</content><author><name></name></author><summary type="html">In this day. My life is begin.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">The happy day</title><link href="http://localhost:4000/1995/10/12/Greate-Day.html" rel="alternate" type="text/html" title="The happy day" /><published>1995-10-12T00:00:00+00:00</published><updated>1995-10-12T00:00:00+00:00</updated><id>http://localhost:4000/1995/10/12/Greate-Day</id><content type="html" xml:base="http://localhost:4000/1995/10/12/Greate-Day.html">&lt;p&gt;In this day. My life is begin&lt;/p&gt;
+
+&lt;h1 id=&quot;can-use&quot;&gt;can use&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;d ok&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;mulu&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;dfd&lt;/td&gt;
+      &lt;td&gt;d&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name></name></author><summary type="html">In this day. My life is begin</summary></entry></feed>
