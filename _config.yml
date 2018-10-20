@@ -26,9 +26,11 @@ github_username:  abearxiong
 markdown: kramdown
 #theme: minima
 timezone: TIMEZONE
+excerpt_separator:  '<!-- more -->'
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+    #- jekyll-gist
 kramdown:
         input: GFM
 sass:

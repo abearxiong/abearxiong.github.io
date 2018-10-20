@@ -3,6 +3,7 @@ layout: post
 title:  "关于第一次搭建Jekyll的总结"
 date:   2018-09-25 00:00:00 -0700
 categories: jekyll blog
+description: For install Jekyll Introduce
 ---
 
 # 从零开始搭建Jekyll

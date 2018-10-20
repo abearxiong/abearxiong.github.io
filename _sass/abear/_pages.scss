@@ -1,0 +1,13 @@
+.page-content{
+order: 0;
+}
+
+.page-sidebar {
+  order: 1;
+  border-bottom: 1px solid rgba(0,0,0, .1);
+  position: sticky;
+  top: 0rem;
+  z-index:1000;
+  height:calc(100vh -4rem);
+  border-left: 1px solid rgba(0, 0, 0, .1);
+}
