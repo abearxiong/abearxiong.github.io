@@ -44,9 +44,11 @@ $on-laptop:        800px !default;
 }
 
 // Import partials.
+//"abear/layout",
+
 @import
+  "abear/mixins",
   "abear/base",
-  "abear/layout",
   "abear/syntax-highlighting",
   "abear/pages"
  ;
