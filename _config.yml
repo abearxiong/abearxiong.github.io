@@ -27,12 +27,11 @@ markdown: kramdown
 #theme: minima
 timezone: TIMEZONE
 excerpt_separator:  '<!-- more -->'
-paginate: 3
-paginate_path: "blog/page:num"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
     #- jekyll-gist
+  - jekyll-paginate
 kramdown:
         input: GFM
 sass:
@@ -44,6 +43,9 @@ comment:
 # There is for disqus setting
 disqus:
         shortname: abearxiong
+# There is for paginate
+paginate: 3
+paginate_path: "page:num"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

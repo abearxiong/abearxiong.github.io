@@ -17,10 +17,10 @@ $xl: 1200px;//75em
 $pc-bg-color: #e7c4c433;
 .page-content{
 	order: 0;
-	overflow: scoll;
+	overflow: auto;
 	background-color:$pc-bg-color;
 	@media screen and(min-width: 1200px){
-		width: 100vh;
+		height: 100vh;
 		.home {
  		   width: 50%;
   	 	   margin: auto;
@@ -29,12 +29,20 @@ $pc-bg-color: #e7c4c433;
 		   }
 		    
 	   	}
+		.post-categories {
+    			display: inline;
+		}
+		.post-tags{
+			display: inline;
+		}		
  	 }
 }
 $ps-bg-color: #e77f04;
+
 .page-sidebar {
   background-color: $ps-bg-color;
   order: 1;
+  overflow: auto;
   border-bottom: 1px solid rgba(0,0,0, .1);
   @media screen and(min-width: 1200px){
     top: 0rem;

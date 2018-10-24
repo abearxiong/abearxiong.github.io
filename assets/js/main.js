@@ -1,0 +1,13 @@
+$("#btn-test").click(function(){
+ 	alert("tes");
+	$.ajax({
+	      type:"get",
+              url:'/posts.json',
+              success:function(data){
+                         alert(JSON.stringify(data));
+	      },
+	      error:function(data){
+	      	alert(JSON.stringify(data));
+	      }
+             })
+})

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include theme/head.html -%}
+
+  <body>
+	  <div class="container-fluid">
+		  <div class="row flex-xl-nowrap">
+    <main class="col-12 col-md-12 col-xl-12 page-content" aria-label="Content">
+      {{ content }}
+    </main>
+		  </div>
+    </div>
+    {%- include theme/foot.html -%}
+  </body>
+
+</html>
