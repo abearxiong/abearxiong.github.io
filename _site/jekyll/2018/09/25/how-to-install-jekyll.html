@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>关于第一次搭建Jekyll的总结 | Abear</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="关于第一次搭建Jekyll的总结" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="For install Jekyll Introduce" />
+<meta property="og:description" content="For install Jekyll Introduce" />
+<link rel="canonical" href="http://localhost:4000/jekyll/2018/09/25/how-to-install-jekyll.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/2018/09/25/how-to-install-jekyll.html" />
+<meta property="og:site_name" content="Abear" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-25T07:00:00+00:00" />
+<script type="application/ld+json">
+{"headline":"关于第一次搭建Jekyll的总结","dateModified":"2018-09-25T07:00:00+00:00","datePublished":"2018-09-25T07:00:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/2018/09/25/how-to-install-jekyll.html"},"url":"http://localhost:4000/jekyll/2018/09/25/how-to-install-jekyll.html","description":"For install Jekyll Introduce","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abear" /><!-- cdn -->  <!-- bootstrap -->
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	  <div class="container-fluid">
+		  <div class="row flex-xl-nowrap">
+    <main class="col-12 col-md-12 col-xl-12 page-content" aria-label="Content">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">关于第一次搭建Jekyll的总结</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-09-25T07:00:00+00:00" itemprop="datePublished">Sep 25, 2018
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="从零开始搭建jekyll">从零开始搭建Jekyll</h1>
+
+<blockquote>
+  <p>距离搭建完成Jekyll已经有很多天了，然后今天来总结一下当时的做法和想法。和当时记下的一点笔记。</p>
+</blockquote>
+
+<h2 id="安装过程">安装过程</h2>
+
+<p>首先安装Ruby20，却发现Ruby主要流行在Linux社区，在window社区对新手很不友好，网上如是说，所以我听从了建议，不安装window版本，但是自己也没有linux的电脑，除了vps服务器。但是用来做git托管网站，还是放在自己电&gt;脑更好了。于是我首先安装了VMware Workstation14,下载地址：搜简书CSDN很多，下载Ubuntu18.04,Ubuntu中文网，官网都有，简略安装方式–ubuntu安装。只是因为Ubuntu18好像硬件需求2G以上让我考虑了一会，自己电脑能带动不，但是一直找不到16.04的&gt;需求，最后还是选择了18.04版本。在2或者3个小时内，边学习其他，边下载和安装，搞定后开始学习安装jekyll。</p>
+
+<p>第一步：安装 Ruby和RubyGems.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install Ruby RubyGems
+</code></pre></div></div>
+
+<p>第二步：安装jekyll,安装需要前置依赖，g++，gcc，make；如果没有自己安装（<code class="highlighter-rouge">apt install g++ gcc make</code>)</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll
+</code></pre></div></div>
+
+<p>第三步：安装bundler</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+</code></pre></div></div>
+
+<p>第四步：创建自己的博客，进入博客根目录并初始化和本地化服务</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new myblog
+bundler install
+bundle exec jekyll serve
+</code></pre></div></div>
+
+<p>第五步：克隆自己name.github.io的项目（安装设置git<a href="#git简略设置">方法</a>)</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:abearxiong.github.io.git
+</code></pre></div></div>
+<p>复制博客中的内容到自己设置的项目中
+第六步：提交自己更改的内容</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m "提交备注名"
+git push
+</code></pre></div></div>
+<p>到自己的name.github.io查找自己的结果。安装完全结束。之后的内容就是对自己的托管博客进行自定义操作。进行修改自己的主题设置。</p>
+
+<h2 id="安装原因">安装原因</h2>
+
+<p>突然间有点无聊了，然后就想到了我的abearxiong.io的小托管什么的网站，我过去什么都没有做，因为什么联想到了这个，于是去关注了hexo，jekyll和hugo。应该最先看到的是hexo，看到有个github.io的网站，然后看到他托管了三个网站，同一个类容，突然就很想去了解这些东西。然后了解hexo和jekyll的区别，再知道hugo。百度和google到的内容全都是hexo和从jekyll，很奇怪，看到github中star的还是jekyll多，我也不知道为什么。
+<img src="https://res.cloudinary.com/xiongxiao/image/upload/v1538282254/github/images/2018-9-30.png" alt="github比较图" /></p>
+
+<p>对这几门而言，在Google的过程中，自己也不知道该选jekyll还是选择hexo，然后突然发现一个真实情况，github中推的jekyll，相当于jekyll是github推荐的，那么何不必在github中使用jekyll呢，如果还有兴趣，在码云和coding中各种搭建一个不同类型的呢。也许还是挺有趣的。</p>
+
+<p>说动就动的旅行开始了，开始了解更深入的jekyll，发现他是一门我从没有接触的Ruby语言而来的，了解Ruby的过程中，很多人赞扬他的语法糖，对于我来说，也许我接触这个，也是接触了一门新的语言了，又可以玩耍一门新的语&gt;言就是很好玩的一件事情了。毕竟在学校此刻的我就是一种奇怪的人，如果交计算机作业，项目什么的，我就在想，我是不是能交一个新的作业，新的不同的没有学过的语言来编写的作业，java，c#，c，mfc，nodejs，php等等。都
+是很有趣的语言。</p>
+
+<h2 id="扩展阅读">扩展阅读</h2>
+
+<h3 id="ubutu安装">ubutu安装</h3>
+
+<p>安装ubuntu 快速版
+可以使用软件</p>
+<ol>
+  <li>Universal USB Installer</li>
+  <li>rufus
+两个都是刻录U盘的工具。把下载下来的ios格式的Ubuntu刻录到U盘
+直接U盘启动，也不需要去看什么教程。
+直接下一步，下一步，然后就完成了。</li>
+</ol>
+
+<p>如果安装window也是类似的，在window下可以直接点开window的ios安装包安装window或者更新windows。</p>
+
+<p>如果安装到虚拟机，只是不需要使用这个软件罢了。</p>
+
+<h3 id="git简略设置-安装过程">git简略设置 <a href="#安装过程">安装过程</a></h3>
+
+<blockquote>
+  <p>这里主要讲一点git的基础配置问题
+在Ubuntu内，需要远程github，然后才能进行操作其他的必要的内容。</p>
+  <ol>
+    <li>第一配置邮箱等信息</li>
+    <li>第二设置rsa配置问题</li>
+    <li>拷贝内容到github网站。</li>
+  </ol>
+</blockquote>
+
+<p>配置全局姓名和邮箱</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "abearxiong"
+
+git config --global user.email "xiongxiao1012@outlook.com"
+</code></pre></div></div>
+<p>配置rsa</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-keygen -t rsa -C "xiongxiao1012@outlook.com"
+cd ~/.ssh/id_rsa.pub 
+
+#复制内容到github中
+</code></pre></div></div>
+
+<p>复制id_rsa.pub的内容到github中</p>
+
+<p>基本使用方法 k</p>
+
+<p>git pull  #更新到远
+git add . #本地修改和增加
+git push  #推送
+git status #状态</p>
+
+  </div><div id="disqus_thread"></div> 
+ <script>
+    var disqus_config = function () {
+      this.page.url = 'http://localhost:4000/jekyll/2018/09/25/how-to-install-jekyll.html';
+      this.page.identifier = 'http://localhost:4000/jekyll/2018/09/25/how-to-install-jekyll.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://abearxiong.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/jekyll/2018/09/25/how-to-install-jekyll.html" hidden></a>
+</article>
+
+    </main>
+		  </div>
+    </div><div class="footer">
+
+</div><!--Bootstrap js-->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- Script -->
+<script src="/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -17,12 +17,10 @@ $xl: 1200px;//75em
 $pc-bg-color: #e7c4c433;
 .page-content{
 	order: 0;
-	overflow: auto;
-	background-color:$pc-bg-color;
+	//background-color:$pc-bg-color;
 	@media screen and(min-width: 1200px){
-		height: 100vh;
 		.home {
- 		   width: 50%;
+ 		   width: 80%;
   	 	   margin: auto;
 	           .post-list-heading {
  			   text-align: center;
@@ -35,6 +33,10 @@ $pc-bg-color: #e7c4c433;
 		.post-tags{
 			display: inline;
 		}		
+		.pagination {
+		    text-align: center;
+		    display: block;
+		}
  	 }
 }
 $ps-bg-color: #e77f04;

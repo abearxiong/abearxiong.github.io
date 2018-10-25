@@ -14,29 +14,70 @@
 <meta property="og:site_name" content="Abear" />
 <link rel="next" href="http://localhost:4000/page2" />
 <script type="application/ld+json">
-{"@type":"WebSite","url":"http://localhost:4000/","name":"Abear","headline":"Abear","description":"每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。","@context":"http://schema.org"}</script>
+{"headline":"Abear","@type":"WebSite","url":"http://localhost:4000/","name":"Abear","description":"每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abear" /><!-- bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abear" /><!-- cdn -->  <!-- bootstrap -->
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	  <div class="container-fluid">
-		  <div class="row flex-xl-nowrap">
-    <main class="col-12 col-md-9 col-xl-8 page-content" aria-label="Content">
-      <div class="home"><h2 class="post-list-heading">My Articles
+	  <div class="container">
+		<div class="row flex-xl-nowrap">
+    		<main class="col-12 col-md-12 col-xl-12 page-content" aria-label="Content">
+      		<div class="home"><h2 class="post-list-heading">My Articles
 	    <button class="btn" id="btn-test" > test</button>
     </h2>
     <ul class="post-lists"><li class="post-card card">
+          <a class="post-link" href="/jekyll/2018/10/25/History-jekyll-style-v3.html">
+            History about Jekyll style(3)
+          </a>
+	  <div sytle="display:inline;">
+	<div class="post-tags">
+		tags: <span class="post-tag">blog</span>	
+	</div>
+        <span class="post-meta">2018/10/25</span>
+	<div class="post-categories">
+		categories: <span class="post-category">jekyll</span>
+	</div>
+	  </div>
+	<div class="post-text"><p>对于Jekyll blog的设计方案。</p>
+
+<p>想了想需要的总的页面。</p>
+
+<p>（1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面</p>
+
+</div>
+      </li><li class="post-card card">
+          <a class="post-link" href="/jekyll/2018/10/24/History-jekyll-style-v2.html">
+            History about Jekyll style(2)
+          </a>
+	  <div sytle="display:inline;">
+	<div class="post-tags">
+		tags: <span class="post-tag">blog</span>	
+	</div>
+        <span class="post-meta">2018/10/24</span>
+	<div class="post-categories">
+		categories: <span class="post-category">jekyll</span>
+	</div>
+	  </div>
+	<div class="post-text"><p>对于Jekyll blog的设计方案。</p>
+<ol>
+  <li>继续探讨昨天的问题，怎么分两栏，分别滚动。 （1）打算使用overflow:scroll尝试，失败，还是一起滚动。（2）感觉是因为自己没有写他的长度，设定posts页面长度试试：解决</li>
+  <li>关于多适应。想尝试使用Bootstrap里面的less，单独取出那块，然后出现了bug，一直调试。失败</li>
+  <li>单纯对于多端适应方案，通过使用单独的设计。@media screen and(mix-width: 1200px)</li>
+</ol>
+
+</div>
+      </li><li class="post-card card">
           <a class="post-link" href="/jekyll/2018/10/20/History-jekyll-style-v1.html">
             History about Jekyll style(1)
           </a>
 	  <div sytle="display:inline;">
-        <span class="post-meta">20 Oct 2018</span>
+	<div class="post-tags">
+		tags: <span class="post-tag">blog</span>	
+	</div>
+        <span class="post-meta">2018/10/20</span>
 	<div class="post-categories">
 		categories: <span class="post-category">jekyll</span>
-	</div>
-	<div class="post-tags">
-		tags: <span class="post-tag">jekyll</span>	
 	</div>
 	  </div>
 	<div class="post-text"><p>对于Jekyll blog的设计方案。设计Jekyll Style.
@@ -44,34 +85,6 @@
 Jekyll最基本的主题自己看了很多，然而我更想要自己设计自己风格一个静态github page页面。</p>
 
 </div>
-      </li><li class="post-card card">
-          <a class="post-link" href="/ubuntu/2018/10/03/install-https-for-vps.html">
-            Https加密和Apache反向代理问题!
-          </a>
-	  <div sytle="display:inline;">
-        <span class="post-meta">03 Oct 2018</span>
-	<div class="post-categories">
-		categories: <span class="post-category">ubuntu</span>
-	</div>
-	<div class="post-tags">
-		tags: <span class="post-tag"></span>	
-	</div>
-	  </div>
-	<div class="post-text">aboot http how to use ssl.</div>
-      </li><li class="post-card card">
-          <a class="post-link" href="/node/2018/10/01/remeber-to-use-npm.html">
-            使用npm
-          </a>
-	  <div sytle="display:inline;">
-        <span class="post-meta">01 Oct 2018</span>
-	<div class="post-categories">
-		categories: <span class="post-category">node</span>
-	</div>
-	<div class="post-tags">
-		tags: <span class="post-tag"></span>	
-	</div>
-	  </div>
-	<div class="post-text">node use.</div>
       </li></ul><div class="page-pagination">
   	
 		<div class="pagination">
@@ -85,7 +98,11 @@ Jekyll最基本的主题自己看了很多，然而我更想要自己设计自�
     		 
   		
     		 
-      	 	 <a href="page2">2</a>
+      	 	 <a href="//page2">2</a>
+    		 
+  		
+    		 
+      	 	 <a href="//page3">3</a>
     		 
   		
 
@@ -97,34 +114,17 @@ Jekyll最基本的主题自己看了很多，然而我更想要自己设计自�
   </div>
 </div>
 
-    </main>
-    <div class="col-12 col-md-3 col-xl-4 page-sidebar"><div class="info-links card">
-	<div class="card-title">abear</div>
-	<img class="card-img-top" src="/images/photo.jpg" alt="My Photos"/>
-	<div class="info-infos">some text for introduce</div>
-	<div class="info-search"> 
-		<div class="input-group">
-      		<input type="text" class="form-control" placeholder="Search for">
-      		<span class="input-group-btn">
-        		<button class="btn btn-secondary" type="button">Go!</button>
-      		</span>
-    		</div>
-	</div>
-	<div class="info-tags">show tages</div>
-	<div class="info-conn">feel github etc</div>
-	<div class="info-footer">
-		Power by jekyll
-		mail connect	
-	</div>
-</div>
-</div>
-		  </div>
-    </div><!--Bootstrap js-->
+    		</main>
+		</div>
+    </div><div class="footer">
+
+</div><!--Bootstrap js-->
 <script src="/assets/js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <!-- Script -->
 <script src="/assets/js/main.js"></script>
-</body>
+ 
+  </body>
 
 </html>

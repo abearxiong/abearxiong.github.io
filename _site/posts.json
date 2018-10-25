@@ -1,20 +1,38 @@
 <p>[</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "title": "History about Jekyll style(3)",
+    "url": "/jekyll/2018/10/25/History-jekyll-style-v3.html",
+    "categories": ["jekyll"],
+    "date": "October 25, 2018",
+    "tags": ["blog"],
+"description": 
+},
+
+{
+    "title": "History about Jekyll style(2)",
+    "url": "/jekyll/2018/10/24/History-jekyll-style-v2.html",
+    "categories": ["jekyll"],
+    "date": "October 24, 2018",
+    "tags": ["blog"],
+"description": 
+},
+
+{
     "title": "History about Jekyll style(1)",
     "url": "/jekyll/2018/10/20/History-jekyll-style-v1.html",
     "categories": ["jekyll"],
     "date": "October 20, 2018",
-    "tags": ["jekyll"],
+    "tags": ["blog"],
 "description": 
 },
 
 {
     "title": "Https加密和Apache反向代理问题!",
-    "url": "/ubuntu/2018/10/03/install-https-for-vps.html",
-    "categories": ["ubuntu"],
+    "url": "/linux/2018/10/03/install-https-for-vps.html",
+    "categories": ["linux"],
     "date": "October 03, 2018",
-    "tags": [],
+    "tags": ["ubuntu"],
 "description": aboot http how to use ssl.
 },
 
@@ -23,32 +41,32 @@
     "url": "/node/2018/10/01/remeber-to-use-npm.html",
     "categories": ["node"],
     "date": "October 01, 2018",
-    "tags": [],
+    "tags": ["npm"],
 "description": node use.
 },
 
 {
     "title": "关于第一次搭建Jekyll的总结",
-    "url": "/jekyll/blog/2018/09/25/how-to-install-jekyll.html",
-    "categories": ["jekyll","blog"],
+    "url": "/jekyll/2018/09/25/how-to-install-jekyll.html",
+    "categories": ["jekyll"],
     "date": "September 25, 2018",
-    "tags": [],
+    "tags": ["blog"],
 "description": For install Jekyll Introduce
 },
 
 {
     "title": "Welcome to Jekyll!",
-    "url": "/jekyll/update/2018/09/23/welcome-to-jekyll.html",
-    "categories": ["jekyll","update"],
+    "url": "/jekyll/2018/09/23/welcome-to-jekyll.html",
+    "categories": ["jekyll"],
     "date": "September 23, 2018",
-    "tags": [],
+    "tags": ["blog"],
 "description": The first blog.
 },
 
 {
     "title": "The happy day",
-    "url": "/1995/10/12/Greate-Day.html",
-    "categories": [],
+    "url": "/me/1995/10/12/Greate-Day.html",
+    "categories": ["me"],
     "date": "October 12, 1995",
     "tags": ["life"],
 "description": good

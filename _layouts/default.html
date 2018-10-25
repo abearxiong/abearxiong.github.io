@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include theme/head.html -%}
+  {%- include theme/header.html -%}
 
   <body>
-	  <div class="container-fluid">
-		  <div class="row flex-xl-nowrap">
-    <main class="col-12 col-md-9 col-xl-8 page-content" aria-label="Content">
-      {{ content }}
-    </main>
-    <div class="col-12 col-md-3 col-xl-4 page-sidebar">
-      {%- include theme/info.html -%}
+	  <div class="container">
+		<div class="row flex-xl-nowrap">
+    		<main class="col-12 col-md-12 col-xl-12 page-content" aria-label="Content">
+      		{{ content }}
+    		</main>
+		</div>
     </div>
-		  </div>
-    </div>
-    {%- include theme/foot.html -%}
+    {%- include theme/footer.html -%}
+    {% comment %} 
+    {%- include theme/footer.html -%}
+    {% endcomment %} 
   </body>
 
 </html>

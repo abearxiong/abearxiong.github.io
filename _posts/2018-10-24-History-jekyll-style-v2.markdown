@@ -3,7 +3,7 @@ layout: post
 title:  History about Jekyll style(2)
 date:   2018-10-24 12:00:00 +0800
 categories: jekyll
-tags: jekyll
+tags: blog
 comments: true
 ---
  对于Jekyll blog的设计方案。
