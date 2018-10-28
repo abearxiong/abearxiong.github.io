@@ -20,15 +20,15 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-	  <div sytle="display:inline;">
-	<div class="post-tags">
+	<div class="post-infos">
+	 <div class="post-tags">
 		tags: <span class="post-tag">{{ post.tags|join: ', ' }}</span>	
-	</div>
-        <span class="post-meta">{{ post.date | date: "%Y/%m/%d" }}</span>
-	<div class="post-categories">
+	 </div>
+         <div class="post-meta">{{ post.date | date: "%Y/%m/%d" }}</div>
+	 <div class="post-categories">
 		categories: <span class="post-category">{{post.categories}}</span>
+ 	 </div>
 	</div>
-	  </div>
 	<div class="post-text">
         {%- if post.description -%}
 	  {{ post.description}}
@@ -55,10 +55,11 @@ layout: default
     		 {% elsif page == 1 %}
       		 <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     		 {% else %}
-      	 	 <a href="/{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      	 	 <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     		 {% endif %}
   		{% endfor %}
 
+		
    	{% if paginator.next_page %}
     	<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
   	{% else %}

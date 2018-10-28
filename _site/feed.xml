@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-25T14:48:19+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</subtitle><entry><title type="html">History about Jekyll style(3)</title><link href="http://localhost:4000/jekyll/2018/10/25/History-jekyll-style-v3.html" rel="alternate" type="text/html" title="History about Jekyll style(3)" /><published>2018-10-25T04:00:00+00:00</published><updated>2018-10-25T04:00:00+00:00</updated><id>http://localhost:4000/jekyll/2018/10/25/History-jekyll-style-v3</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/25/History-jekyll-style-v3.html">&lt;p&gt;对于Jekyll blog的设计方案。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-28T07:05:13+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</subtitle><entry><title type="html">Histroy jekyll style v1(4)</title><link href="http://localhost:4000/jekyll/2018/10/27/History-jekyll-style-v1-4.html" rel="alternate" type="text/html" title="Histroy jekyll style v1(4)" /><published>2018-10-27T14:00:00+00:00</published><updated>2018-10-27T14:00:00+00:00</updated><id>http://localhost:4000/jekyll/2018/10/27/History-jekyll-style-v1-4</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/27/History-jekyll-style-v1-4.html">&lt;p&gt;对于Jekyll blog的设计方案。
+(1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面&lt;/p&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;所有文章列表
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;标签&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;分类&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;内容&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;上下一页&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;RSS&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;样式&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;文章
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;标签&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;分类&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;评论&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;最新文章或关联文章&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;文字统计和访问统计&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;样式&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;其他页面的信息
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;标签页面
+        &lt;ul class=&quot;task-list&quot;&gt;
+          &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;具体标签&lt;/li&gt;
+          &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;表格分类&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;分类页面&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;归档页面&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;个人信息页面&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Jekyll Blog 历程页面&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;导航页站点地图&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;插件
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;百度分析&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Google分析&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;disqus&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;其他
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;图床&lt;a href=&quot;https://cloudinary.com&quot;&gt;cloudinary&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;还行的Jekyll Blog&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://liberize.github.io/&quot; title=&quot;很不错的一个网站&quot;&gt;liberize&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.fooleap.org/&quot;&gt;fooleap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mytrix.in/&quot;&gt;mytrix&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://leiminnet.cn&quot;&gt;leiminnet&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!-- more --&gt;
+&lt;p&gt;对于这个三个思考，首先想到的是文章。&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;需要有标签和分类，标签跳转，显示相应的标签的内容。&lt;/li&gt;
+  &lt;li&gt;需要可以设置的评论,disqus。直接添加js代码即可&lt;/li&gt;
+  &lt;li&gt;需要有最新文章和关联文章的显示。&lt;/li&gt;
+  &lt;li&gt;文字数量统计和访问统计，访问统计可以用百度分析引入和Google分析引入。&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 (1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面 所有文章列表 标签 分类 内容 上下一页 RSS 样式 文章 标签 分类 评论 最新文章或关联文章 文字统计和访问统计 样式 其他页面的信息 标签页面 具体标签 表格分类 分类页面 归档页面 个人信息页面 Jekyll Blog 历程页面 导航页站点地图 插件 百度分析 Google分析 disqus 其他 图床cloudinary 还行的Jekyll Blog liberize fooleap mytrix leiminnet</summary></entry><entry><title type="html">History about Jekyll style(3)</title><link href="http://localhost:4000/jekyll/2018/10/25/History-jekyll-style-v1-3.html" rel="alternate" type="text/html" title="History about Jekyll style(3)" /><published>2018-10-25T04:00:00+00:00</published><updated>2018-10-25T04:00:00+00:00</updated><id>http://localhost:4000/jekyll/2018/10/25/History-jekyll-style-v1-3</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/25/History-jekyll-style-v1-3.html">&lt;p&gt;对于Jekyll blog的设计方案。&lt;/p&gt;
 
 &lt;p&gt;想了想需要的总的页面。&lt;/p&gt;
 
@@ -12,7 +79,7 @@
 
 &lt;p&gt;去掉了posts页面，其他个人信息，重定义了引入的Bootstrap和JQuery。&lt;/p&gt;
 
-&lt;p&gt;思考了关于如何跳转到其他页面的办法，可拖动的按钮什么的，或者其他的的按钮，进入导航页面等等。&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 想了想需要的总的页面。 （1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面</summary></entry><entry><title type="html">History about Jekyll style(2)</title><link href="http://localhost:4000/jekyll/2018/10/24/History-jekyll-style-v2.html" rel="alternate" type="text/html" title="History about Jekyll style(2)" /><published>2018-10-24T04:00:00+00:00</published><updated>2018-10-24T04:00:00+00:00</updated><id>http://localhost:4000/jekyll/2018/10/24/History-jekyll-style-v2</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/24/History-jekyll-style-v2.html">&lt;p&gt;对于Jekyll blog的设计方案。&lt;/p&gt;
+&lt;p&gt;思考了关于如何跳转到其他页面的办法，可拖动的按钮什么的，或者其他的的按钮，进入导航页面等等。&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 想了想需要的总的页面。 （1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面</summary></entry><entry><title type="html">History about Jekyll style(2)</title><link href="http://localhost:4000/jekyll/2018/10/24/History-jekyll-style-v1-2.html" rel="alternate" type="text/html" title="History about Jekyll style(2)" /><published>2018-10-24T04:00:00+00:00</published><updated>2018-10-24T04:00:00+00:00</updated><id>http://localhost:4000/jekyll/2018/10/24/History-jekyll-style-v1-2</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/24/History-jekyll-style-v1-2.html">&lt;p&gt;对于Jekyll blog的设计方案。&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;继续探讨昨天的问题，怎么分两栏，分别滚动。 （1）打算使用overflow:scroll尝试，失败，还是一起滚动。（2）感觉是因为自己没有写他的长度，设定posts页面长度试试：解决&lt;/li&gt;
   &lt;li&gt;关于多适应。想尝试使用Bootstrap里面的less，单独取出那块，然后出现了bug，一直调试。失败&lt;/li&gt;
@@ -21,7 +88,7 @@
   &lt;li&gt;分页功能在&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;添加&lt;code class=&quot;highlighter-rouge&quot;&gt;paginate: 5&lt;/code&gt;  然后添加分页路径：&lt;code class=&quot;highlighter-rouge&quot;&gt;paginate_path: &quot;blog/page:num&quot;&lt;/code&gt; ，还有分页插件jekyll-paginate
 。&lt;/li&gt;
   &lt;li&gt;关于标签。 可行方案1 &lt;img src=&quot;https://blog.fooleap.org/jekyll-tags-page.html&quot; alt=&quot;Jekyll设置API统计文章数据&quot; /&gt;。 可行方案2 使用标签变量site.tags，显示所有标签-取变量的时候获取tag in site.tags 然后tag[0]是标签名字，tag[1]是具体内容。 可行方案3 多页面自定义设置&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 继续探讨昨天的问题，怎么分两栏，分别滚动。 （1）打算使用overflow:scroll尝试，失败，还是一起滚动。（2）感觉是因为自己没有写他的长度，设定posts页面长度试试：解决 关于多适应。想尝试使用Bootstrap里面的less，单独取出那块，然后出现了bug，一直调试。失败 单纯对于多端适应方案，通过使用单独的设计。@media screen and(mix-width: 1200px)</summary></entry><entry><title type="html">History about Jekyll style(1)</title><link href="http://localhost:4000/jekyll/2018/10/20/History-jekyll-style-v1.html" rel="alternate" type="text/html" title="History about Jekyll style(1)" /><published>2018-10-20T04:00:00+00:00</published><updated>2018-10-20T04:00:00+00:00</updated><id>http://localhost:4000/jekyll/2018/10/20/History-jekyll-style-v1</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/20/History-jekyll-style-v1.html">&lt;p&gt;对于Jekyll blog的设计方案。设计Jekyll Style.
+&lt;/ol&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 继续探讨昨天的问题，怎么分两栏，分别滚动。 （1）打算使用overflow:scroll尝试，失败，还是一起滚动。（2）感觉是因为自己没有写他的长度，设定posts页面长度试试：解决 关于多适应。想尝试使用Bootstrap里面的less，单独取出那块，然后出现了bug，一直调试。失败 单纯对于多端适应方案，通过使用单独的设计。@media screen and(mix-width: 1200px)</summary></entry><entry><title type="html">History about Jekyll style(1)</title><link href="http://localhost:4000/jekyll/2018/10/20/History-jekyll-style-v1-1.html" rel="alternate" type="text/html" title="History about Jekyll style(1)" /><published>2018-10-20T04:00:00+00:00</published><updated>2018-10-20T04:00:00+00:00</updated><id>http://localhost:4000/jekyll/2018/10/20/History-jekyll-style-v1-1</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/20/History-jekyll-style-v1-1.html">&lt;p&gt;对于Jekyll blog的设计方案。设计Jekyll Style.
  &lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1540018987/github/images/jekyll-themesV1.png&quot; alt=&quot;风格&quot; /&gt;
 Jekyll最基本的主题自己看了很多，然而我更想要自己设计自己风格一个静态github page页面。&lt;!-- more --&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -427,4 +494,6 @@ git status #状态&lt;/p&gt;</content><author><name></name></author><category te
       &lt;td&gt;d&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</content><author><name></name></author><category term="life" /><summary type="html">In this day. My life is begin can use d ok mulu   dfd d</summary></entry></feed>
+&lt;/table&gt;
+
+&lt;p&gt;test&lt;br /&gt; &lt;em&gt;sss&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="life" /><summary type="html">In this day. My life is begin can use d ok mulu   dfd d test sss</summary></entry></feed>

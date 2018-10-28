@@ -18,25 +18,43 @@ $pc-bg-color: #e7c4c433;
 .page-content{
 	order: 0;
 	//background-color:$pc-bg-color;
-	@media screen and(min-width: 1200px){
+	@media screen and(min-width: 768px){
 		.home {
  		   width: 80%;
   	 	   margin: auto;
 	           .post-list-heading {
- 			   text-align: center;
+ 			  // text-align: center;
+			  margin-left: 2em;
 		   }
-		    
+		   .post-link {
+			         text-align: center;
+			         font-size: larger;
+				 border-bottom: 0.1em solid #0000001a;
+				 color: #606004;
+			       } 
 	   	}
-		.post-categories {
-    			display: inline;
-		}
-		.post-tags{
-			display: inline;
+		.post-infos{
+			width: 100%;
+			display: -webkit-flex;
+			display: flex;
+			justify-content: space-around;
+			.post-categories {
+    				//display: inline;
+			}
+			.post-tags{
+				//display: inline;
+			}
+			.post-meta{
+				//display: inline;
+				//text-align: center;
+			}
 		}		
 		.pagination {
 		    text-align: center;
 		    display: block;
 		}
+				
+		
  	 }
 }
 $ps-bg-color: #e77f04;
