@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Learn Rake
-date:   2018-10-28 15:00 +8000
+date:   2018-10-28 15:00:00 +8000
 categories: Ruby
 tags: rake
 description: Learn Rake and make some note

@@ -1,8 +1,35 @@
 <p>[</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "title": "Ubuntu time is not Beijing time",
+    "url": "/ubuntu/2018/10/Ubuntu-change-timezone.html",
+    "categories": ["Ubuntu"],
+    "date": "October 29, 2018",
+    "tags": ["ubuntu"],
+"description": 
+},
+
+{
+    "title": "Learn Rake",
+    "url": "/ruby/2018/10/Work-for-rail.html",
+    "categories": ["Ruby"],
+    "date": "October 28, 2018",
+    "tags": ["rake"],
+"description": Learn Rake and make some note
+},
+
+{
+    "title": "Jekyll Blog Style v1 final",
+    "url": "/jekyll/2018/10/History-jekyll-style-v1-5.html",
+    "categories": ["jekyll"],
+    "date": "October 28, 2018",
+    "tags": ["blog"],
+"description": 
+},
+
+{
     "title": "Histroy jekyll style v1(4)",
-    "url": "/jekyll/2018/10/27/History-jekyll-style-v1-4.html",
+    "url": "/jekyll/2018/10/History-jekyll-style-v1-4.html",
     "categories": ["jekyll"],
     "date": "October 27, 2018",
     "tags": ["blog"],
@@ -11,7 +38,7 @@
 
 {
     "title": "History about Jekyll style(3)",
-    "url": "/jekyll/2018/10/25/History-jekyll-style-v1-3.html",
+    "url": "/jekyll/2018/10/History-jekyll-style-v1-3.html",
     "categories": ["jekyll"],
     "date": "October 25, 2018",
     "tags": ["blog"],
@@ -20,7 +47,7 @@
 
 {
     "title": "History about Jekyll style(2)",
-    "url": "/jekyll/2018/10/24/History-jekyll-style-v1-2.html",
+    "url": "/jekyll/2018/10/History-jekyll-style-v1-2.html",
     "categories": ["jekyll"],
     "date": "October 24, 2018",
     "tags": ["blog"],
@@ -29,7 +56,7 @@
 
 {
     "title": "History about Jekyll style(1)",
-    "url": "/jekyll/2018/10/20/History-jekyll-style-v1-1.html",
+    "url": "/jekyll/2018/10/History-jekyll-style-v1-1.html",
     "categories": ["jekyll"],
     "date": "October 20, 2018",
     "tags": ["blog"],
@@ -38,7 +65,7 @@
 
 {
     "title": "Https加密和Apache反向代理问题!",
-    "url": "/linux/2018/10/03/install-https-for-vps.html",
+    "url": "/linux/2018/10/install-https-for-vps.html",
     "categories": ["linux"],
     "date": "October 03, 2018",
     "tags": ["ubuntu"],
@@ -47,7 +74,7 @@
 
 {
     "title": "使用npm",
-    "url": "/node/2018/10/01/remeber-to-use-npm.html",
+    "url": "/node/2018/10/remeber-to-use-npm.html",
     "categories": ["node"],
     "date": "October 01, 2018",
     "tags": ["npm"],
@@ -56,7 +83,7 @@
 
 {
     "title": "关于第一次搭建Jekyll的总结",
-    "url": "/jekyll/2018/09/25/how-to-install-jekyll.html",
+    "url": "/jekyll/2018/09/how-to-install-jekyll.html",
     "categories": ["jekyll"],
     "date": "September 25, 2018",
     "tags": ["blog"],
@@ -65,7 +92,7 @@
 
 {
     "title": "Welcome to Jekyll!",
-    "url": "/jekyll/2018/09/23/welcome-to-jekyll.html",
+    "url": "/jekyll/2018/09/welcome-to-jekyll.html",
     "categories": ["jekyll"],
     "date": "September 23, 2018",
     "tags": ["blog"],
@@ -74,7 +101,7 @@
 
 {
     "title": "The happy day",
-    "url": "/me/1995/10/12/Greate-Day.html",
+    "url": "/me/1995/10/Greate-Day.html",
     "categories": ["me"],
     "date": "October 12, 1995",
     "tags": ["life"],

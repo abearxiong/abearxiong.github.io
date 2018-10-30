@@ -1,4 +1,24 @@
 require 'rake'
+desc "create new article"
+task :newart,:article do |t,args|
+	time = Time.new #Get new time
+	timeinfos = time.to_s.split(" ")
+	path ="_posts/"
+	filename= args["article"].gsub(" ","-")
+	suffix = ".markdown"
+	newfile = path+timeinfos[0]+"-"+filename+suffix
+	title = "title name"
+	date = time.inspect
+	categories = "catetories"
+        tags = "tags"
+	comments = true
+	description = "description: xixi"
+	inputContent = "---\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\ncomments: #{comments}\n#{description}\n---\n"
+	File.open(newfile,"w+") do |aFile|
+		aFile.write(inputContent)
+	end
+end
+
 desc "There is rakefile for rake cmd.and Ruby File is in file _rubycmd"
 task :default do
 		#your code goes here				

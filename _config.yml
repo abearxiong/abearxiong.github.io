@@ -25,12 +25,15 @@ github_username:  abearxiong
 # Build settings
 markdown: kramdown
 #theme: minima
-timezone: TIMEZONE
+#timezone: TIMEZONE
+timezone: Asia/Shanghai
+#timezone: '+8000'
 excerpt_separator:  '<!-- more -->'
+permalink: /:categories/:year/:month/:title.html
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-    #- jekyll-gist
+  - jekyll-gist
   - jekyll-paginate
 kramdown:
         input: GFM
@@ -49,9 +52,11 @@ paginate_path: "page:num"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - con.sh
+  - rakefile
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/

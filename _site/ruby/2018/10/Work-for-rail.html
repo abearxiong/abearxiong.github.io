@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Learn Rake | Abear</title>
+<meta name="generator" content="Jekyll v3.8.4" />
+<meta property="og:title" content="Learn Rake" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Learn Rake and make some note" />
+<meta property="og:description" content="Learn Rake and make some note" />
+<link rel="canonical" href="http://localhost:4000/ruby/2018/10/Work-for-rail.html" />
+<meta property="og:url" content="http://localhost:4000/ruby/2018/10/Work-for-rail.html" />
+<meta property="og:site_name" content="Abear" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-10-28T23:00:00+08:00" />
+<script type="application/ld+json">
+{"datePublished":"2018-10-28T23:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/ruby/2018/10/Work-for-rail.html"},"@type":"BlogPosting","url":"http://localhost:4000/ruby/2018/10/Work-for-rail.html","headline":"Learn Rake","description":"Learn Rake and make some note","dateModified":"2018-10-28T23:00:00+08:00","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abear" /><!-- cdn -->  <!-- bootstrap -->
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	  <div class="container">
+		<div class="row flex-xl-nowrap">
+    		<main class="col-12 col-md-12 col-xl-12 page-content" aria-label="Content">
+      		<div class="home">
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Learn Rake</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-10-28T23:00:00+08:00" itemprop="datePublished">Oct 28, 2018
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ol>
+  <li>Install rake.<br />
+I use Ubuntu and I install Gem for Ruby.So I install it by commond <code class="highlighter-rouge">gem install rake</code>.</li>
+  <li>create the first Rake task.</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">desc</span> <span class="s2">"some explian language"</span>
+<span class="n">task</span> <span class="ss">:task_name</span> <span class="k">do</span>
+    <span class="c1"># coding </span>
+    <span class="nb">puts</span> <span class="s2">"print some in bash"</span>
+<span class="k">end</span>
+<span class="n">desc</span> <span class="s2">"use input"</span>
+<span class="n">task</span> <span class="ss">:task_name_input</span><span class="p">,</span><span class="ss">:a</span> <span class="k">do</span><span class="o">|</span><span class="n">t</span><span class="p">,</span><span class="n">args</span><span class="o">|</span>
+    <span class="c1"># coding </span>
+    <span class="nb">puts</span> <span class="s2">"print some in bash:"</span><span class="p">,</span><span class="n">args</span>
+    <span class="c1"># t is `task_name_input` args is 'input paramater'</span>
+<span class="k">end</span></code></pre></figure>
+
+<ol>
+  <li>Rake bash commond
+    <ul>
+      <li><code class="highlighter-rouge">Rake -T</code> is show all task. And it can show task description.</li>
+      <li><code class="highlighter-rouge">Rake task_name</code> is run task by task name <code class="highlighter-rouge">task_name</code>.</li>
+      <li><code class="highlighter-rouge">Rake task_name_intpu[1]</code> is can input some paramater.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Edit History：
+    2018-10-28 First draft</p>
+
+
+  </div><div id="disqus_thread"></div> 
+ <script>
+    var disqus_config = function () {
+      this.page.url = 'http://localhost:4000/ruby/2018/10/Work-for-rail.html';
+      this.page.identifier = 'http://localhost:4000/ruby/2018/10/Work-for-rail.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://abearxiong.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><a class="u-url" href="/ruby/2018/10/Work-for-rail.html" hidden></a>
+</article>
+</div>
+
+    		</main>
+		</div>
+    </div><div class="footer">
+
+</div><!--Bootstrap js-->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- Script -->
+<script src="/assets/js/main.js"></script>
+ 
+  </body>
+
+</html>
