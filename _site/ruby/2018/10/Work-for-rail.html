@@ -61,11 +61,16 @@ I use Ubuntu and I install Gem for Ruby.So I install it by commond <code class="
       <li><code class="highlighter-rouge">Rake task_name_intpu[1]</code> is can input some paramater.</li>
     </ul>
   </li>
+  <li>Rake in zsh is very difficult in add parms. Must use <code class="highlighter-rouge">test\["x"\]</code></li>
 </ol>
 
-<p>Edit History：
-    2018-10-28 First draft</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">task</span> <span class="ss">:test</span><span class="p">,</span><span class="ss">:arg1</span> <span class="k">do</span> <span class="o">|</span><span class="n">t</span><span class="p">,</span><span class="n">args</span><span class="o">|</span>
+	<span class="nb">puts</span> <span class="n">args</span>
+<span class="k">end</span></code></pre></figure>
 
+<p>Edit History：
+-2018-10-28 First draft
+-2018-11-07 add 4th</p>
 
   </div><div id="disqus_thread"></div> 
  <script>

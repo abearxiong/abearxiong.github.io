@@ -1,12 +1,12 @@
 <p>[</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-    "title": "title name",
-    "url": "/catetories/2018/10/x-xx.html",
-    "categories": ["catetories"],
-    "date": "October 30, 2018",
-    "tags": ["tags"],
-"description": 
+    "title": "Use Ruby to create new article file",
+    "url": "/ruby/2018/10/create-new-article-use-ruby.html",
+    "categories": ["Ruby"],
+    "date": "October 29, 2018",
+    "tags": ["ruby"],
+"description": Learn Ruby about file operating and make some note
 },
 
 {

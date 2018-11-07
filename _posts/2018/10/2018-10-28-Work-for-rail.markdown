@@ -27,6 +27,13 @@ end
 - `Rake task_name` is run task by task name `task_name`.
 - `Rake task_name_intpu[1]` is can input some paramater.
 
-Edit History：
-    2018-10-28 First draft
+4. Rake in zsh is very difficult in add parms. Must use `test\["x"\]`
+{% highlight Ruby %}
+task :test,:arg1 do |t,args|
+	puts args
+end
+{% endhighlight %}
 
+Edit History：
+-2018-10-28 First draft
+-2018-11-07 add 4th

@@ -1,8 +1,0 @@
----
-title: title name 
-date: 2018-10-30 22:56:49 +0800 
-categories: catetories 
-tags: tags
-comments: true
-desctiption: xixi
----
