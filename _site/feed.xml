@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-11-07T21:22:04+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</subtitle><entry><title type="html">Use Ruby to create new article file</title><link href="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html" rel="alternate" type="text/html" title="Use Ruby to create new article file" /><published>2018-10-29T23:00:00+08:00</published><updated>2018-10-29T23:00:00+08:00</updated><id>http://localhost:4000/ruby/2018/10/create-new-article-use-ruby</id><content type="html" xml:base="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html">&lt;h4 id=&quot;learn-from-runoobcom&quot;&gt;Learn from &lt;a href=&quot;http://www.runoob.com/ruby/ruby-input-output.html&quot; title=&quot;Runoob learning web&quot;&gt;runoob.com&lt;/a&gt;&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-27T21:44:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</subtitle><entry><title type="html">Use Ruby to create new article file</title><link href="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html" rel="alternate" type="text/html" title="Use Ruby to create new article file" /><published>2018-10-29T23:00:00+08:00</published><updated>2018-10-29T23:00:00+08:00</updated><id>http://localhost:4000/ruby/2018/10/create-new-article-use-ruby</id><content type="html" xml:base="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html">&lt;h4 id=&quot;learn-from-runoobcom&quot;&gt;Learn from &lt;a href=&quot;http://www.runoob.com/ruby/ruby-input-output.html&quot; title=&quot;Runoob learning web&quot;&gt;runoob.com&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;First about File operating is diffierent from C,C++,Java.So I need learn ruby.&lt;/p&gt;
 
@@ -114,16 +114,10 @@ I use Ubuntu and I install Gem for Ruby.So I install it by commond &lt;code clas
 
 &lt;script src=&quot;https://gist.github.com/abearxiong/959575ccea40cc6d166418133e346339.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/c08ee0f2726fd0e3909d.js?file=test.md&quot;&gt; &lt;/script&gt;
-
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request
-&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/959575ccea40cc6d166418133e346339.js?file=dd.py&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;编辑历程：
+&lt;p&gt;&lt;br /&gt;
+true&lt;script src=&quot;https://gist.github.com/c08ee0f2726fd0e3909d.js?file=test.md&quot;&gt; &lt;/script&gt;
+true&lt;script src=&quot;https://gist.github.com/959575ccea40cc6d166418133e346339.js?file=dd.py&quot;&gt; &lt;/script&gt;
+编辑历程：
     2018-10-28 初稿
 [bg1]: http://liberize.github.io/ “纯净,白”
 [bg2]: https://blog.fooleap.org/ “纯净，干脆/80”
