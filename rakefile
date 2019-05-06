@@ -1,6 +1,6 @@
 require 'rake'
-desc "create new article"
-task :newart,[:article,:title,:categories,:tags,:description] do |t,args|
+desc "create new article;"
+task :newart,[:article,:title,:categories,:tags,:description,:comments] do |t,args|
 	time = Time.new #Get new time
 	timeinfos = time.to_s.split(" ")
 	path ="_posts/"
@@ -12,7 +12,7 @@ task :newart,[:article,:title,:categories,:tags,:description] do |t,args|
 	date = time.inspect
 	categories =args["categories"].nil??  "articles" : args["categories"]
 	tags = args["tags"].nil?? "notags" : args["tags"].split(" ")
-	comments = true
+	comments = args["comments"].nil?? false: arts["comments"]
 	description = args["description"].nil?? "" : "desctiption: #{args["description"]}\n"
 	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\ncomments: #{comments}\n#{description}---\n"
 	File.open(newfile,"w+") do |aFile|

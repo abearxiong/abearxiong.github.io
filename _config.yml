@@ -16,15 +16,18 @@
 title: Abear
 email: xiongxiao1012@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-   每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。
+   每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://abearxiong.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: abear02789740
 github_username:  abearxiong
+locale: zh-Cn
 
 # Build settings
 markdown: kramdown
-#theme: minima
+bearlife:
+        theme: bearlife
+version: 1.0
 #timezone: TIMEZONE
 timezone: Asia/Shanghai
 #timezone: '+8000'
@@ -49,6 +52,8 @@ disqus:
 # There is for paginate
 paginate: 3
 paginate_path: "page:num"
+gist:
+  noscript: false
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -57,6 +62,9 @@ exclude:
   - Gemfile.lock
   - con.sh
   - rakefile
+  - Cmd/
+  - RubyCmd/
+  - jekyllServer.sh
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/

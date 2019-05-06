@@ -1,6 +1,33 @@
 <p>[</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "title": "python 类型转换一点点",
+    "url": "/python/2019/05/python-change.html",
+    "categories": ["python"],
+    "date": "May 06, 2019",
+    "tags": ["notags"],
+"description": 
+},
+
+{
+    "title": "再次陪伴jekyll",
+    "url": "/life/2019/04/new-start-jekyll.html",
+    "categories": ["life"],
+    "date": "April 28, 2019",
+    "tags": ["jekyll"],
+"description": 
+},
+
+{
+    "title": "Ruby用window的子系统",
+    "url": "/me/2019/04/use-window-linux.html",
+    "categories": ["me"],
+    "date": "April 27, 2019",
+    "tags": ["life"],
+"description": 重新再来管理
+},
+
+{
     "title": "Use Ruby to create new article file",
     "url": "/ruby/2018/10/create-new-article-use-ruby.html",
     "categories": ["Ruby"],
@@ -33,7 +60,7 @@
     "categories": ["jekyll"],
     "date": "October 28, 2018",
     "tags": ["blog"],
-"description": 
+"description": 关于过去修饰自己静态博客的想法
 },
 
 {

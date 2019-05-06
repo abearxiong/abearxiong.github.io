@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-27T21:44:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，写好代码，玩好，IT男。</subtitle><entry><title type="html">Use Ruby to create new article file</title><link href="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html" rel="alternate" type="text/html" title="Use Ruby to create new article file" /><published>2018-10-29T23:00:00+08:00</published><updated>2018-10-29T23:00:00+08:00</updated><id>http://localhost:4000/ruby/2018/10/create-new-article-use-ruby</id><content type="html" xml:base="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html">&lt;h4 id=&quot;learn-from-runoobcom&quot;&gt;Learn from &lt;a href=&quot;http://www.runoob.com/ruby/ruby-input-output.html&quot; title=&quot;Runoob learning web&quot;&gt;runoob.com&lt;/a&gt;&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-06T19:04:47+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。</subtitle><entry><title type="html">python 类型转换一点点</title><link href="http://localhost:4000/python/2019/05/python-change.html" rel="alternate" type="text/html" title="python 类型转换一点点" /><published>2019-05-06T19:00:39+08:00</published><updated>2019-05-06T19:00:39+08:00</updated><id>http://localhost:4000/python/2019/05/python-change</id><content type="html" xml:base="http://localhost:4000/python/2019/05/python-change.html">&lt;script src=&quot;https://gist.github.com/cbb0967a564ed2df713da17159efe1f3.js?file=util_learing_twohash.md&quot;&gt; &lt;/script&gt;
+
+&lt;script src=&quot;https://gist.github.com/cbb0967a564ed2df713da17159efe1f3.js?file=util_learing_twohash.py&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="notags" /><summary type="html"></summary></entry><entry><title type="html">再次陪伴jekyll</title><link href="http://localhost:4000/life/2019/04/new-start-jekyll.html" rel="alternate" type="text/html" title="再次陪伴jekyll" /><published>2019-04-28T17:51:28+08:00</published><updated>2019-04-28T17:51:28+08:00</updated><id>http://localhost:4000/life/2019/04/new-start-jekyll</id><content type="html" xml:base="http://localhost:4000/life/2019/04/new-start-jekyll.html">&lt;h1 id=&quot;重新开发jekyll&quot;&gt;重新开发jekyll&lt;/h1&gt;
+
+&lt;p&gt;今天早上想完善一些东西，然后就一直操作。直到现在的时刻。首先我要记得一点点的需要完善的东西，rake和rakefile,jobs,fk,bg等。&lt;/p&gt;
+
+&lt;p&gt;然后就是接触jekyll遇到的一些小问题，因为使用了分页插件，&lt;strong&gt;发现Jekyll在文档中有配置&lt;code class=&quot;highlighter-rouge&quot;&gt;permalink: /blog/histroy&lt;/code&gt;的情况下，不能够收集posts?&lt;/strong&gt;然后没有内容，我以为是因为添加了permalink问题，结果是因为分页插件问题。&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><summary type="html">重新开发jekyll 今天早上想完善一些东西，然后就一直操作。直到现在的时刻。首先我要记得一点点的需要完善的东西，rake和rakefile,jobs,fk,bg等。 然后就是接触jekyll遇到的一些小问题，因为使用了分页插件，发现Jekyll在文档中有配置permalink: /blog/histroy的情况下，不能够收集posts?然后没有内容，我以为是因为添加了permalink问题，结果是因为分页插件问题。</summary></entry><entry><title type="html">Ruby用window的子系统</title><link href="http://localhost:4000/me/2019/04/use-window-linux.html" rel="alternate" type="text/html" title="Ruby用window的子系统" /><published>2019-04-27T00:00:00+08:00</published><updated>2019-04-27T00:00:00+08:00</updated><id>http://localhost:4000/me/2019/04/use-window-linux</id><content type="html" xml:base="http://localhost:4000/me/2019/04/use-window-linux.html">&lt;p&gt;之前每次玩Jekyll是使用Ubuntu，然后装的是Ubuntu虚拟机，虚拟机占内存，同时，不能使用中文打字，这样对我是很不友好的，所以很长的时间是没有动这个的。今天重新拾起了，并因为是window的子系统，有中文打字，同时没有装虚拟机，不是很需要占空间，自己也可以并发操作其他的东西，对自己更加的方便了。很开心。&lt;/p&gt;
+
+&lt;p&gt;我想，文章，有文章的好，短文字，有短文字的好。自己应该放一个东西来操作一些短的文字的玩法。&lt;/p&gt;
+
+&lt;p&gt;我好像除了QQ，不太喜欢玩其他的聊天工具，自己也不是某个社区的长占人员，自己生活是在干什么呢？很好奇。&lt;/p&gt;
+
+&lt;p&gt;现在几天的我，很想整合一切自己周围所拥有的一切的事物。&lt;/p&gt;
+
+&lt;p&gt;记得某时候回来，看看，提醒一下自己。&lt;/p&gt;
+
+&lt;p&gt;start: 4-27&lt;/p&gt;
+&lt;div style=&quot;color:red&quot;&gt;红色幸运&lt;/div&gt;</content><author><name></name></author><category term="life" /><summary type="html">之前每次玩Jekyll是使用Ubuntu，然后装的是Ubuntu虚拟机，虚拟机占内存，同时，不能使用中文打字，这样对我是很不友好的，所以很长的时间是没有动这个的。今天重新拾起了，并因为是window的子系统，有中文打字，同时没有装虚拟机，不是很需要占空间，自己也可以并发操作其他的东西，对自己更加的方便了。很开心。 我想，文章，有文章的好，短文字，有短文字的好。自己应该放一个东西来操作一些短的文字的玩法。 我好像除了QQ，不太喜欢玩其他的聊天工具，自己也不是某个社区的长占人员，自己生活是在干什么呢？很好奇。 现在几天的我，很想整合一切自己周围所拥有的一切的事物。 记得某时候回来，看看，提醒一下自己。 start: 4-27 红色幸运</summary></entry><entry><title type="html">Use Ruby to create new article file</title><link href="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html" rel="alternate" type="text/html" title="Use Ruby to create new article file" /><published>2018-10-29T23:00:00+08:00</published><updated>2018-10-29T23:00:00+08:00</updated><id>http://localhost:4000/ruby/2018/10/create-new-article-use-ruby</id><content type="html" xml:base="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html">&lt;h4 id=&quot;learn-from-runoobcom&quot;&gt;Learn from &lt;a href=&quot;http://www.runoob.com/ruby/ruby-input-output.html&quot; title=&quot;Runoob learning web&quot;&gt;runoob.com&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;First about File operating is diffierent from C,C++,Java.So I need learn ruby.&lt;/p&gt;
 
@@ -63,47 +80,68 @@ I use Ubuntu and I install Gem for Ruby.So I install it by commond &lt;code clas
 -2018-11-07 add 4th&lt;/p&gt;</content><author><name></name></author><category term="rake" /><summary type="html">Install rake. I use Ubuntu and I install Gem for Ruby.So I install it by commond gem install rake. create the first Rake task. desc &quot;some explian language&quot; task :task_name do # coding puts &quot;print some in bash&quot; end desc &quot;use input&quot; task :task_name_input,:a do|t,args| # coding puts &quot;print some in bash:&quot;,args # t is `task_name_input` args is 'input paramater' end Rake bash commond Rake -T is show all task. And it can show task description. Rake task_name is run task by task name task_name. Rake task_name_intpu[1] is can input some paramater. Rake in zsh is very difficult in add parms. Must use test\[&quot;x&quot;\] task :test,:arg1 do |t,args| puts args end Edit History： -2018-10-28 First draft -2018-11-07 add 4th</summary></entry><entry><title type="html">Jekyll Blog Style v1 final</title><link href="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-5.html" rel="alternate" type="text/html" title="Jekyll Blog Style v1 final" /><published>2018-10-28T20:00:57+08:00</published><updated>2018-10-28T20:00:57+08:00</updated><id>http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-5</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-5.html">&lt;p&gt;对于Jekyll blog的设计方案。
 (1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面&lt;/p&gt;
 
-&lt;p&gt;[x] 所有文章列表
-    - [x] 标签
-    - [x] 分类
-    - [x] 内容
-    - [x] 上下一页
-    - [ ] RSS
-    - [ ] 样式
-[ ] 文章
-    - [ ] 标签
-    - [ ] 分类
-    - [x] 评论
-    - [ ] 最新文章或关联文章
-    - [ ] 文字统计和访问统计
-    - [ ] 样式
-[ ] 其他页面的信息
-    - [ ] 标签页面
-        - [ ] 具体标签
-        - [ ] 表格分类
-    - [ ] 分类页面
-    - [ ] 归档页面
-    - [ ] 个人信息页面
-    - [ ] Jekyll Blog 历程页面
-    - [ ] 导航页站点地图
-[ ] 插件
-    - [ ] 百度分析
-    - [ ] Google分析
-    - [x] disqus（fooleap有关于墙内访问的&lt;a href=&quot;https://github.com/fooleap/disqus-php-api&quot; title=&quot;disqus-api&quot;&gt;github&lt;/a&gt;）
-[ ] 其他
-    - [x] 图床&lt;a href=&quot;https://cloudinary.com&quot;&gt;cloudinary&lt;/a&gt;&lt;/p&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;所有文章列表
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;标签&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;分类&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;内容&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;上下一页&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;RSS&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;样式&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;文章
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;标签&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;分类&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;评论&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;最新文章或关联文章&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;文字统计和访问统计&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;样式&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;其他页面的信息
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;标签页面
+        &lt;ul class=&quot;task-list&quot;&gt;
+          &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;具体标签&lt;/li&gt;
+          &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;表格分类&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;分类页面&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;归档页面&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;个人信息页面&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Jekyll Blog 历程页面&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;导航页站点地图&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;插件
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;百度分析&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Google分析&lt;/li&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;disqus（fooleap有关于墙内访问的&lt;a href=&quot;https://github.com/fooleap/disqus-php-api&quot; title=&quot;disqus-api&quot;&gt;github&lt;/a&gt;）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;其他
+    &lt;ul class=&quot;task-list&quot;&gt;
+      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;图床&lt;a href=&quot;https://cloudinary.com&quot;&gt;cloudinary&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;还行的Jekyll Blog&lt;/p&gt;
 &lt;h4 id=&quot;一级推荐&quot;&gt;一级推荐&lt;/h4&gt;
 &lt;ol&gt;
-  &lt;li&gt;[fooleap][bg2]&lt;/li&gt;
-  &lt;li&gt;[mytrix][bg3]&lt;/li&gt;
-  &lt;li&gt;[leiminnet][bg4]&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.fooleap.org/&quot; title=&quot;纯净，干脆/80&quot;&gt;fooleap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mytrix.in/&quot; title=&quot;日语一点点，纯净&quot;&gt;mytrix&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://leiminnet.cn&quot; title=&quot;有一些友联可以卡&quot;&gt;leiminnet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://echizen.github.io/&quot; title=&quot;厉害了&quot;&gt;echizen&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h4 id=&quot;二级推荐&quot;&gt;二级推荐&lt;/h4&gt;
 &lt;ol&gt;
-  &lt;li&gt;[liberize][bg1]
+  &lt;li&gt;&lt;a href=&quot;http://liberize.github.io/&quot; title=&quot;纯净,白&quot;&gt;liberize&lt;/a&gt;
 &lt;!-- more --&gt;
 对于这个三个思考，首先想到的是文章。&lt;/li&gt;
   &lt;li&gt;需要有标签和分类，标签跳转，显示相应的标签的内容。&lt;/li&gt;
@@ -112,18 +150,20 @@ I use Ubuntu and I install Gem for Ruby.So I install it by commond &lt;code clas
   &lt;li&gt;文字数量统计和访问统计，访问统计可以用百度分析引入和Google分析引入。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;script src=&quot;https://gist.github.com/abearxiong/959575ccea40cc6d166418133e346339.js&quot;&gt;&lt;/script&gt;
+&lt;!-- &lt;script src=&quot;https://gist.github.com/abearxiong/959575ccea40cc6d166418133e346339.js&quot;&gt;&lt;/script&gt;
+&lt;br/&gt;
+&lt;script src=&quot;https://gist.github.com/abearxiong/76e2b1e0717d45e822de226d2cb794a4.js&quot;&gt;&lt;/script&gt; --&gt;
+&lt;script src=&quot;https://gist.github.com/959575ccea40cc6d166418133e346339.js?file=dd.py&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;&lt;br /&gt;
-true&lt;script src=&quot;https://gist.github.com/c08ee0f2726fd0e3909d.js?file=test.md&quot;&gt; &lt;/script&gt;
-true&lt;script src=&quot;https://gist.github.com/959575ccea40cc6d166418133e346339.js?file=dd.py&quot;&gt; &lt;/script&gt;
-编辑历程：
-    2018-10-28 初稿
-[bg1]: http://liberize.github.io/ “纯净,白”
-[bg2]: https://blog.fooleap.org/ “纯净，干脆/80”
-[bg3]: https://mytrix.in/ “日语一点点，纯净”
-[bg4]: http://leiminnet.cn “有一些友联可以卡”
-[bg5]: https://dayday.plus&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 (1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面 [x] 所有文章列表 - [x] 标签 - [x] 分类 - [x] 内容 - [x] 上下一页 - [ ] RSS - [ ] 样式 [ ] 文章 - [ ] 标签 - [ ] 分类 - [x] 评论 - [ ] 最新文章或关联文章 - [ ] 文字统计和访问统计 - [ ] 样式 [ ] 其他页面的信息 - [ ] 标签页面 - [ ] 具体标签 - [ ] 表格分类 - [ ] 分类页面 - [ ] 归档页面 - [ ] 个人信息页面 - [ ] Jekyll Blog 历程页面 - [ ] 导航页站点地图 [ ] 插件 - [ ] 百度分析 - [ ] Google分析 - [x] disqus（fooleap有关于墙内访问的github） [ ] 其他 - [x] 图床cloudinary 还行的Jekyll Blog 一级推荐 fooleap mytrix leiminnet 二级推荐 liberize</summary></entry><entry><title type="html">Histroy jekyll style v1(4)</title><link href="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-4.html" rel="alternate" type="text/html" title="Histroy jekyll style v1(4)" /><published>2018-10-27T22:00:00+08:00</published><updated>2018-10-27T22:00:00+08:00</updated><id>http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-4</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-4.html">&lt;p&gt;对于Jekyll blog的设计方案。
+&lt;script src=&quot;https://gist.github.com/76e2b1e0717d45e822de226d2cb794a4.js?file=alias.markdown&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;编辑历程：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;2018-10-28 初稿&lt;/li&gt;
+  &lt;li&gt;哈哈&lt;/li&gt;
+  &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 (1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面 所有文章列表 标签 分类 内容 上下一页 RSS 样式 文章 标签 分类 评论 最新文章或关联文章 文字统计和访问统计 样式 其他页面的信息 标签页面 具体标签 表格分类 分类页面 归档页面 个人信息页面 Jekyll Blog 历程页面 导航页站点地图 插件 百度分析 Google分析 disqus（fooleap有关于墙内访问的github） 其他 图床cloudinary 还行的Jekyll Blog 一级推荐 fooleap mytrix leiminnet echizen 二级推荐 liberize</summary></entry><entry><title type="html">Histroy jekyll style v1(4)</title><link href="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-4.html" rel="alternate" type="text/html" title="Histroy jekyll style v1(4)" /><published>2018-10-27T22:00:00+08:00</published><updated>2018-10-27T22:00:00+08:00</updated><id>http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-4</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-4.html">&lt;p&gt;对于Jekyll blog的设计方案。
 (1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面&lt;/p&gt;
 &lt;ul class=&quot;task-list&quot;&gt;
   &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;所有文章列表
@@ -213,279 +253,4 @@ true&lt;script src=&quot;https://gist.github.com/959575ccea40cc6d166418133e34633
   &lt;li&gt;分页功能在&lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;添加&lt;code class=&quot;highlighter-rouge&quot;&gt;paginate: 5&lt;/code&gt;  然后添加分页路径：&lt;code class=&quot;highlighter-rouge&quot;&gt;paginate_path: &quot;blog/page:num&quot;&lt;/code&gt; ，还有分页插件jekyll-paginate
 。&lt;/li&gt;
   &lt;li&gt;关于标签。 可行方案1 &lt;img src=&quot;https://blog.fooleap.org/jekyll-tags-page.html&quot; alt=&quot;Jekyll设置API统计文章数据&quot; /&gt;。 可行方案2 使用标签变量site.tags，显示所有标签-取变量的时候获取tag in site.tags 然后tag[0]是标签名字，tag[1]是具体内容。 可行方案3 多页面自定义设置&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 继续探讨昨天的问题，怎么分两栏，分别滚动。 （1）打算使用overflow:scroll尝试，失败，还是一起滚动。（2）感觉是因为自己没有写他的长度，设定posts页面长度试试：解决 关于多适应。想尝试使用Bootstrap里面的less，单独取出那块，然后出现了bug，一直调试。失败 单纯对于多端适应方案，通过使用单独的设计。@media screen and(mix-width: 1200px)</summary></entry><entry><title type="html">History about Jekyll style(1)</title><link href="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-1.html" rel="alternate" type="text/html" title="History about Jekyll style(1)" /><published>2018-10-20T12:00:00+08:00</published><updated>2018-10-20T12:00:00+08:00</updated><id>http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-1</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-1.html">&lt;p&gt;对于Jekyll blog的设计方案。设计Jekyll Style.
- &lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1540018987/github/images/jekyll-themesV1.png&quot; alt=&quot;风格&quot; /&gt;
-Jekyll最基本的主题自己看了很多，然而我更想要自己设计自己风格一个静态github page页面。&lt;!-- more --&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;关于内容摘要问题&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;关于RSS的
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;rss-subscribe&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;subscribe &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/feed.xml&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;via RSS&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
-关于Jekyll摘要设置-- 内容区&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- more --&amp;gt;&lt;/span&gt; 
- 同时_config.yml设置
- excerpt_separator: &lt;span class=&quot;c&quot;&gt;&amp;lt;!--excerpt--&amp;gt;&lt;/span&gt;  #这里可以定义自己的摘要分割符
- POST内容区：&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;layout中的文件，default.html,home.html,post.html,page.html等等&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;default.html 是设置默认页面
-post.html 是文章
-home.html 主要是pages分页显示页面
-page.html 是单个的文章显示风格&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;使用bootrap样式，使用row，col分割窗口&lt;/li&gt;
-  &lt;li&gt;发现一个问题，没有解决?
-分成连个row行，一个row行滚动，如何使得另一个行不滚动，进行固定状态。&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。设计Jekyll Style. Jekyll最基本的主题自己看了很多，然而我更想要自己设计自己风格一个静态github page页面。</summary></entry><entry><title type="html">Https加密和Apache反向代理问题!</title><link href="http://localhost:4000/linux/2018/10/install-https-for-vps.html" rel="alternate" type="text/html" title="Https加密和Apache反向代理问题!" /><published>2018-10-03T23:06:57+08:00</published><updated>2018-10-03T23:06:57+08:00</updated><id>http://localhost:4000/linux/2018/10/install-https-for-vps</id><content type="html" xml:base="http://localhost:4000/linux/2018/10/install-https-for-vps.html">&lt;h1 id=&quot;digitalocean-vps-加密服务器为https和反向代理&quot;&gt;DigitalOcean VPS 加密服务器为HTTPS和反向代理&lt;/h1&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;因为有一些Token，登陆模块，想只放在一个自己常用的服务器，然后就使用了nodejs来作为一个登陆模块。在面对Microsoft outlook OAuth的时候发现一个问题，他的回调函数必须是https的样式的。于是，自己去找办法设置自己的网站的http进行加密。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;很多是网上找到的，自己只记下自己成功的步骤，不对过程做更多了解。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;在这过程自己去gandi网站买了个6元的域名，gnoixiong.qw；修改为了digitalOcean的dns，发现需要很久才能更新成功，可以访问。修改为DigitalOcean的DNS是为了测试他自带的均衡加载，最后弄了快差不多的时候发现需要每个月10美元，放弃。&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;digitalocean-vps-http-加密ubuntu170使用lets-encrypt&quot;&gt;DigitalOcean VPS http 加密（Ubuntu17.0）&lt;strong&gt;使用Let’s Encrypt&lt;/strong&gt;&lt;/h2&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;第一次是Google到的，但是最后遇到的问题是不支持什么的错误，而且根据官网的解决办法无效，记得是&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo certbot --authenticator standalone --installer apache -d www.gnoixiong.pw --pre-hook &quot;service apache stop&quot; --post-hook &quot;service apache start&quot;
-&lt;/code&gt;，2019年1月什么之前。[此刻时间2018.10.2]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;根据url成功&quot;&gt;根据&lt;a href=&quot;https://devanswers.co/lets-encrypt-ssl-apache-ubuntu-18-04/&quot;&gt;url&lt;/a&gt;成功&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo add-apt-repository ppa:certbot/certbot&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;输入Enter&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt update&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install python-certbot-apache&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538577134/github/images/2018-10-03-01.png&quot; alt=&quot;图1&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Enter&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;suto certbot --apache -d gnoixiong.pw -d www.gnoixiong.pw
-xiongxiao1012@outlook.com&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Enter&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538577134/github/images/2018-10-03-02.png&quot; alt=&quot;图2&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538577134/github/images/2018-10-03-03.png&quot; alt=&quot;图3&quot; /&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;检测是否成功&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538577134/github/images/2018-10-03-04.png&quot; alt=&quot;图4&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;如图类似的URL去检测
-https://www.ssllabs.com/ssltest/analyze.html?d=www.gnoixiong.pw
-https://www.ssllabs.com/ssltest/analyze.html?d=gnoixiong.pw
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo certbot renew --dry-run&lt;/code&gt; 执行自动申请证书&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;反向代理问题&quot;&gt;反向代理问题&lt;/h2&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;当我的https弄好后，发现Microsoft需要https才行，而我弄好的只是php的，nodejs的3000端口还是http接口。所以需要反向代理，之前玩微信小程序的时候知道NGINX可以反向代理，而去了解资料知道Apache同样可以，并通过一系列查资料成功完成。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1538577134/github/images/2018-10-03-05.png&quot; alt=&quot;图5&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;过程&quot;&gt;过程&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;加载apache模块，使用a2enmod命令加载模块&lt;/li&gt;
-  &lt;li&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;a2enmod proxy proxy_balancer proxy_http
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;配置反向代理功能，进入sites_available(Ubuntu /etc/apache2/sites_available)，创建一个新的站点配置文件(新建文件），然后编辑内容如下：&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;VirtualHost *:80&amp;gt;
-        #配置站点的域名
-        ServerName xxx.com
-        #off表示开启反向代理，on表示开启正向代理
-        ProxyRequests Off
-        ProxyMaxForwards 100
-        ProxyPreserveHost On
-        ProxyPass / http://127.0.0.1:3000/
-        ProxyPassReverse / http://127.0.0.1:3000/
-        &amp;lt;Proxy *&amp;gt;
-            Order Deny,Allow
-            Allow from all
-        &amp;lt;/Proxy&amp;gt;
-&amp;lt;/VirtualHost&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a2ensite&lt;/code&gt;加载刚才那个文件，然后 &lt;code class=&quot;highlighter-rouge&quot;&gt;systemctl restart apache2&lt;/code&gt;  重启,即可。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;https的有东西&quot;&gt;https的有东西&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;在之前的http是可以已经算是完成了，然后代理也没毛病，然后却发现一个大的问题，https不行，仍旧是之前的443端口，而且没有代理。Google了一会，然后自己慢慢摸索已经是好的配置，关于443的配置。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;重复修改已经有的443的那个配置文件，发现一直不能成功。&lt;/li&gt;
-  &lt;li&gt;根据已经有的配置文件，复制出来，创建一个新的文件，通过&lt;code class=&quot;highlighter-rouge&quot;&gt;a2ensite&lt;/code&gt; 加载新的文件，等于默认一个域名，代理一个域名，后成功。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;配置文件在最下&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;参考文献:
-    简书&lt;a href=&quot;https://www.jianshu.com/p/47eca94680aa&quot;&gt;zhengyu4767&lt;/a&gt; |
-    CSDN&lt;a href=&quot;https://blog.csdn.net/aerchi/article/details/73605496&quot;&gt;乐意黎&lt;/a&gt; |
-    自己对已经好的配置的理解，保存之前配置好的文件，很重要。&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#关于HTTPS的配置文件
-&amp;lt;IfModule mod_ssl.c&amp;gt;
-&amp;lt;VirtualHost *:443&amp;gt;
-ServerName www.gnoixiong.pw
-DocumentRoot /var/www/LoginApi
-SSLEngine On
-Include /etc/letsencrypt/options-ssl-apache.conf
-#ServerAlias www.gnoixiong.pw
-SSLCertificateFile /etc/letsencrypt/live/gnoixiong.pw/fullchain.pem
-SSLCertificateKeyFile /etc/letsencrypt/live/gnoixiong.pw/privkey.pem
-
-ProxyRequests Off
-ProxyMaxForwards 100
-ProxyPreserveHost On
-ProxyPass / http://127.0.0.1:3000/
-ProxyPassReverse / http://127.0.0.1:3000/
-&amp;lt;Proxy *&amp;gt;
-        Order Deny,Allow
-        Allow from all
-&amp;lt;/Proxy&amp;gt;
-
-&amp;lt;/VirtualHost&amp;gt;
-&amp;lt;/IfModule&amp;gt;
-
-#关于HTTP的配置文件
-
-&amp;lt;VirtualHost *:80&amp;gt;
-        #配置站点的域名
-        ServerName gnoixxiong.pw
-        #配置站点的管理员信息
-        ServerAdmin xiongxiao1012@outlook.com
-
-        #off表示开启反向代理，on表示开启正向代理
-        ProxyRequests Off
-        ProxyMaxForwards 100
-        ProxyPreserveHost On
-        #这里表示要将现在这个虚拟主机跳转到本机的4000端口
-        ProxyPass /var/www/LoginApi  http://127.0.0.1:3000/
-        ProxyPassReverse /var/www/LoginApi http://127.0.0.1:3000/
-
-        &amp;lt;Proxy *&amp;gt;
-            Order Deny,Allow
-            Allow from all
-        &amp;lt;/Proxy&amp;gt;
-
-&amp;lt;/VirtualHost&amp;gt;        
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="ubuntu" /><summary type="html">DigitalOcean VPS 加密服务器为HTTPS和反向代理 因为有一些Token，登陆模块，想只放在一个自己常用的服务器，然后就使用了nodejs来作为一个登陆模块。在面对Microsoft outlook OAuth的时候发现一个问题，他的回调函数必须是https的样式的。于是，自己去找办法设置自己的网站的http进行加密。 很多是网上找到的，自己只记下自己成功的步骤，不对过程做更多了解。 在这过程自己去gandi网站买了个6元的域名，gnoixiong.qw；修改为了digitalOcean的dns，发现需要很久才能更新成功，可以访问。修改为DigitalOcean的DNS是为了测试他自带的均衡加载，最后弄了快差不多的时候发现需要每个月10美元，放弃。 DigitalOcean VPS http 加密（Ubuntu17.0）使用Let’s Encrypt 第一次是Google到的，但是最后遇到的问题是不支持什么的错误，而且根据官网的解决办法无效，记得是sudo certbot --authenticator standalone --installer apache -d www.gnoixiong.pw --pre-hook &quot;service apache stop&quot; --post-hook &quot;service apache start&quot; ，2019年1月什么之前。[此刻时间2018.10.2] 根据url成功 sudo add-apt-repository ppa:certbot/certbot 输入Enter sudo apt update sudo apt install python-certbot-apache y+Enter suto certbot --apache -d gnoixiong.pw -d www.gnoixiong.pw xiongxiao1012@outlook.com a+Enter n 检测是否成功 如图类似的URL去检测 https://www.ssllabs.com/ssltest/analyze.html?d=www.gnoixiong.pw https://www.ssllabs.com/ssltest/analyze.html?d=gnoixiong.pw sudo certbot renew --dry-run 执行自动申请证书 反向代理问题 当我的https弄好后，发现Microsoft需要https才行，而我弄好的只是php的，nodejs的3000端口还是http接口。所以需要反向代理，之前玩微信小程序的时候知道NGINX可以反向代理，而去了解资料知道Apache同样可以，并通过一系列查资料成功完成。 过程 加载apache模块，使用a2enmod命令加载模块 a2enmod proxy proxy_balancer proxy_http 配置反向代理功能，进入sites_available(Ubuntu /etc/apache2/sites_available)，创建一个新的站点配置文件(新建文件），然后编辑内容如下： &amp;lt;VirtualHost *:80&amp;gt; #配置站点的域名 ServerName xxx.com #off表示开启反向代理，on表示开启正向代理 ProxyRequests Off ProxyMaxForwards 100 ProxyPreserveHost On ProxyPass / http://127.0.0.1:3000/ ProxyPassReverse / http://127.0.0.1:3000/ &amp;lt;Proxy *&amp;gt; Order Deny,Allow Allow from all &amp;lt;/Proxy&amp;gt; &amp;lt;/VirtualHost&amp;gt; a2ensite加载刚才那个文件，然后 systemctl restart apache2 重启,即可。 https的有东西 在之前的http是可以已经算是完成了，然后代理也没毛病，然后却发现一个大的问题，https不行，仍旧是之前的443端口，而且没有代理。Google了一会，然后自己慢慢摸索已经是好的配置，关于443的配置。 重复修改已经有的443的那个配置文件，发现一直不能成功。 根据已经有的配置文件，复制出来，创建一个新的文件，通过a2ensite 加载新的文件，等于默认一个域名，代理一个域名，后成功。 配置文件在最下 参考文献: 简书zhengyu4767 | CSDN乐意黎 | 自己对已经好的配置的理解，保存之前配置好的文件，很重要。 #关于HTTPS的配置文件 &amp;lt;IfModule mod_ssl.c&amp;gt; &amp;lt;VirtualHost *:443&amp;gt; ServerName www.gnoixiong.pw DocumentRoot /var/www/LoginApi SSLEngine On Include /etc/letsencrypt/options-ssl-apache.conf #ServerAlias www.gnoixiong.pw SSLCertificateFile /etc/letsencrypt/live/gnoixiong.pw/fullchain.pem SSLCertificateKeyFile /etc/letsencrypt/live/gnoixiong.pw/privkey.pem ProxyRequests Off ProxyMaxForwards 100 ProxyPreserveHost On ProxyPass / http://127.0.0.1:3000/ ProxyPassReverse / http://127.0.0.1:3000/ &amp;lt;Proxy *&amp;gt; Order Deny,Allow Allow from all &amp;lt;/Proxy&amp;gt; &amp;lt;/VirtualHost&amp;gt; &amp;lt;/IfModule&amp;gt; #关于HTTP的配置文件 &amp;lt;VirtualHost *:80&amp;gt; #配置站点的域名 ServerName gnoixxiong.pw #配置站点的管理员信息 ServerAdmin xiongxiao1012@outlook.com #off表示开启反向代理，on表示开启正向代理 ProxyRequests Off ProxyMaxForwards 100 ProxyPreserveHost On #这里表示要将现在这个虚拟主机跳转到本机的4000端口 ProxyPass /var/www/LoginApi http://127.0.0.1:3000/ ProxyPassReverse /var/www/LoginApi http://127.0.0.1:3000/ &amp;lt;Proxy *&amp;gt; Order Deny,Allow Allow from all &amp;lt;/Proxy&amp;gt; &amp;lt;/VirtualHost&amp;gt;</summary></entry><entry><title type="html">使用npm</title><link href="http://localhost:4000/node/2018/10/remeber-to-use-npm.html" rel="alternate" type="text/html" title="使用npm" /><published>2018-10-01T08:13:57+08:00</published><updated>2018-10-01T08:13:57+08:00</updated><id>http://localhost:4000/node/2018/10/remeber-to-use-npm</id><content type="html" xml:base="http://localhost:4000/node/2018/10/remeber-to-use-npm.html">&lt;h1 id=&quot;使用npm&quot;&gt;使用npm&lt;/h1&gt;
-
-&lt;h2 id=&quot;提出问题&quot;&gt;提出问题&lt;/h2&gt;
-
-&lt;p&gt;对于目前所用的npm的基础部分，我感觉很薄弱，然后我需要去了解最基本的使用和扩展方面的知识，通过了解这些内容来增加我的知识储备。&lt;/p&gt;
-
-&lt;p&gt;在做笔记的过程当中来学习如何去做笔记。&lt;/p&gt;
-
-&lt;p&gt;首先作为一个程序员，之前一直没有注意过版本问题，现在很有必要去实现他，用nvm来管理node的使用，而用npm来下载在网络上流行的各种包。所以我最开始的步骤是删除之前已经拥有的node的包和npm的包，然后下载nvm。&lt;/p&gt;
-
-&lt;p&gt;nvm的基础语法不多。&lt;/p&gt;
-
-&lt;h3 id=&quot;nvm使用&quot;&gt;nvm使用&lt;/h3&gt;
-&lt;p&gt;使用的方法很简便。重点只需要记下这么几个。&lt;a href=&quot;https://github.com/coreybutler/nvm-windows&quot;&gt;下载地址&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;nvm install &amp;lt;version&amp;gt;&lt;/code&gt;下载具体版本&lt;code class=&quot;highlighter-rouge&quot;&gt;uninstall&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nvm list&lt;/code&gt;查看node.js的安装，&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nvm on/off&lt;/code&gt;启动版本控制和关闭。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nvm use&amp;lt;version&amp;gt;&lt;/code&gt;使用那个版本&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;nvm ls-remote&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;nvm current&lt;/code&gt;
-注意
-nvm安装后需要配置环境，其一，不要自己去帮他创建文件。因为自动管理，使用nvm use的时候，会是修改一个快捷方式，自己尝试的时候发现，node的环境变量设置为e:/nodejs，然后在e下创建了一个nodejs的文件夹，nvm use后，不会自动切换，只能手动管理。npm是切到最新版的npm去设置npm全局安装包位置，然后安装全局npm（为了可以全局使用，然后设置他的环境变量）。
-&lt;strong&gt;扩展方面&lt;/strong&gt;–windows点击install.cmd配置环境
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvm node_mirror  https://npm.taobao.org/mirrors/node/
-nvm npm_mirror https://npm.taobao.org/mirrors/npm/
-nvm root &amp;lt;path&amp;gt; 设置路径
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;下载好后，我的步骤。&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nvm node_mirror  https://npm.taobao.org/mirrors/node/
-nvm npm_mirror https://npm.taobao.org/mirrors/npm/
-nvm install latest
-nvm use 10.11.0
-npm config set prefix &quot;E:\node\npm&quot;
-配置用户文件夹下 .npmrc
-npm install npm -g --registry=https://registry.npm.taobao.org
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;之后不重要 nrm是npm源管理器
-npm install -g cnpm –registry=http://r.cnpmjs.org&lt;/p&gt;
-
-&lt;p&gt;npm install -g nrm&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-## npm使用命令
-
-1. `npm outdated` 和`npm update` 
-2. npm install 
-    1. -g 是全局
-    2. --save是保存到package.json作为dependency
-    3. --save-dev 作为devDependency 
-    4. 删除如上，参数类似，方法是uninstall
-
-## 扩展方面
-1.  `npm whoami`查看用户
-2.  `npm adduser`+输入用户名密码和邮箱 添加用户
-3.  `npm root`
-4.  `npm ls`显示安装的包
-5.  `npm star&amp;lt;package&amp;gt;` `npm stars`
-6.  `npm doctor`检查环境，比如npm的地址，node版本，检查ping
-7.  `npm docs`检查文档
-8.  `npm build` `npm rebuild` 
-9.  `npm prune` 移出无关的包`npm deprecate`移出重复包
-10.  `npm repo &amp;lt;package&amp;gt;`在浏览器中打开指定的源码仓库页面
-11.  `npm view`查看注册信息
-12.  `npm publish`出版
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;access, adduser, audit, bin, bugs, c, cache, ci, cit,
-completion, config, create, ddp, dedupe, deprecate,
-dist-tag, docs, doctor, edit, explore, get, help,
-help-search, hook, i, init, install, install-test, it, link,
-list, ln, login, logout, ls, outdated, owner, pack, ping,
-prefix, profile, prune, publish, rb, rebuild, repo, restart,
-root, run, run-script, s, se, search, set, shrinkwrap, star,
-stars, start, stop, t, team, test, token, tst, un,
-uninstall, unpublish, unstar, up, update, v, version, view,
-whoami
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;npm配置&lt;/p&gt;
-
-&lt;p&gt;folders&lt;/p&gt;
-
-&lt;p&gt;package-lock.json&lt;/p&gt;
-
-&lt;p&gt;package.json&lt;/p&gt;
-
-&lt;p&gt;npmrc&lt;/p&gt;
-
-&lt;p&gt;package-locks&lt;/p&gt;
-
-&lt;p&gt;shrinkwrap.json
-```&lt;/p&gt;</content><author><name></name></author><category term="npm" /><summary type="html">使用npm 提出问题 对于目前所用的npm的基础部分，我感觉很薄弱，然后我需要去了解最基本的使用和扩展方面的知识，通过了解这些内容来增加我的知识储备。 在做笔记的过程当中来学习如何去做笔记。 首先作为一个程序员，之前一直没有注意过版本问题，现在很有必要去实现他，用nvm来管理node的使用，而用npm来下载在网络上流行的各种包。所以我最开始的步骤是删除之前已经拥有的node的包和npm的包，然后下载nvm。 nvm的基础语法不多。 nvm使用 使用的方法很简便。重点只需要记下这么几个。下载地址 使用nvm install &amp;lt;version&amp;gt;下载具体版本uninstall nvm list查看node.js的安装， nvm on/off启动版本控制和关闭。 nvm use&amp;lt;version&amp;gt;使用那个版本 nvm ls-remote + nvm current 注意 nvm安装后需要配置环境，其一，不要自己去帮他创建文件。因为自动管理，使用nvm use的时候，会是修改一个快捷方式，自己尝试的时候发现，node的环境变量设置为e:/nodejs，然后在e下创建了一个nodejs的文件夹，nvm use后，不会自动切换，只能手动管理。npm是切到最新版的npm去设置npm全局安装包位置，然后安装全局npm（为了可以全局使用，然后设置他的环境变量）。 扩展方面–windows点击install.cmd配置环境 nvm node_mirror https://npm.taobao.org/mirrors/node/ nvm npm_mirror https://npm.taobao.org/mirrors/npm/ nvm root &amp;lt;path&amp;gt; 设置路径 下载好后，我的步骤。 nvm node_mirror https://npm.taobao.org/mirrors/node/ nvm npm_mirror https://npm.taobao.org/mirrors/npm/ nvm install latest nvm use 10.11.0 npm config set prefix &quot;E:\node\npm&quot; 配置用户文件夹下 .npmrc npm install npm -g --registry=https://registry.npm.taobao.org 之后不重要 nrm是npm源管理器 npm install -g cnpm –registry=http://r.cnpmjs.org npm install -g nrm ## npm使用命令 1. `npm outdated` 和`npm update` 2. npm install 1. -g 是全局 2. --save是保存到package.json作为dependency 3. --save-dev 作为devDependency 4. 删除如上，参数类似，方法是uninstall ## 扩展方面 1. `npm whoami`查看用户 2. `npm adduser`+输入用户名密码和邮箱 添加用户 3. `npm root` 4. `npm ls`显示安装的包 5. `npm star&amp;lt;package&amp;gt;` `npm stars` 6. `npm doctor`检查环境，比如npm的地址，node版本，检查ping 7. `npm docs`检查文档 8. `npm build` `npm rebuild` 9. `npm prune` 移出无关的包`npm deprecate`移出重复包 10. `npm repo &amp;lt;package&amp;gt;`在浏览器中打开指定的源码仓库页面 11. `npm view`查看注册信息 12. `npm publish`出版 access, adduser, audit, bin, bugs, c, cache, ci, cit, completion, config, create, ddp, dedupe, deprecate, dist-tag, docs, doctor, edit, explore, get, help, help-search, hook, i, init, install, install-test, it, link, list, ln, login, logout, ls, outdated, owner, pack, ping, prefix, profile, prune, publish, rb, rebuild, repo, restart, root, run, run-script, s, se, search, set, shrinkwrap, star, stars, start, stop, t, team, test, token, tst, un, uninstall, unpublish, unstar, up, update, v, version, view, whoami npm配置 folders package-lock.json package.json npmrc package-locks shrinkwrap.json ```</summary></entry></feed>
+&lt;/ol&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 继续探讨昨天的问题，怎么分两栏，分别滚动。 （1）打算使用overflow:scroll尝试，失败，还是一起滚动。（2）感觉是因为自己没有写他的长度，设定posts页面长度试试：解决 关于多适应。想尝试使用Bootstrap里面的less，单独取出那块，然后出现了bug，一直调试。失败 单纯对于多端适应方案，通过使用单独的设计。@media screen and(mix-width: 1200px)</summary></entry></feed>

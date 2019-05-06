@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-  {%- include theme/header.html -%}
-
-  <body>
-	  <div class="container">
-		<div class="row flex-xl-nowrap">
-    		<main class="col-12 col-md-12 col-xl-12 page-content" aria-label="Content">
-      		{{ content }}
-    		</main>
-		</div>
-    </div>
-    {%- include theme/footer.html -%}
-    {% comment %} 
-    {%- include theme/footer.html -%}
-    {% endcomment %} 
-  </body>
-
-</html>
+---
+theme: bearlife
+scripts: []
+links: []
+---
+{%- include bearlife/default.html -%}

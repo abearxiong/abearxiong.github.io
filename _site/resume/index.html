@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+.title{
+    color:red;
+    text-align:center;
+}
+.Content{
+    text-align: center;
+}
+</style>
+<div class="container">
+    <div class="row flex-xl-nowrap" id="app">
+        <main class="col-12 col-md-12 col-xl-12 page-content" aria-label="Content">
+            <div class="title">简历${message}</div>
+            <div class="resume-content">
+                <div class="resume-self-intro">
+                </div>
+                <div class="resume-skill">
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<script>
+ window.onload = function(){
+    var app = new Vue({
+    el: '#app',
+    delimiters: ['${', '}'],
+    data: {
+        message: 'Hello Vue!'
+        ,baseInfoCN: {
+            '姓名' : '熊潇',
+            '专业' : '计算机科学与技术',
+            '毕业时间' : '2019.06',
+            '性别' : '男',
+            '技能' : 'Java,Web,Nodejs',
+            '学历' : '本科',
+            '爱好' : '网络，搜索，知识',
+            '大学' : '西华大学',
+            '电话' : '15202829140',
+            '邮箱' : '1019443290@qq.com'
+        }
+        ,baseInfoEN: {
+            "name": "xiao xiong",
+            "graduation time" : "2019.06"
+        }
+        ,skillCN: {
+            '核心语言' : [
+                '熟悉掌握Java,Nodejs',
+                '学过C++,C#(使用过MFC和C#的wpf做过电脑小程序）',
+                '了解python>php>Ruby>Android'
+            ],
+            '框架' : [
+                '熟悉springBoot,koa2',
+                '熟悉Vue,Bootstrap,JQuery',
+                '了解MVVM，Laravel,Webpack,React'
+            ],
+            '数据库' : [
+                '熟悉Mysql,mongodb'
+            ],
+            '开发工具' : [
+                '熟练IDEA,VScode,VS2017,Sublime,Vim'
+            ],
+            '其他' : [
+                '熟练Linux，运维VPS服务器'
+            ]
+        },
+        colledgeCN : {
+            '大学成就' : [
+                { '内容': '参加过思科比赛', '结果': '无', '时间' : '2016'},
+                { '内容': '参加蓝桥杯', '结果' : '三等奖' ,  '时间' : '2017'},
+                { '内容': '计算机设计大赛(微信答题系统)', '结果' : '二等奖' ,  '时间' : '2018'},
+                { '内容': '英语四级', '结果' : '435' ,  '时间' : '2017.12.16'}
+            ]
+        },
+        projectCN ：[
+            {'语言' : '', '项目名字' : '', '项目内容' : '', '主要负责' : '', '时间': ''}
+        ]
+        ,colledgeEN : {
+            'colledge success' : [
+                { content: '参加过思科比赛', result: '无',time : '2016'},
+                { content: '参加蓝桥杯', result : '三等奖' , time : '2017'},
+                { content: '计算机设计大赛(微信答题系统)', result : '二等奖' , time : '2018'},
+                { content: '英语四级', result : '435' , time : '2017.12.16'}
+            ]
+        },
+    }
+    })
+    // alert("hhh")
+    // $("#app").click(function(){
+    //     alert("踩踩踩")
+    // })
+ }
+</script>
+    <!--Bootstrap js--><script src="/assets/js/jquery-3.3.1.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script><!-- Script --> </script><script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+
+</body>
+</html>
