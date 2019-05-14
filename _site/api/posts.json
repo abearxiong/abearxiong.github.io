@@ -1,6 +1,15 @@
 <p>[</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "title": "专一和百晓",
+    "url": "/life/2019/05/only-one-for-learning.html",
+    "categories": ["life"],
+    "date": "May 08, 2019",
+    "tags": ["me"],
+"description": 
+},
+
+{
     "title": "python 类型转换一点点",
     "url": "/python/2019/05/python-change.html",
     "categories": ["python"],
