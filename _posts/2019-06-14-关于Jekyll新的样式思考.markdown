@@ -1,0 +1,47 @@
+---
+layout: post
+title: 关于Jekyll新的样式思考 
+date: 2019-06-14 08:18:09 +0800 
+categories: life 
+tags: ["life", "blog"]
+description: 思考
+comments: false
+---
+### 1. 我需要什么？
+### 2. 我想做什么？
+
+## 需要学习liquid（Jekyll liquid)
+
+[liquid网站](https://liquid.bootcss.com/filters/date/)
+
+### 主要方面
+
+1. 定义变量 assign，类型具有String Number Boolean Nil Array
+2. 循环和控制 for 和 case when ，其中for 有The forloop object（循环最后和第一，个数等等），，if和unless
+3. 其他都是关于过滤filter的东西
+
+### 过滤filter
+
+#### 1. date
+
+关于时间的过滤
+
+{% raw %}
+{{ post.date | date: "%b %Y"}} => May 2019
+{{ post.date }} => 2019-06-14 08:18:09 +0800
+{{ post.date | date: "%Y-%m-%d %H:%M" }} => 2018-12-06 04:24
+{{ "now" | date: "%Y-%m-%d %H:%M" }}
+{{ "today" | date: "%Y-%m-%d %H:%M" }}
+{% endraw %}
+
+#### 2. join
+
+#### 3. default
+设置默认值
+#### 5. strip_html
+
+删除HTML 的标签
+
+#### 7. url_decode 和 url_encode
+
+关于内容非URL安全的字符转换为百分号编码

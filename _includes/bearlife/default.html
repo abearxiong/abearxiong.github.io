@@ -5,7 +5,8 @@
     {{ layout.links |join: '' }}
   </head>
   <body>
-	  <div class="container">
+    {%- include bearlife/components/headnav.html -%}
+	  <div class="container-fluid">
       {{ content }}
     </div>
     {%- include bearlife/components/footer.html -%}

@@ -5,6 +5,7 @@ date:   2018-10-24 12:00:00 +0800
 categories: jekyll
 tags: blog
 comments: true
+description: "过去的v2想法"
 ---
  对于Jekyll blog的设计方案。
 1. 继续探讨昨天的问题，怎么分两栏，分别滚动。 （1）打算使用overflow:scroll尝试，失败，还是一起滚动。（2）感觉是因为自己没有写他的长度，设定posts页面长度试试：解决

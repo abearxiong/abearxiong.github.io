@@ -1,0 +1,46 @@
+---
+layout: default
+title: 所有的pages页面
+date: 2019-06-15 11:30:07 +0800 
+description: 关于页面内容中的所有站点统计
+permalink: /site/pages
+---
+{%- include bearlife/components/userinfo.html -%}
+<div class="articles">
+  <ul class="articles-nav border-bottom row">
+      <li class="articles-nav-link float-left h3 ">
+        <a  href="/"> Overview <span class="Counter"> {{ site.posts|size }}</span></a>
+      </li>
+      <li class="articles-nav-link float-left h3"> 
+        <a class="selected" href="/categories">Categories <span class="Counter"> {{ site.categories|size }}</span></a>
+      </li>
+      <li class="articles-nav-link float-left h3">
+        <a href="/tags">Tags <span class="Counter"> {{ site.tags |size }}</span></a>
+      </li>
+      <li class="articles-nav-link float-left h3">
+        <a href="/site/pages">Pages</a>
+      </li>
+      <li class="articles-nav-link float-left h3">
+        <a href="/site/posts">Posts</a>
+      </li>
+  </ul>
+  
+  <table>	
+  	<tr>
+      <th>链接</th>
+  		<th>题目</th>
+  		<th>描述</th>
+  		<th>日期</th>
+  	</tr>
+	{% for post in site.pages %}
+	<tr>
+      <td><a href="{{ post.url | relative_url }}">{{ post.url | relative_url }}</a></td>
+	    <td><a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
+	    <td>{{ post.description }}</td>
+	    <td>{{ post.date | date: "%Y-%m-%d %H:%M" }}</td>
+	</tr>
+	{% endfor %}
+  </table>
+
+
+</div>

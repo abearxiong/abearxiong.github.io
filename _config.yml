@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Abear
+author: abearxiong
 email: xiongxiao1012@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
    每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。
@@ -50,7 +51,7 @@ comment:
 disqus:
         shortname: abearxiong
 # There is for paginate
-paginate: 3
+paginate: 10
 paginate_path: "page:num"
 gist:
   noscript: false

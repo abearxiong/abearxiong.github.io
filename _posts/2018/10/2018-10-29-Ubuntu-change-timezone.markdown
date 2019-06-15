@@ -5,7 +5,7 @@ date:   2018-10-29 17:00:00 +0800
 categories: Ubuntu
 tags: ubuntu
 comments: true
-#description: g
+description: 不是北京时间的jekyll，修正为本地时间方法
 ---
 It's very sad about install ubuntu,and don't set time in Beijing Time zone,I also don't install chinese language.I use Ubuntu in vm, everytime I use `bundle exec jekyll serve`,and now date's article is don't show because of jekyll show that timezone's article. And when I run my Ruby program, the time is not I want to get.It's -7000 and I'm in +8000.So I offten make mistakes for use this timezone. So I change my Ubuntu timezone. Before I do this change, I installed Chinese language, but Make ubuntu collapse.It's very bad for me to use Ubuntu,Maybe is because Ubuntu's install source is not set chinese source.
 

@@ -112,7 +112,7 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .social-media-list &:hover {
@@ -251,4 +251,39 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+
+.header-wraper{
+  position: relative;
+}
+.Header{
+  align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #24292e;
+  color: #212529;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 16px;
+    z-index: 32;
+}
+.Header-item {
+    align-self: stretch;
+    margin-right: 16px;
+}
+.Header-link {
+    color: #fff !important;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.octicon {
+    display: inline-block; 
+    fill: currentColor;
+    vertical-align: text-top;
+}
+.v-align-middle {
+    vertical-align: middle!important;
+}
+.float-left {
+    float: left;
 }

@@ -1,0 +1,52 @@
+@charset "utf-8";
+.vcard-details {
+    list-style: none;
+}
+.vcard-detail .octicon {
+    margin-left: -22px;
+}
+.vcard-detail .octicon {
+    color: #6a737d;
+    float: left;
+    margin-left: -24px;
+    margin-top: 3px;
+    text-align: center;
+    width: 16px;
+}
+.user-place{
+
+}
+.user-title{
+	font-size: 26px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.user-author{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #666;
+}
+.user-introduce{
+    margin-bottom: 12px;
+    color: #6a737d;
+    font-size: 14px;
+}
+.boder-top {
+	border-top: 1px solid #eee;
+}
+
+@media screen and (min-width: 1265px){
+	.user-infos{
+        margin-top: 2%;
+		margin-left: 2%;
+		width: 18%;
+		/*border: 1px solid red;*/
+	}
+}
+@media screen and (max-width: 1264px){
+	.user-infos{
+		display: none;
+	}
+}

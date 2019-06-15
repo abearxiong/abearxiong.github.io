@@ -5,7 +5,7 @@ date:   2018-10-25 12:00:00 +0800
 categories: jekyll
 tags: blog
 comments: true
-describtion: 设计风格3
+description: 设计风格3
 ---
  对于Jekyll blog的设计方案。
  

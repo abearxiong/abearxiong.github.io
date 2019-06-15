@@ -1,4 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-05-13T18:28:33+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。</subtitle><entry><title type="html">专一和百晓</title><link href="http://localhost:4000/life/2019/05/only-one-for-learning.html" rel="alternate" type="text/html" title="专一和百晓" /><published>2019-05-08T23:34:26+08:00</published><updated>2019-05-08T23:34:26+08:00</updated><id>http://localhost:4000/life/2019/05/only-one-for-learning</id><content type="html" xml:base="http://localhost:4000/life/2019/05/only-one-for-learning.html">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-15T21:56:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。</subtitle><author><name>abearxiong</name></author><entry><title type="html">关于jekyll汇总</title><link href="http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB.html" rel="alternate" type="text/html" title="关于jekyll汇总" /><published>2019-06-15T11:37:07+08:00</published><updated>2019-06-15T11:37:07+08:00</updated><id>http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB</id><content type="html" xml:base="http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB.html">&lt;h2 id=&quot;我想要做什么&quot;&gt;我想要做什么&lt;/h2&gt;
+
+&lt;p&gt;关于jekyll每一个标签都是有一定的数量。我可以分开所有的标签，并且计数单个的那个标签的个数。获得的内容，进行相应的显示。&lt;/p&gt;
+
+&lt;h2 id=&quot;liquid的unip实现&quot;&gt;liquid的unip实现&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/8ae3caa6728e26565fec4a146344a065.js?file=jekyll-liquid-tags.md&quot;&gt; &lt;/script&gt;</content><author><name>abearxiong</name></author><category term="blog" /><category term="jekyll" /><summary type="html">我想要做什么 关于jekyll每一个标签都是有一定的数量。我可以分开所有的标签，并且计数单个的那个标签的个数。获得的内容，进行相应的显示。 liquid的unip实现</summary></entry><entry><title type="html">关于Jekyll新的样式思考</title><link href="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html" rel="alternate" type="text/html" title="关于Jekyll新的样式思考" /><published>2019-06-14T08:18:09+08:00</published><updated>2019-06-14T08:18:09+08:00</updated><id>http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83</id><content type="html" xml:base="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html">&lt;h3 id=&quot;1-我需要什么&quot;&gt;1. 我需要什么？&lt;/h3&gt;
+&lt;h3 id=&quot;2-我想做什么&quot;&gt;2. 我想做什么？&lt;/h3&gt;
+
+&lt;h2 id=&quot;需要学习liquidjekyll-liquid&quot;&gt;需要学习liquid（Jekyll liquid)&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://liquid.bootcss.com/filters/date/&quot;&gt;liquid网站&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;主要方面&quot;&gt;主要方面&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;定义变量 assign，类型具有String Number Boolean Nil Array&lt;/li&gt;
+  &lt;li&gt;循环和控制 for 和 case when ，其中for 有The forloop object（循环最后和第一，个数等等），，if和unless&lt;/li&gt;
+  &lt;li&gt;其他都是关于过滤filter的东西&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;过滤filter&quot;&gt;过滤filter&lt;/h3&gt;
+
+&lt;h4 id=&quot;1-date&quot;&gt;1. date&lt;/h4&gt;
+
+&lt;p&gt;关于时间的过滤&lt;/p&gt;
+
+&lt;p&gt;{{ post.date | date: “%b %Y”}} =&amp;gt; May 2019
+{{ post.date }} =&amp;gt; 2019-06-14 08:18:09 +0800
+{{ post.date | date: “%Y-%m-%d %H:%M” }} =&amp;gt; 2018-12-06 04:24
+{{ “now” | date: “%Y-%m-%d %H:%M” }}
+{{ “today” | date: “%Y-%m-%d %H:%M” }}&lt;/p&gt;
+
+&lt;h4 id=&quot;2-join&quot;&gt;2. join&lt;/h4&gt;
+
+&lt;h4 id=&quot;3-default&quot;&gt;3. default&lt;/h4&gt;
+&lt;p&gt;设置默认值&lt;/p&gt;
+&lt;h4 id=&quot;5-strip_html&quot;&gt;5. strip_html&lt;/h4&gt;
+
+&lt;p&gt;删除HTML 的标签&lt;/p&gt;
+
+&lt;h4 id=&quot;7-url_decode-和-url_encode&quot;&gt;7. url_decode 和 url_encode&lt;/h4&gt;
+
+&lt;p&gt;关于内容非URL安全的字符转换为百分号编码&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="life" /><category term="blog" /><summary type="html">1. 我需要什么？ 2. 我想做什么？ 需要学习liquid（Jekyll liquid) liquid网站 主要方面 定义变量 assign，类型具有String Number Boolean Nil Array 循环和控制 for 和 case when ，其中for 有The forloop object（循环最后和第一，个数等等），，if和unless 其他都是关于过滤filter的东西 过滤filter 1. date 关于时间的过滤 {{ post.date | date: “%b %Y”}} =&amp;gt; May 2019 {{ post.date }} =&amp;gt; 2019-06-14 08:18:09 +0800 {{ post.date | date: “%Y-%m-%d %H:%M” }} =&amp;gt; 2018-12-06 04:24 {{ “now” | date: “%Y-%m-%d %H:%M” }} {{ “today” | date: “%Y-%m-%d %H:%M” }} 2. join 3. default 设置默认值 5. strip_html 删除HTML 的标签 7. url_decode 和 url_encode 关于内容非URL安全的字符转换为百分号编码</summary></entry><entry><title type="html">markdown收录设定规则</title><link href="http://localhost:4000/life/2019/06/%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87.html" rel="alternate" type="text/html" title="markdown收录设定规则" /><published>2019-06-13T17:29:13+08:00</published><updated>2019-06-13T17:29:13+08:00</updated><id>http://localhost:4000/life/2019/06/%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87</id><content type="html" xml:base="http://localhost:4000/life/2019/06/%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87.html">&lt;h2 id=&quot;markdown中文名字&quot;&gt;markdown中文名字&lt;/h2&gt;
+
+&lt;p&gt;文件的名字可以是中文的。&lt;/p&gt;
+
+&lt;p&gt;-[x] 关内容一定要有description,行数一定不能超过三行，一定是文章的总结。之前的文件，一定要有描述，而且描述一定在三行一下。规范化页面显示效果。
+-[x] 关于ruby中创建新的内容，把设置文件的部分和标题这部分，重构掉，因为中文名是可以的，中文的url地址也是可以访问的
+-[x] 把首页的内容，重构。标题 描述 标签 更新时间
+-[x] github issues 是草稿纸或者就是属于空间。 随心play..&lt;/p&gt;
+
+&lt;h2 id=&quot;标签分页和其他类型分页实现&quot;&gt;标签分页和其他类型分页实现？&lt;/h2&gt;
+
+&lt;p&gt;归档函数功能即可&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;把整体的标签内容放一起好吗？（可以，前端分页，我不可能写太多，比如上万，因此这么去实现是可以的）&lt;/li&gt;
+  &lt;li&gt;前端分页,获取所有的内容，通过自定义的优化界面显示，是可以的。分页优化显示。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;to do lists&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>abearxiong</name></author><category term="blog" /><category term="life" /><summary type="html">markdown中文名字 文件的名字可以是中文的。 -[x] 关内容一定要有description,行数一定不能超过三行，一定是文章的总结。之前的文件，一定要有描述，而且描述一定在三行一下。规范化页面显示效果。 -[x] 关于ruby中创建新的内容，把设置文件的部分和标题这部分，重构掉，因为中文名是可以的，中文的url地址也是可以访问的 -[x] 把首页的内容，重构。标题 描述 标签 更新时间 -[x] github issues 是草稿纸或者就是属于空间。 随心play.. 标签分页和其他类型分页实现？ 归档函数功能即可 把整体的标签内容放一起好吗？（可以，前端分页，我不可能写太多，比如上万，因此这么去实现是可以的） 前端分页,获取所有的内容，通过自定义的优化界面显示，是可以的。分页优化显示。 to do lists</summary></entry><entry><title type="html">专一和百晓</title><link href="http://localhost:4000/life/2019/05/only-one-for-learning.html" rel="alternate" type="text/html" title="专一和百晓" /><published>2019-05-08T23:34:26+08:00</published><updated>2019-05-08T23:34:26+08:00</updated><id>http://localhost:4000/life/2019/05/only-one-for-learning</id><content type="html" xml:base="http://localhost:4000/life/2019/05/only-one-for-learning.html">&lt;blockquote&gt;
   &lt;p&gt;关于显示时间快捷键；通过注册快捷键查看系统快捷键，程序快捷键。Jekyll的博客每次更新的时候显示部分的内容。&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -13,11 +75,11 @@
 &lt;p&gt;昨天和前天我是用了很长的时间去做了一件事，去分析已有的c#的代码来实现python的程序。难点在于合并16进制内容，实现python中的tea算法加密，实现tea算法的解密。基于内容的分析，而这两天因为经常性的超过吃饭时限，就没有吃饭，最终很晚，晚上才去吃了剩菜，也不是在规定时间去吃的，而昨天连晚饭都没有吃，然后下楼去买的泡面吃，敲代码然后忘记吃饭？？厉害了我的天。然后有了以下部分的感悟。&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;短内容流内容
-s&lt;/p&gt;
-  &lt;h1 id=&quot;关于专一的思考&quot;&gt;关于专一的思考&lt;/h1&gt;
-  &lt;p&gt;人们常说一件事，如果学习一个东西一万个小时，那么是极擅长那个事务的。我此刻想了想我是生命轨迹，除了必要的学历，其实没有什么是自己唯一去做的超过这个时限长度的内容。人的生命算60年，60&lt;em&gt;365&lt;/em&gt;24 = 525600 个小时；用人生命的1/50去学习一个事务，还是很占用时间的。即使来说，让人会擅长那个方面。&lt;/p&gt;
+  &lt;p&gt;短内容流内容&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h1 id=&quot;关于专一的思考&quot;&gt;关于专一的思考&lt;/h1&gt;
+&lt;p&gt;人们常说一件事，如果学习一个东西一万个小时，那么是极擅长那个事务的。我此刻想了想我是生命轨迹，除了必要的学历，其实没有什么是自己唯一去做的超过这个时限长度的内容。人的生命算60年，60&lt;em&gt;365&lt;/em&gt;24 = 525600 个小时；用人生命的1/50去学习一个事务，还是很占用时间的。即使来说，让人会擅长那个方面。&lt;/p&gt;
 
 &lt;p&gt;作为一个人，自己的思绪，思考，每个人都是不一样的，我却是那种想知道所有的东西的人，想做的事情超多，然后知道自己想做的超多的事情都没有做。然后，一次次的让自己思考该怎么做，做什么。盲目做现在做的事情，现在做的事情一次次超过自己计划的的时间，因为本身的能力是有限制的去完成那个事件，也许是天赋，也许是能力。能力如何来，做更多就会了，做更多的要求是什么，花更多的时间。所以，如何让自己擅长的某方面，花更少的时间或者如何去依据思考的想法去实现那个东西呢？办法，办法？&lt;/p&gt;
 
@@ -33,13 +95,13 @@ s&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;做网站以画画的形式表现出来。烦躁每一个标签的，类的优化显示，为何不更方便呢？&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name></name></author><category term="me" /><summary type="html">关于显示时间快捷键；通过注册快捷键查看系统快捷键，程序快捷键。Jekyll的博客每次更新的时候显示部分的内容。 大一统生活记录： 生活所用的APP或者程序统一化。 我需要一个放置我的想法的一个地方 昨天和前天我是用了很长的时间去做了一件事，去分析已有的c#的代码来实现python的程序。难点在于合并16进制内容，实现python中的tea算法加密，实现tea算法的解密。基于内容的分析，而这两天因为经常性的超过吃饭时限，就没有吃饭，最终很晚，晚上才去吃了剩菜，也不是在规定时间去吃的，而昨天连晚饭都没有吃，然后下楼去买的泡面吃，敲代码然后忘记吃饭？？厉害了我的天。然后有了以下部分的感悟。 短内容流内容 s 关于专一的思考 人们常说一件事，如果学习一个东西一万个小时，那么是极擅长那个事务的。我此刻想了想我是生命轨迹，除了必要的学历，其实没有什么是自己唯一去做的超过这个时限长度的内容。人的生命算60年，6036524 = 525600 个小时；用人生命的1/50去学习一个事务，还是很占用时间的。即使来说，让人会擅长那个方面。 作为一个人，自己的思绪，思考，每个人都是不一样的，我却是那种想知道所有的东西的人，想做的事情超多，然后知道自己想做的超多的事情都没有做。然后，一次次的让自己思考该怎么做，做什么。盲目做现在做的事情，现在做的事情一次次超过自己计划的的时间，因为本身的能力是有限制的去完成那个事件，也许是天赋，也许是能力。能力如何来，做更多就会了，做更多的要求是什么，花更多的时间。所以，如何让自己擅长的某方面，花更少的时间或者如何去依据思考的想法去实现那个东西呢？办法，办法？ 万事万物都是有其规律的，现在人类的知识量汇总起来是及其庞大的，如何运用起来这些人类的知识呢？很多的内容都是散发在网站上，自己通过网络获取那些东西，解析万物知识，得到相应结果。 万物接口，程序得到通信内容，做相应的事情。 突然发现了我人生的使命了，在复杂变化的世界当中，让人类不需要更多的时间去做某个事情，让人类更方便的生活，让人类更多时间去做自己想做的事情，去散发自己的思考。所以，我应该以什么开始去实现我的使命呢？如何才会做到这个事情呢？ 生活就是一场游戏，为了打boss需要让自己去学会很多的内容，而最终的目的是打死boss，如果不是为了享受中途打boss的快感，如何去更快的打倒boss是我们的需求，那么如何让之成为现实嗯。打boss是一个路程，而boss的数量是无止境的。我想什么都知道一点，我想遇到每个boss，我想更快的遇到boss，我想遇到无限boss中的最后的一个boss。而使命，串联所有的知识，最快的实现一个boss的达到。 做网站以画画的形式表现出来。烦躁每一个标签的，类的优化显示，为何不更方便呢？</summary></entry><entry><title type="html">python 类型转换一点点</title><link href="http://localhost:4000/python/2019/05/python-change.html" rel="alternate" type="text/html" title="python 类型转换一点点" /><published>2019-05-06T19:00:39+08:00</published><updated>2019-05-06T19:00:39+08:00</updated><id>http://localhost:4000/python/2019/05/python-change</id><content type="html" xml:base="http://localhost:4000/python/2019/05/python-change.html">&lt;script src=&quot;https://gist.github.com/cbb0967a564ed2df713da17159efe1f3.js?file=util_learing_twohash.md&quot;&gt; &lt;/script&gt;
+&lt;/blockquote&gt;</content><author><name>abearxiong</name></author><category term="me" /><summary type="html">关于显示时间快捷键；通过注册快捷键查看系统快捷键，程序快捷键。Jekyll的博客每次更新的时候显示部分的内容。 大一统生活记录： 生活所用的APP或者程序统一化。 我需要一个放置我的想法的一个地方 昨天和前天我是用了很长的时间去做了一件事，去分析已有的c#的代码来实现python的程序。难点在于合并16进制内容，实现python中的tea算法加密，实现tea算法的解密。基于内容的分析，而这两天因为经常性的超过吃饭时限，就没有吃饭，最终很晚，晚上才去吃了剩菜，也不是在规定时间去吃的，而昨天连晚饭都没有吃，然后下楼去买的泡面吃，敲代码然后忘记吃饭？？厉害了我的天。然后有了以下部分的感悟。 短内容流内容 关于专一的思考 人们常说一件事，如果学习一个东西一万个小时，那么是极擅长那个事务的。我此刻想了想我是生命轨迹，除了必要的学历，其实没有什么是自己唯一去做的超过这个时限长度的内容。人的生命算60年，6036524 = 525600 个小时；用人生命的1/50去学习一个事务，还是很占用时间的。即使来说，让人会擅长那个方面。 作为一个人，自己的思绪，思考，每个人都是不一样的，我却是那种想知道所有的东西的人，想做的事情超多，然后知道自己想做的超多的事情都没有做。然后，一次次的让自己思考该怎么做，做什么。盲目做现在做的事情，现在做的事情一次次超过自己计划的的时间，因为本身的能力是有限制的去完成那个事件，也许是天赋，也许是能力。能力如何来，做更多就会了，做更多的要求是什么，花更多的时间。所以，如何让自己擅长的某方面，花更少的时间或者如何去依据思考的想法去实现那个东西呢？办法，办法？ 万事万物都是有其规律的，现在人类的知识量汇总起来是及其庞大的，如何运用起来这些人类的知识呢？很多的内容都是散发在网站上，自己通过网络获取那些东西，解析万物知识，得到相应结果。 万物接口，程序得到通信内容，做相应的事情。 突然发现了我人生的使命了，在复杂变化的世界当中，让人类不需要更多的时间去做某个事情，让人类更方便的生活，让人类更多时间去做自己想做的事情，去散发自己的思考。所以，我应该以什么开始去实现我的使命呢？如何才会做到这个事情呢？ 生活就是一场游戏，为了打boss需要让自己去学会很多的内容，而最终的目的是打死boss，如果不是为了享受中途打boss的快感，如何去更快的打倒boss是我们的需求，那么如何让之成为现实嗯。打boss是一个路程，而boss的数量是无止境的。我想什么都知道一点，我想遇到每个boss，我想更快的遇到boss，我想遇到无限boss中的最后的一个boss。而使命，串联所有的知识，最快的实现一个boss的达到。 做网站以画画的形式表现出来。烦躁每一个标签的，类的优化显示，为何不更方便呢？</summary></entry><entry><title type="html">python 类型转换一点点</title><link href="http://localhost:4000/python/2019/05/python-change.html" rel="alternate" type="text/html" title="python 类型转换一点点" /><published>2019-05-06T19:00:39+08:00</published><updated>2019-05-06T19:00:39+08:00</updated><id>http://localhost:4000/python/2019/05/python-change</id><content type="html" xml:base="http://localhost:4000/python/2019/05/python-change.html">&lt;script src=&quot;https://gist.github.com/cbb0967a564ed2df713da17159efe1f3.js?file=util_learing_twohash.md&quot;&gt; &lt;/script&gt;
 
-&lt;script src=&quot;https://gist.github.com/cbb0967a564ed2df713da17159efe1f3.js?file=util_learing_twohash.py&quot;&gt; &lt;/script&gt;</content><author><name></name></author><category term="notags" /><summary type="html"></summary></entry><entry><title type="html">再次陪伴jekyll</title><link href="http://localhost:4000/life/2019/04/new-start-jekyll.html" rel="alternate" type="text/html" title="再次陪伴jekyll" /><published>2019-04-28T17:51:28+08:00</published><updated>2019-04-28T17:51:28+08:00</updated><id>http://localhost:4000/life/2019/04/new-start-jekyll</id><content type="html" xml:base="http://localhost:4000/life/2019/04/new-start-jekyll.html">&lt;h1 id=&quot;重新开发jekyll&quot;&gt;重新开发jekyll&lt;/h1&gt;
+&lt;script src=&quot;https://gist.github.com/cbb0967a564ed2df713da17159efe1f3.js?file=util_learing_twohash.py&quot;&gt; &lt;/script&gt;</content><author><name>abearxiong</name></author><category term="notags" /><summary type="html"></summary></entry><entry><title type="html">再次陪伴jekyll</title><link href="http://localhost:4000/life/2019/04/new-start-jekyll.html" rel="alternate" type="text/html" title="再次陪伴jekyll" /><published>2019-04-28T17:51:28+08:00</published><updated>2019-04-28T17:51:28+08:00</updated><id>http://localhost:4000/life/2019/04/new-start-jekyll</id><content type="html" xml:base="http://localhost:4000/life/2019/04/new-start-jekyll.html">&lt;h1 id=&quot;重新开发jekyll&quot;&gt;重新开发jekyll&lt;/h1&gt;
 
 &lt;p&gt;今天早上想完善一些东西，然后就一直操作。直到现在的时刻。首先我要记得一点点的需要完善的东西，rake和rakefile,jobs,fk,bg等。&lt;/p&gt;
 
-&lt;p&gt;然后就是接触jekyll遇到的一些小问题，因为使用了分页插件，&lt;strong&gt;发现Jekyll在文档中有配置&lt;code class=&quot;highlighter-rouge&quot;&gt;permalink: /blog/histroy&lt;/code&gt;的情况下，不能够收集posts?&lt;/strong&gt;然后没有内容，我以为是因为添加了permalink问题，结果是因为分页插件问题。&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><summary type="html">重新开发jekyll 今天早上想完善一些东西，然后就一直操作。直到现在的时刻。首先我要记得一点点的需要完善的东西，rake和rakefile,jobs,fk,bg等。 然后就是接触jekyll遇到的一些小问题，因为使用了分页插件，发现Jekyll在文档中有配置permalink: /blog/histroy的情况下，不能够收集posts?然后没有内容，我以为是因为添加了permalink问题，结果是因为分页插件问题。</summary></entry><entry><title type="html">Ruby用window的子系统</title><link href="http://localhost:4000/me/2019/04/use-window-linux.html" rel="alternate" type="text/html" title="Ruby用window的子系统" /><published>2019-04-27T00:00:00+08:00</published><updated>2019-04-27T00:00:00+08:00</updated><id>http://localhost:4000/me/2019/04/use-window-linux</id><content type="html" xml:base="http://localhost:4000/me/2019/04/use-window-linux.html">&lt;p&gt;之前每次玩Jekyll是使用Ubuntu，然后装的是Ubuntu虚拟机，虚拟机占内存，同时，不能使用中文打字，这样对我是很不友好的，所以很长的时间是没有动这个的。今天重新拾起了，并因为是window的子系统，有中文打字，同时没有装虚拟机，不是很需要占空间，自己也可以并发操作其他的东西，对自己更加的方便了。很开心。&lt;/p&gt;
+&lt;p&gt;然后就是接触jekyll遇到的一些小问题，因为使用了分页插件，&lt;strong&gt;发现Jekyll在文档中有配置&lt;code class=&quot;highlighter-rouge&quot;&gt;permalink: /blog/histroy&lt;/code&gt;的情况下，不能够收集posts?&lt;/strong&gt;然后没有内容，我以为是因为添加了permalink问题，结果是因为分页插件问题。&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="jekyll" /><summary type="html">重新开发jekyll 今天早上想完善一些东西，然后就一直操作。直到现在的时刻。首先我要记得一点点的需要完善的东西，rake和rakefile,jobs,fk,bg等。 然后就是接触jekyll遇到的一些小问题，因为使用了分页插件，发现Jekyll在文档中有配置permalink: /blog/histroy的情况下，不能够收集posts?然后没有内容，我以为是因为添加了permalink问题，结果是因为分页插件问题。</summary></entry><entry><title type="html">Ruby用window的子系统</title><link href="http://localhost:4000/me/2019/04/use-window-linux.html" rel="alternate" type="text/html" title="Ruby用window的子系统" /><published>2019-04-27T00:00:00+08:00</published><updated>2019-04-27T00:00:00+08:00</updated><id>http://localhost:4000/me/2019/04/use-window-linux</id><content type="html" xml:base="http://localhost:4000/me/2019/04/use-window-linux.html">&lt;p&gt;之前每次玩Jekyll是使用Ubuntu，然后装的是Ubuntu虚拟机，虚拟机占内存，同时，不能使用中文打字，这样对我是很不友好的，所以很长的时间是没有动这个的。今天重新拾起了，并因为是window的子系统，有中文打字，同时没有装虚拟机，不是很需要占空间，自己也可以并发操作其他的东西，对自己更加的方便了。很开心。&lt;/p&gt;
 
 &lt;p&gt;我想，文章，有文章的好，短文字，有短文字的好。自己应该放一个东西来操作一些短的文字的玩法。&lt;/p&gt;
 
@@ -50,7 +112,7 @@ s&lt;/p&gt;
 &lt;p&gt;记得某时候回来，看看，提醒一下自己。&lt;/p&gt;
 
 &lt;p&gt;start: 4-27&lt;/p&gt;
-&lt;div style=&quot;color:red&quot;&gt;红色幸运&lt;/div&gt;</content><author><name></name></author><category term="life" /><summary type="html">之前每次玩Jekyll是使用Ubuntu，然后装的是Ubuntu虚拟机，虚拟机占内存，同时，不能使用中文打字，这样对我是很不友好的，所以很长的时间是没有动这个的。今天重新拾起了，并因为是window的子系统，有中文打字，同时没有装虚拟机，不是很需要占空间，自己也可以并发操作其他的东西，对自己更加的方便了。很开心。 我想，文章，有文章的好，短文字，有短文字的好。自己应该放一个东西来操作一些短的文字的玩法。 我好像除了QQ，不太喜欢玩其他的聊天工具，自己也不是某个社区的长占人员，自己生活是在干什么呢？很好奇。 现在几天的我，很想整合一切自己周围所拥有的一切的事物。 记得某时候回来，看看，提醒一下自己。 start: 4-27 红色幸运</summary></entry><entry><title type="html">Use Ruby to create new article file</title><link href="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html" rel="alternate" type="text/html" title="Use Ruby to create new article file" /><published>2018-10-29T23:00:00+08:00</published><updated>2018-10-29T23:00:00+08:00</updated><id>http://localhost:4000/ruby/2018/10/create-new-article-use-ruby</id><content type="html" xml:base="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html">&lt;h4 id=&quot;learn-from-runoobcom&quot;&gt;Learn from &lt;a href=&quot;http://www.runoob.com/ruby/ruby-input-output.html&quot; title=&quot;Runoob learning web&quot;&gt;runoob.com&lt;/a&gt;&lt;/h4&gt;
+&lt;div style=&quot;color:red&quot;&gt;红色幸运&lt;/div&gt;</content><author><name>abearxiong</name></author><category term="life" /><summary type="html">之前每次玩Jekyll是使用Ubuntu，然后装的是Ubuntu虚拟机，虚拟机占内存，同时，不能使用中文打字，这样对我是很不友好的，所以很长的时间是没有动这个的。今天重新拾起了，并因为是window的子系统，有中文打字，同时没有装虚拟机，不是很需要占空间，自己也可以并发操作其他的东西，对自己更加的方便了。很开心。 我想，文章，有文章的好，短文字，有短文字的好。自己应该放一个东西来操作一些短的文字的玩法。 我好像除了QQ，不太喜欢玩其他的聊天工具，自己也不是某个社区的长占人员，自己生活是在干什么呢？很好奇。 现在几天的我，很想整合一切自己周围所拥有的一切的事物。 记得某时候回来，看看，提醒一下自己。 start: 4-27 红色幸运</summary></entry><entry><title type="html">Use Ruby to create new article file</title><link href="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html" rel="alternate" type="text/html" title="Use Ruby to create new article file" /><published>2018-10-29T23:00:00+08:00</published><updated>2018-10-29T23:00:00+08:00</updated><id>http://localhost:4000/ruby/2018/10/create-new-article-use-ruby</id><content type="html" xml:base="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html">&lt;h4 id=&quot;learn-from-runoobcom&quot;&gt;Learn from &lt;a href=&quot;http://www.runoob.com/ruby/ruby-input-output.html&quot; title=&quot;Runoob learning web&quot;&gt;runoob.com&lt;/a&gt;&lt;/h4&gt;
 
 &lt;p&gt;First about File operating is diffierent from C,C++,Java.So I need learn ruby.&lt;/p&gt;
 
@@ -65,7 +127,7 @@ There is create Article file gist:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;2018-10-29 First draft. Create articel&lt;/li&gt;
   &lt;li&gt;2018-11-07 repair gist&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="ruby" /><summary type="html">Learn from runoob.com First about File operating is diffierent from C,C++,Java.So I need learn ruby. About I/O ruby has read,write,gets puts,readline,getc,printf;In stdin can use str = gets etc.</summary></entry><entry><title type="html">Ubuntu time is not Beijing time</title><link href="http://localhost:4000/ubuntu/2018/10/Ubuntu-change-timezone.html" rel="alternate" type="text/html" title="Ubuntu time is not Beijing time" /><published>2018-10-29T17:00:00+08:00</published><updated>2018-10-29T17:00:00+08:00</updated><id>http://localhost:4000/ubuntu/2018/10/Ubuntu-change-timezone</id><content type="html" xml:base="http://localhost:4000/ubuntu/2018/10/Ubuntu-change-timezone.html">&lt;p&gt;It’s very sad about install ubuntu,and don’t set time in Beijing Time zone,I also don’t install chinese language.I use Ubuntu in vm, everytime I use &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;,and now date’s article is don’t show because of jekyll show that timezone’s article. And when I run my Ruby program, the time is not I want to get.It’s -7000 and I’m in +8000.So I offten make mistakes for use this timezone. So I change my Ubuntu timezone. Before I do this change, I installed Chinese language, but Make ubuntu collapse.It’s very bad for me to use Ubuntu,Maybe is because Ubuntu’s install source is not set chinese source.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>abearxiong</name></author><category term="ruby" /><summary type="html">Learn from runoob.com First about File operating is diffierent from C,C++,Java.So I need learn ruby. About I/O ruby has read,write,gets puts,readline,getc,printf;In stdin can use str = gets etc.</summary></entry><entry><title type="html">Ubuntu time is not Beijing time</title><link href="http://localhost:4000/ubuntu/2018/10/Ubuntu-change-timezone.html" rel="alternate" type="text/html" title="Ubuntu time is not Beijing time" /><published>2018-10-29T17:00:00+08:00</published><updated>2018-10-29T17:00:00+08:00</updated><id>http://localhost:4000/ubuntu/2018/10/Ubuntu-change-timezone</id><content type="html" xml:base="http://localhost:4000/ubuntu/2018/10/Ubuntu-change-timezone.html">&lt;p&gt;It’s very sad about install ubuntu,and don’t set time in Beijing Time zone,I also don’t install chinese language.I use Ubuntu in vm, everytime I use &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;,and now date’s article is don’t show because of jekyll show that timezone’s article. And when I run my Ruby program, the time is not I want to get.It’s -7000 and I’m in +8000.So I offten make mistakes for use this timezone. So I change my Ubuntu timezone. Before I do this change, I installed Chinese language, but Make ubuntu collapse.It’s very bad for me to use Ubuntu,Maybe is because Ubuntu’s install source is not set chinese source.&lt;/p&gt;
 
 &lt;p&gt;How to change my Ubuntu timezone is learning from &lt;a href=&quot;https://blog.csdn.net/zhengchaooo/article/details/79500032&quot; title=&quot;How to change Ubuntu time&quot;&gt;csdn-zhengchaooo&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# To look my timezone&lt;/span&gt;
@@ -77,7 +139,7 @@ There is create Article file gist:&lt;/p&gt;
 &lt;!-- more --&gt;
 
 &lt;p&gt;Edit History：
-    2018-10-29 First draft&lt;/p&gt;</content><author><name></name></author><category term="ubuntu" /><summary type="html">It’s very sad about install ubuntu,and don’t set time in Beijing Time zone,I also don’t install chinese language.I use Ubuntu in vm, everytime I use bundle exec jekyll serve,and now date’s article is don’t show because of jekyll show that timezone’s article. And when I run my Ruby program, the time is not I want to get.It’s -7000 and I’m in +8000.So I offten make mistakes for use this timezone. So I change my Ubuntu timezone. Before I do this change, I installed Chinese language, but Make ubuntu collapse.It’s very bad for me to use Ubuntu,Maybe is because Ubuntu’s install source is not set chinese source. How to change my Ubuntu timezone is learning from csdn-zhengchaooo. date -R # To look my timezone tzselect # To change my timezone and choose 4 9 1 1 sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime #cp file to local sudo date -s 17:00:00 #change Time sudo hwclock --systohc #change systohc</summary></entry><entry><title type="html">Learn Rake</title><link href="http://localhost:4000/ruby/2018/10/Work-for-rail.html" rel="alternate" type="text/html" title="Learn Rake" /><published>2018-10-28T23:00:00+08:00</published><updated>2018-10-28T23:00:00+08:00</updated><id>http://localhost:4000/ruby/2018/10/Work-for-rail</id><content type="html" xml:base="http://localhost:4000/ruby/2018/10/Work-for-rail.html">&lt;ol&gt;
+    2018-10-29 First draft&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="ubuntu" /><summary type="html">It’s very sad about install ubuntu,and don’t set time in Beijing Time zone,I also don’t install chinese language.I use Ubuntu in vm, everytime I use bundle exec jekyll serve,and now date’s article is don’t show because of jekyll show that timezone’s article. And when I run my Ruby program, the time is not I want to get.It’s -7000 and I’m in +8000.So I offten make mistakes for use this timezone. So I change my Ubuntu timezone. Before I do this change, I installed Chinese language, but Make ubuntu collapse.It’s very bad for me to use Ubuntu,Maybe is because Ubuntu’s install source is not set chinese source. How to change my Ubuntu timezone is learning from csdn-zhengchaooo. date -R # To look my timezone tzselect # To change my timezone and choose 4 9 1 1 sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime #cp file to local sudo date -s 17:00:00 #change Time sudo hwclock --systohc #change systohc</summary></entry><entry><title type="html">Learn Rake</title><link href="http://localhost:4000/ruby/2018/10/Work-for-rail.html" rel="alternate" type="text/html" title="Learn Rake" /><published>2018-10-28T23:00:00+08:00</published><updated>2018-10-28T23:00:00+08:00</updated><id>http://localhost:4000/ruby/2018/10/Work-for-rail</id><content type="html" xml:base="http://localhost:4000/ruby/2018/10/Work-for-rail.html">&lt;ol&gt;
   &lt;li&gt;Install rake.&lt;br /&gt;
 I use Ubuntu and I install Gem for Ruby.So I install it by commond &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install rake&lt;/code&gt;.&lt;/li&gt;
   &lt;li&gt;create the first Rake task.&lt;/li&gt;
@@ -112,171 +174,4 @@ I use Ubuntu and I install Gem for Ruby.So I install it by commond &lt;code clas
 
 &lt;p&gt;Edit History：
 -2018-10-28 First draft
--2018-11-07 add 4th&lt;/p&gt;</content><author><name></name></author><category term="rake" /><summary type="html">Install rake. I use Ubuntu and I install Gem for Ruby.So I install it by commond gem install rake. create the first Rake task. desc &quot;some explian language&quot; task :task_name do # coding puts &quot;print some in bash&quot; end desc &quot;use input&quot; task :task_name_input,:a do|t,args| # coding puts &quot;print some in bash:&quot;,args # t is `task_name_input` args is 'input paramater' end Rake bash commond Rake -T is show all task. And it can show task description. Rake task_name is run task by task name task_name. Rake task_name_intpu[1] is can input some paramater. Rake in zsh is very difficult in add parms. Must use test\[&quot;x&quot;\] task :test,:arg1 do |t,args| puts args end Edit History： -2018-10-28 First draft -2018-11-07 add 4th</summary></entry><entry><title type="html">Jekyll Blog Style v1 final</title><link href="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-5.html" rel="alternate" type="text/html" title="Jekyll Blog Style v1 final" /><published>2018-10-28T20:00:57+08:00</published><updated>2018-10-28T20:00:57+08:00</updated><id>http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-5</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-5.html">&lt;p&gt;对于Jekyll blog的设计方案。
-(1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面&lt;/p&gt;
-
-&lt;ul class=&quot;task-list&quot;&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;所有文章列表
-    &lt;ul class=&quot;task-list&quot;&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;标签&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;分类&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;内容&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;上下一页&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;RSS&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;样式&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;文章
-    &lt;ul class=&quot;task-list&quot;&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;标签&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;分类&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;评论&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;最新文章或关联文章&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;文字统计和访问统计&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;样式&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;其他页面的信息
-    &lt;ul class=&quot;task-list&quot;&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;标签页面
-        &lt;ul class=&quot;task-list&quot;&gt;
-          &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;具体标签&lt;/li&gt;
-          &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;表格分类&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;分类页面&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;归档页面&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;个人信息页面&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Jekyll Blog 历程页面&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;导航页站点地图&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;插件
-    &lt;ul class=&quot;task-list&quot;&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;百度分析&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Google分析&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;disqus（fooleap有关于墙内访问的&lt;a href=&quot;https://github.com/fooleap/disqus-php-api&quot; title=&quot;disqus-api&quot;&gt;github&lt;/a&gt;）&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;其他
-    &lt;ul class=&quot;task-list&quot;&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;图床&lt;a href=&quot;https://cloudinary.com&quot;&gt;cloudinary&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;还行的Jekyll Blog&lt;/p&gt;
-&lt;h4 id=&quot;一级推荐&quot;&gt;一级推荐&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.fooleap.org/&quot; title=&quot;纯净，干脆/80&quot;&gt;fooleap&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mytrix.in/&quot; title=&quot;日语一点点，纯净&quot;&gt;mytrix&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://leiminnet.cn&quot; title=&quot;有一些友联可以卡&quot;&gt;leiminnet&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://echizen.github.io/&quot; title=&quot;厉害了&quot;&gt;echizen&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h4 id=&quot;二级推荐&quot;&gt;二级推荐&lt;/h4&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;http://liberize.github.io/&quot; title=&quot;纯净,白&quot;&gt;liberize&lt;/a&gt;
-&lt;!-- more --&gt;
-对于这个三个思考，首先想到的是文章。&lt;/li&gt;
-  &lt;li&gt;需要有标签和分类，标签跳转，显示相应的标签的内容。&lt;/li&gt;
-  &lt;li&gt;需要可以设置的评论,disqus。直接添加js代码即可&lt;/li&gt;
-  &lt;li&gt;需要有最新文章和关联文章的显示。&lt;/li&gt;
-  &lt;li&gt;文字数量统计和访问统计，访问统计可以用百度分析引入和Google分析引入。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!-- &lt;script src=&quot;https://gist.github.com/abearxiong/959575ccea40cc6d166418133e346339.js&quot;&gt;&lt;/script&gt;
-&lt;br/&gt;
-&lt;script src=&quot;https://gist.github.com/abearxiong/76e2b1e0717d45e822de226d2cb794a4.js&quot;&gt;&lt;/script&gt; --&gt;
-&lt;script src=&quot;https://gist.github.com/959575ccea40cc6d166418133e346339.js?file=dd.py&quot;&gt; &lt;/script&gt;
-
-&lt;script src=&quot;https://gist.github.com/76e2b1e0717d45e822de226d2cb794a4.js?file=alias.markdown&quot;&gt; &lt;/script&gt;
-
-&lt;p&gt;编辑历程：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;2018-10-28 初稿&lt;/li&gt;
-  &lt;li&gt;哈哈&lt;/li&gt;
-  &lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 (1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面 所有文章列表 标签 分类 内容 上下一页 RSS 样式 文章 标签 分类 评论 最新文章或关联文章 文字统计和访问统计 样式 其他页面的信息 标签页面 具体标签 表格分类 分类页面 归档页面 个人信息页面 Jekyll Blog 历程页面 导航页站点地图 插件 百度分析 Google分析 disqus（fooleap有关于墙内访问的github） 其他 图床cloudinary 还行的Jekyll Blog 一级推荐 fooleap mytrix leiminnet echizen 二级推荐 liberize</summary></entry><entry><title type="html">Histroy jekyll style v1(4)</title><link href="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-4.html" rel="alternate" type="text/html" title="Histroy jekyll style v1(4)" /><published>2018-10-27T22:00:00+08:00</published><updated>2018-10-27T22:00:00+08:00</updated><id>http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-4</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-4.html">&lt;p&gt;对于Jekyll blog的设计方案。
-(1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面&lt;/p&gt;
-&lt;ul class=&quot;task-list&quot;&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;所有文章列表
-    &lt;ul class=&quot;task-list&quot;&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;标签&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;分类&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;内容&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;上下一页&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;RSS&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;样式&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;文章
-    &lt;ul class=&quot;task-list&quot;&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;标签&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;分类&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;评论&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;最新文章或关联文章&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;文字统计和访问统计&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;样式&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;其他页面的信息
-    &lt;ul class=&quot;task-list&quot;&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;标签页面
-        &lt;ul class=&quot;task-list&quot;&gt;
-          &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;具体标签&lt;/li&gt;
-          &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;表格分类&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;分类页面&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;归档页面&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;个人信息页面&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Jekyll Blog 历程页面&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;导航页站点地图&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;插件
-    &lt;ul class=&quot;task-list&quot;&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;百度分析&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Google分析&lt;/li&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;disqus&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;其他
-    &lt;ul class=&quot;task-list&quot;&gt;
-      &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;图床&lt;a href=&quot;https://cloudinary.com&quot;&gt;cloudinary&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;还行的Jekyll Blog&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;http://liberize.github.io/&quot; title=&quot;很不错的一个网站&quot;&gt;liberize&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.fooleap.org/&quot;&gt;fooleap&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://mytrix.in/&quot;&gt;mytrix&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://leiminnet.cn&quot;&gt;leiminnet&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;!-- more --&gt;
-&lt;p&gt;对于这个三个思考，首先想到的是文章。&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;需要有标签和分类，标签跳转，显示相应的标签的内容。&lt;/li&gt;
-  &lt;li&gt;需要可以设置的评论,disqus。直接添加js代码即可&lt;/li&gt;
-  &lt;li&gt;需要有最新文章和关联文章的显示。&lt;/li&gt;
-  &lt;li&gt;文字数量统计和访问统计，访问统计可以用百度分析引入和Google分析引入。&lt;/li&gt;
-&lt;/ol&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 (1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面 所有文章列表 标签 分类 内容 上下一页 RSS 样式 文章 标签 分类 评论 最新文章或关联文章 文字统计和访问统计 样式 其他页面的信息 标签页面 具体标签 表格分类 分类页面 归档页面 个人信息页面 Jekyll Blog 历程页面 导航页站点地图 插件 百度分析 Google分析 disqus 其他 图床cloudinary 还行的Jekyll Blog liberize fooleap mytrix leiminnet</summary></entry><entry><title type="html">History about Jekyll style(3)</title><link href="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-3.html" rel="alternate" type="text/html" title="History about Jekyll style(3)" /><published>2018-10-25T12:00:00+08:00</published><updated>2018-10-25T12:00:00+08:00</updated><id>http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-3</id><content type="html" xml:base="http://localhost:4000/jekyll/2018/10/History-jekyll-style-v1-3.html">&lt;p&gt;对于Jekyll blog的设计方案。&lt;/p&gt;
-
-&lt;p&gt;想了想需要的总的页面。&lt;/p&gt;
-
-&lt;p&gt;（1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面
-&lt;!-- more --&gt;
-我之前把文章列表和其他页面放在了一起，和我一直的目的，把所有的内容简洁化冲突了，其实我应该需要更少的内容，显示的更明确的内容，才是我的目标。对的！&lt;/p&gt;
-
-&lt;p&gt;文章为文章，目录为目录，信息为信息，提供跳转，思考跳转方式。&lt;/p&gt;
-
-&lt;h3 id=&quot;做了的东西&quot;&gt;做了的东西！&lt;/h3&gt;
-
-&lt;p&gt;去掉了posts页面，其他个人信息，重定义了引入的Bootstrap和JQuery。&lt;/p&gt;
-
-&lt;p&gt;思考了关于如何跳转到其他页面的办法，可拖动的按钮什么的，或者其他的的按钮，进入导航页面等等。&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">对于Jekyll blog的设计方案。 想了想需要的总的页面。 （1）要的文章列表页面（2）要的其他信息页面（3）要的文章页面</summary></entry></feed>
+-2018-11-07 add 4th&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="rake" /><summary type="html">Install rake. I use Ubuntu and I install Gem for Ruby.So I install it by commond gem install rake. create the first Rake task. desc &quot;some explian language&quot; task :task_name do # coding puts &quot;print some in bash&quot; end desc &quot;use input&quot; task :task_name_input,:a do|t,args| # coding puts &quot;print some in bash:&quot;,args # t is `task_name_input` args is 'input paramater' end Rake bash commond Rake -T is show all task. And it can show task description. Rake task_name is run task by task name task_name. Rake task_name_intpu[1] is can input some paramater. Rake in zsh is very difficult in add parms. Must use test\[&quot;x&quot;\] task :test,:arg1 do |t,args| puts args end Edit History： -2018-10-28 First draft -2018-11-07 add 4th</summary></entry></feed>

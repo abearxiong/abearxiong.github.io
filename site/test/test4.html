@@ -1,0 +1,37 @@
+---
+layout: articles
+title: 测试test4
+date: 2019-06-13 16:29:13 +0800 
+description: 测试4
+permalink: /test4/
+---
+<table>	
+{% for page in site.pages %}
+<tr>
+    <td> title：{{ page.title }}</td>
+    <td>description：{{page.description}},</td>
+    <td>date: {{page.date}}</td>
+</tr>
+{% endfor %}
+</table>
+
+<table>	
+{% for page in site.posts %}
+<tr>
+    <td> title：{{ page.title }}</td>
+    <td>description：{{page.description}},</td>
+    <td>date: {{page.date}}</td>
+</tr>
+{% endfor %}
+</table>
+
+2333
+<table>	
+{% for page in site.others %}
+<tr>
+    <td> title：{{ page.title }}</td>
+    <td>description：{{page.description}},</td>
+    <td>date: {{page.date}}</td>
+</tr>
+{% endfor %}
+</table>

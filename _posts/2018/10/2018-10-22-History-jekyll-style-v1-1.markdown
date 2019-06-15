@@ -5,6 +5,7 @@ date:   2018-10-20 12:00:00 +0800
 categories: jekyll
 tags: blog
 comments: true
+description: 想法
 ---
  对于Jekyll blog的设计方案。设计Jekyll Style.
  ![风格](https://res.cloudinary.com/xiongxiao/image/upload/v1540018987/github/images/jekyll-themesV1.png)

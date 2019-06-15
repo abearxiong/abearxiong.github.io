@@ -1,0 +1,184 @@
+<p>[</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "title": "关于jekyll汇总",
+    "url": "/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB.html",
+    "categories": ["jekyll"],
+    "date": "June 15, 2019",
+    "tags": ["blog","jekyll"],
+"description": 我需要汇总标签或者分类文章页面，使用liquid的时候发现uniq后的内容和字符串不匹配，后来解决了问题，因为uniq，会自动计数，是一个对象。实现，分类标签和类别，其中各自包含他们的个数。
+},
+
+{
+    "title": "关于Jekyll新的样式思考",
+    "url": "/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html",
+    "categories": ["life"],
+    "date": "June 14, 2019",
+    "tags": ["life","blog"],
+"description": 思考
+},
+
+{
+    "title": "markdown收录设定规则",
+    "url": "/life/2019/06/%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87.html",
+    "categories": ["life"],
+    "date": "June 13, 2019",
+    "tags": ["blog","life"],
+"description": 设定规则和想法
+},
+
+{
+    "title": "专一和百晓",
+    "url": "/life/2019/05/only-one-for-learning.html",
+    "categories": ["life"],
+    "date": "May 08, 2019",
+    "tags": ["me"],
+"description": 关于专一学习和广泛学习的思考。究竟人生是唯一的去学习好，还是快乐生活，知道自己想知道的，做自己想做的事情好呢？
+},
+
+{
+    "title": "python 类型转换一点点",
+    "url": "/python/2019/05/python-change.html",
+    "categories": ["python"],
+    "date": "May 06, 2019",
+    "tags": ["notags"],
+"description": 关于python类型转换
+},
+
+{
+    "title": "再次陪伴jekyll",
+    "url": "/life/2019/04/new-start-jekyll.html",
+    "categories": ["life"],
+    "date": "April 28, 2019",
+    "tags": ["jekyll"],
+"description": 陪伴是最长的告白
+},
+
+{
+    "title": "Ruby用window的子系统",
+    "url": "/me/2019/04/use-window-linux.html",
+    "categories": ["me"],
+    "date": "April 27, 2019",
+    "tags": ["life"],
+"description": 重新再来管理
+},
+
+{
+    "title": "Use Ruby to create new article file",
+    "url": "/ruby/2018/10/create-new-article-use-ruby.html",
+    "categories": ["Ruby"],
+    "date": "October 29, 2018",
+    "tags": ["ruby"],
+"description": Learn Ruby about file operating and make some note
+},
+
+{
+    "title": "Ubuntu time is not Beijing time",
+    "url": "/ubuntu/2018/10/Ubuntu-change-timezone.html",
+    "categories": ["Ubuntu"],
+    "date": "October 29, 2018",
+    "tags": ["ubuntu"],
+"description": 不是北京时间的jekyll，修正为本地时间方法
+},
+
+{
+    "title": "Learn Rake",
+    "url": "/ruby/2018/10/Work-for-rail.html",
+    "categories": ["Ruby"],
+    "date": "October 28, 2018",
+    "tags": ["rake"],
+"description": Learn Rake and make some note
+},
+
+{
+    "title": "Jekyll Blog Style v1 final",
+    "url": "/jekyll/2018/10/History-jekyll-style-v1-5.html",
+    "categories": ["jekyll"],
+    "date": "October 28, 2018",
+    "tags": ["blog"],
+"description": 关于过去修饰自己静态博客的想法
+},
+
+{
+    "title": "Histroy jekyll style v1(4)",
+    "url": "/jekyll/2018/10/History-jekyll-style-v1-4.html",
+    "categories": ["jekyll"],
+    "date": "October 27, 2018",
+    "tags": ["blog"],
+"description": 对于博客的设计，因为之前所有的都是每天想一点做一点。而最终的规划已经感觉做好了，所以，我觉得之后应该写个最终版本，之后对于设计就不再写每天做了什么的了,而是在最终版本修改。
+},
+
+{
+    "title": "History about Jekyll style(3)",
+    "url": "/jekyll/2018/10/History-jekyll-style-v1-3.html",
+    "categories": ["jekyll"],
+    "date": "October 25, 2018",
+    "tags": ["blog"],
+"description": 设计风格3
+},
+
+{
+    "title": "History about Jekyll style(2)",
+    "url": "/jekyll/2018/10/History-jekyll-style-v1-2.html",
+    "categories": ["jekyll"],
+    "date": "October 24, 2018",
+    "tags": ["blog"],
+"description": 过去的v2想法
+},
+
+{
+    "title": "History about Jekyll style(1)",
+    "url": "/jekyll/2018/10/History-jekyll-style-v1-1.html",
+    "categories": ["jekyll"],
+    "date": "October 20, 2018",
+    "tags": ["blog"],
+"description": 想法
+},
+
+{
+    "title": "Https加密和Apache反向代理问题!",
+    "url": "/linux/2018/10/install-https-for-vps.html",
+    "categories": ["linux"],
+    "date": "October 03, 2018",
+    "tags": ["ubuntu"],
+"description": aboot http how to use ssl.
+},
+
+{
+    "title": "使用npm",
+    "url": "/node/2018/10/remeber-to-use-npm.html",
+    "categories": ["node"],
+    "date": "October 01, 2018",
+    "tags": ["npm"],
+"description": node use.
+},
+
+{
+    "title": "关于第一次搭建Jekyll的总结",
+    "url": "/jekyll/2018/09/how-to-install-jekyll.html",
+    "categories": ["jekyll"],
+    "date": "September 25, 2018",
+    "tags": ["blog"],
+"description": For install Jekyll Introduce
+},
+
+{
+    "title": "Welcome to Jekyll!",
+    "url": "/jekyll/2018/09/welcome-to-jekyll.html",
+    "categories": ["jekyll"],
+    "date": "September 23, 2018",
+    "tags": ["blog"],
+"description": The first blog.
+},
+
+{
+    "title": "The happy day",
+    "url": "/me/1995/10/Greate-Day.html",
+    "categories": ["me"],
+    "date": "October 12, 1995",
+    "tags": ["life"],
+"description": good
+}
+</code></pre></div></div>
+
+<p>]</p>
