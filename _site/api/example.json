@@ -1,6 +1,87 @@
 <p>[</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "title": "大学生涯1",
+    "url": "/life/2019/06/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF1.html",
+    "categories": ["life"],
+    "date": "June 20, 2019",
+    "tags": ["我的大学"],
+"description": 
+},
+
+{
+    "title": "关于博客多端同步的问题？",
+    "url": "/life/2019/06/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5%E7%9A%84%E9%97%AE%E9%A2%98.html",
+    "categories": ["life"],
+    "date": "June 19, 2019",
+    "tags": ["blog"],
+"description": 因为会使用各种各样的网站和软件，有的是自己去查找资料的，有的是自己获取资源的。关于博客，内容可以放在多个地方：简书，知乎，CSDN，博客园，微信公众号。
+},
+
+{
+    "title": "关于jekyll中字符统计",
+    "url": "/life/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E4%B8%AD%E5%AD%97%E7%AC%A6%E7%BB%9F%E8%AE%A1.html",
+    "categories": ["life"],
+    "date": "June 19, 2019",
+    "tags": ["blog","jekyll"],
+"description": 关于页面使用size统计字数的规则和特点。
+},
+
+{
+    "title": "我想做的系统",
+    "url": "/articles/2019/06/%E6%88%91%E6%83%B3%E5%81%9A%E7%9A%84%E7%B3%BB%E7%BB%9F.html",
+    "categories": ["articles"],
+    "date": "June 19, 2019",
+    "tags": ["系统"],
+"description": 从大三开始都想做的一个系统，关于智能的和交互的。
+},
+
+{
+    "title": "2019毕业座谈会隐藏的思想",
+    "url": "/articles/2019/06/2019%E6%AF%95%E4%B8%9A%E5%BA%A7%E8%B0%88%E4%BC%9A%E9%9A%90%E8%97%8F%E7%9A%84%E6%80%9D%E6%83%B3.html",
+    "categories": ["articles"],
+    "date": "June 19, 2019",
+    "tags": ["life"],
+"description": 计算机学院的毕业座谈会，代替室友去。整体的听和我自己的思考，因为性格问题，自己不喜欢去在那个场面去说东西。
+},
+
+{
+    "title": "关于outlook日历和手机同步的方法？",
+    "url": "/life/2019/06/%E5%85%B3%E4%BA%8Eoutlook%E6%97%A5%E5%8E%86%E5%92%8C%E6%89%8B%E6%9C%BA%E5%90%8C%E6%AD%A5%E7%9A%84%E6%96%B9%E6%B3%95.html",
+    "categories": ["life"],
+    "date": "June 18, 2019",
+    "tags": ["life"],
+"description": QQ邮箱同步内容，小米手机的日历具有outlook日历同步的功能。
+},
+
+{
+    "title": "2019年6月18日 关于jekyll静态博客功能需求分析和介绍",
+    "url": "/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%92%8C%E4%BB%8B%E7%BB%8D.html",
+    "categories": ["jekyll"],
+    "date": "June 18, 2019",
+    "tags": ["jekyll","life","博客"],
+"description": 最新版本的Jekyll样式和准备需要的功能。
+},
+
+{
+    "title": "为什么想要用php做一个网页保存的网站",
+    "url": "/php/2019/06/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81%E7%94%A8php%E5%81%9A%E4%B8%80%E4%B8%AA%E7%BD%91%E4%BF%9D%E5%AD%98%E7%9A%84%E7%BD%91%E7%AB%99.html",
+    "categories": ["php"],
+    "date": "June 17, 2019",
+    "tags": ["网站"],
+"description": 这里，我需要找到php的优点，特点。和vue，java等等的比较，php是的确有优势去完成一个可以作为一个动态保存内容的网站？
+},
+
+{
+    "title": "关于静态网站设定规则",
+    "url": "/life/2019/06/%E8%A7%84%E5%88%99.html",
+    "categories": ["life"],
+    "date": "June 17, 2019",
+    "tags": ["me"],
+"description": 关于github的笔记进行限定规则进行优化内容以及优化生活的方法。生活，学习，编程，等等。
+},
+
+{
     "title": "关于jekyll汇总",
     "url": "/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB.html",
     "categories": ["jekyll"],
@@ -15,7 +96,7 @@
     "categories": ["life"],
     "date": "June 14, 2019",
     "tags": ["life","blog"],
-"description": 思考
+"description": 思考，关于liquid的简单汇总，关于，此刻新的样式的修正方案。
 },
 
 {
@@ -172,12 +253,12 @@
 },
 
 {
-    "title": "The happy day",
-    "url": "/me/1995/10/Greate-Day.html",
-    "categories": ["me"],
+    "title": "Greate Day",
+    "url": "/1995/10/Greate-Day.html",
+    "categories": [],
     "date": "October 12, 1995",
-    "tags": ["life"],
-"description": good
+    "tags": [],
+"description": 
 }
 </code></pre></div></div>
 

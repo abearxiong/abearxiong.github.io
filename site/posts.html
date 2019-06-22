@@ -1,5 +1,5 @@
 ---
-layout: container
+layout: default
 title: 所有的posts页面
 date: 2019-06-15 11:20:07 +0800 
 description: 关于页面内容中的文章
@@ -29,6 +29,7 @@ permalink: /site/posts
   	<tr>
   		<th>题目</th>
   		<th>类别</th>
+      <th>标签</th>
   		<th>描述</th>
   		<th>日期</th>
   	</tr>
@@ -36,8 +37,9 @@ permalink: /site/posts
 	<tr>
 	    <td><a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
 	    <td>{{ post.categories }}</td>
+      <td nowrap>{{ post.tags | join: " "}}</td>
 	    <td>{{ post.description }}</td>
-	    <td>{{ post.date | date: "%Y-%m-%d %H:%M" }}</td>
+	    <td nowrap>{{ post.date | date: "%Y-%m-%d %H:%M" }}</td>
 	</tr>
 	{% endfor %}
   </table>

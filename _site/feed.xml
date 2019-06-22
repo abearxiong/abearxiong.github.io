@@ -1,177 +1,197 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-15T21:56:02+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。</subtitle><author><name>abearxiong</name></author><entry><title type="html">关于jekyll汇总</title><link href="http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB.html" rel="alternate" type="text/html" title="关于jekyll汇总" /><published>2019-06-15T11:37:07+08:00</published><updated>2019-06-15T11:37:07+08:00</updated><id>http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB</id><content type="html" xml:base="http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB.html">&lt;h2 id=&quot;我想要做什么&quot;&gt;我想要做什么&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-20T23:11:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。</subtitle><author><name>abearxiong</name></author><entry><title type="html">大学生涯1</title><link href="http://localhost:4000/life/2019/06/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF1.html" rel="alternate" type="text/html" title="大学生涯1" /><published>2019-06-20T21:35:41+08:00</published><updated>2019-06-20T21:35:41+08:00</updated><id>http://localhost:4000/life/2019/06/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF1</id><content type="html" xml:base="http://localhost:4000/life/2019/06/%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%B6%AF1.html"></content><author><name>abearxiong</name></author><category term="我的大学" /><summary type="html"></summary></entry><entry><title type="html">关于博客多端同步的问题？</title><link href="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5%E7%9A%84%E9%97%AE%E9%A2%98.html" rel="alternate" type="text/html" title="关于博客多端同步的问题？" /><published>2019-06-19T22:44:34+08:00</published><updated>2019-06-19T22:44:34+08:00</updated><id>http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5%E7%9A%84%E9%97%AE%E9%A2%98%3F</id><content type="html" xml:base="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5%E7%9A%84%E9%97%AE%E9%A2%98.html">&lt;p&gt;github是我的核心的博客网站，因为是使用jekyll，那么很多的内容是保存为Makedown或者未来会去学习的latex，排版的艺术。&lt;/p&gt;
+
+&lt;p&gt;因为是网络的沉迷者，很多不会的知识都是在网上找到的，自己解决的各种BUG，可能就会花一部分的时间去找到，然后自己去解决。在这个解决的工程中，会接触很多网站，有的解决办法有效，有的解决办法无效，对自己而言，需要进行一个总结，记录下来就好了，再同步到自己喜欢的各个社区，互相帮助，互相成长，那也是极好的一个道路。&lt;/p&gt;
+
+&lt;p&gt;现在查资料一般不是问问题，而是百度，Google问题，有的解决办法在简书，有的在CSDN，很少在博客园，知乎中找到。但是知乎应该是一个可以收获知识的地方，公众号未来就是我的秘密基地，万一某一天，自己在这个位置的记录不见了，也许在另一个地方自己还能找到自己的以前的记录。&lt;/p&gt;
+
+&lt;p&gt;在这个地方，书写下同步问题？是因为我想的自动化。&lt;/p&gt;
+
+&lt;p&gt;模拟登录简书，知乎，CSDN，博客园，然后发布内容，然后更新内容。那么久不需要自己更多的时间去一个一个点，发布文章更新了。&lt;/p&gt;
+
+&lt;p&gt;所以在未来的某一天我需要去实现上一句话的功能。谨记！！！&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="blog" /><summary type="html">github是我的核心的博客网站，因为是使用jekyll，那么很多的内容是保存为Makedown或者未来会去学习的latex，排版的艺术。 因为是网络的沉迷者，很多不会的知识都是在网上找到的，自己解决的各种BUG，可能就会花一部分的时间去找到，然后自己去解决。在这个解决的工程中，会接触很多网站，有的解决办法有效，有的解决办法无效，对自己而言，需要进行一个总结，记录下来就好了，再同步到自己喜欢的各个社区，互相帮助，互相成长，那也是极好的一个道路。 现在查资料一般不是问问题，而是百度，Google问题，有的解决办法在简书，有的在CSDN，很少在博客园，知乎中找到。但是知乎应该是一个可以收获知识的地方，公众号未来就是我的秘密基地，万一某一天，自己在这个位置的记录不见了，也许在另一个地方自己还能找到自己的以前的记录。 在这个地方，书写下同步问题？是因为我想的自动化。 模拟登录简书，知乎，CSDN，博客园，然后发布内容，然后更新内容。那么久不需要自己更多的时间去一个一个点，发布文章更新了。 所以在未来的某一天我需要去实现上一句话的功能。谨记！！！</summary></entry><entry><title type="html">关于jekyll中字符统计</title><link href="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E4%B8%AD%E5%AD%97%E7%AC%A6%E7%BB%9F%E8%AE%A1.html" rel="alternate" type="text/html" title="关于jekyll中字符统计" /><published>2019-06-19T15:14:25+08:00</published><updated>2019-06-19T15:14:25+08:00</updated><id>http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E4%B8%AD%E5%AD%97%E7%AC%A6%E7%BB%9F%E8%AE%A1</id><content type="html" xml:base="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E4%B8%AD%E5%AD%97%E7%AC%A6%E7%BB%9F%E8%AE%A1.html">&lt;p&gt;使用下方代码获取总的字数数量。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+{{ page.content | size }}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;会获取包括编程&lt;code class=&quot;highlighter-rouge&quot;&gt;{  }&lt;/code&gt;这些标志的数量，是所有内容数量的总和。&lt;/p&gt;
+
+&lt;p&gt;一个汉字，字母，字符都是1，entrl也是1&lt;/p&gt;
+
+&lt;p&gt;字数： 194&lt;/p&gt;
+
+&lt;p&gt;注意到，如果文章中的内容超过某一个限度的时候，是不能解析的。&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="blog" /><category term="jekyll" /><summary type="html">使用下方代码获取总的字数数量。 {{ page.content | size }} 会获取包括编程{ }这些标志的数量，是所有内容数量的总和。 一个汉字，字母，字符都是1，entrl也是1 字数： 194 注意到，如果文章中的内容超过某一个限度的时候，是不能解析的。</summary></entry><entry><title type="html">我想做的系统</title><link href="http://localhost:4000/articles/2019/06/%E6%88%91%E6%83%B3%E5%81%9A%E7%9A%84%E7%B3%BB%E7%BB%9F.html" rel="alternate" type="text/html" title="我想做的系统" /><published>2019-06-19T15:09:07+08:00</published><updated>2019-06-19T15:09:07+08:00</updated><id>http://localhost:4000/articles/2019/06/%E6%88%91%E6%83%B3%E5%81%9A%E7%9A%84%E7%B3%BB%E7%BB%9F</id><content type="html" xml:base="http://localhost:4000/articles/2019/06/%E6%88%91%E6%83%B3%E5%81%9A%E7%9A%84%E7%B3%BB%E7%BB%9F.html">&lt;p&gt;在很久以前，我就想做一个关于人工智能的系统，问的问题，然后他可以回答我，他又自己的逻辑思考，信息获取渠道。我以为是一个编程，我就一直在想如何有一门语言专门去编程这种系统，差不多我就以为他是一门语言。&lt;/p&gt;
+
+&lt;p&gt;我现在发现，其实，他是任何一个语言都可以编程的一个系统，只是他是一个功能完善的系统。现在我以及将来我都可能不会看到的一个想象中的智能系统。&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="系统" /><summary type="html">在很久以前，我就想做一个关于人工智能的系统，问的问题，然后他可以回答我，他又自己的逻辑思考，信息获取渠道。我以为是一个编程，我就一直在想如何有一门语言专门去编程这种系统，差不多我就以为他是一门语言。 我现在发现，其实，他是任何一个语言都可以编程的一个系统，只是他是一个功能完善的系统。现在我以及将来我都可能不会看到的一个想象中的智能系统。</summary></entry><entry><title type="html">2019毕业座谈会隐藏的思想</title><link href="http://localhost:4000/articles/2019/06/2019%E6%AF%95%E4%B8%9A%E5%BA%A7%E8%B0%88%E4%BC%9A%E9%9A%90%E8%97%8F%E7%9A%84%E6%80%9D%E6%83%B3.html" rel="alternate" type="text/html" title="2019毕业座谈会隐藏的思想" /><published>2019-06-19T12:41:48+08:00</published><updated>2019-06-19T12:41:48+08:00</updated><id>http://localhost:4000/articles/2019/06/2019%E6%AF%95%E4%B8%9A%E5%BA%A7%E8%B0%88%E4%BC%9A%E9%9A%90%E8%97%8F%E7%9A%84%E6%80%9D%E6%83%B3</id><content type="html" xml:base="http://localhost:4000/articles/2019/06/2019%E6%AF%95%E4%B8%9A%E5%BA%A7%E8%B0%88%E4%BC%9A%E9%9A%90%E8%97%8F%E7%9A%84%E6%80%9D%E6%83%B3.html">&lt;p&gt;在9点50附近在6a519开座谈会。&lt;/p&gt;
+
+&lt;p&gt;很多人都是讲关于他们大学加实验室，各种蓝桥杯，ACM，获取实验室中的学习内容，关于学习方式等等，说在寝室打游戏什么的。他们很多只能代表他们生活的环境的一个特点，而之后的结果也是根据那个特点去得到的信息。&lt;/p&gt;
+
+&lt;p&gt;无论是不是优秀，他们眼里看到的优秀，是实验室，考研，学生会，ACM比赛等等的，说让下届的学弟学妹是去实验室什么。然而大多数的人是不具有这个特点的，不会去进入实验室的。&lt;/p&gt;
+
+&lt;p&gt;在我的想法中，如果是座谈会，应该是面对的大多数的普通的学生，如何让他们学得更好，会获取一个好的未来的结果。黄主任是抓住了这个核心的问题的，而大多数是不具有这个核心，而是代表某一块的学生。&lt;/p&gt;
+
+&lt;p&gt;在核心观点上，如何让大多数普通学生学习。在座谈会上，大多数人是主推学生的学习兴趣，然后告罪于学生自己的不端正，不学习，没有兴趣。但是很多东西不能一概而论。&lt;/p&gt;
+
+&lt;p&gt;所以，在这里，我提出了我的思考，但是没有以说出。&lt;/p&gt;
+
+&lt;p&gt;在当前的计算机学院中，大一大二，大三大四，我感觉是两个阶段，对每一个学生而言，在学校和在寝室都是孤立状态，对加实验室的还行，可以找到目标，因为有别人带或者老师带，而一般的学生在这种情况下，是少了一信息渠道，很多的情况下，首先是信息不对等，第二是知识不对等，第三是最后的结果不对等。从大学开始和到之后的大学结束，学生间的拉锯结果，除了爱好，兴趣，有的时候可能就是机缘问题，机缘和学习造成最后的结果。很多资源是给与了在前面奔跑的人，前线自己努力或者在老师眼皮子底下的人，因为他们具有很多的消息，很多普通学生不知道的这些消息，而同样的很多的时候其他人或者老师是没有一个信息渠道去散发的这一些消息。如何这样的呢？是因为每一个学生， 寝室都是一个孤岛，除非面对面，其他的QQ，微信，都是很难作为一个信息交流的渠道，有什么办法能解决这一问题呢？&lt;/p&gt;
+
+&lt;p&gt;我看来，作为一个计算机专业的学生，那么特色点在网络，在软件，在计算机，那么为什么没有一款软件，网站，获取其他于学院的学生有一个交流内容的渠道呢？&lt;/p&gt;
+
+&lt;p&gt;大二，大三会学习一些语言，然后根据语言会有一些课程设计，比如Java的做网站和做软件，C#的做一个asp.net的网站，javaEE的网站，c++的MFC程序，然后呢？大一大二不知道啊，他们从哪里知道这个呢？为什么就觉得他们不需要知道呢？如果当时知道，那么会不会看到大二大三的成果自己去学习一些新的东西。因为不知道，而通过信息了解知道，在面对的时候自己知道选择什么，然后就有兴趣去成长了。而我需要课程中课程结束的课程设计，发一个视频，给一份源码，写一份说明书，放在交流的网站，那么下一届的学生看到了，那么应该有个成长机会在内心深处。&lt;/p&gt;
+
+&lt;p&gt;关于计算机的学习，有时候是了解，大概了解，然后有兴趣，然后深入。很多的时候，因为不知道，那么有没有办法去找的解决办法呢？作为一个学计算机的，很多的时候我都是网络上各种百度，各种搜索找解决办法，而相对于上一届经过的学生，是不是上一届的学生知道的更多，说不定上一届就能解决我的问题呢？其他人也有可能，在寝室，在学习的地方，现在学生是没有一个交流渠道的，去找解决办法，只有从网上，我不觉得网上，非学校网去找一定是好的，因为搜索有的时候就是一个花费大量时间的时候，找到解决办法会有一定的过程，而如果有别人带领，那么会快得多。计算机学院，为啥没有像知乎或者论坛这种类型的社区交流网站呢？不喜欢易班，因为易班没有抓住我们需要的要求，而本学校，本学院难道不知道我们需要的要求是什么吗？我们的需求不知道吗？我们学生想要，那么去做就是了，自己写出来不好吗？不够优秀，让更多人参与进来编程不好吗？&lt;/p&gt;
+
+&lt;p&gt;有时候我觉得，考研，工作，实习，学习，也有一些大三大四的学生是待寝室的，如果有老师组织一些在校的希望参与的学生，大家为什么就不能做一个大的对于我们计算机学院的一些软件或者网站呢？这只是一个项目，而学到了大三这个阶段的时候，很多学生都或多或少的会一些东西了，又在老师带领下，其实是可以做东西的？而做出来的东西，为何就不能用呢？做出来给下一届用，到了下一届，又做一个东西给下一届用。那是很完美的。&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="life" /><summary type="html">在9点50附近在6a519开座谈会。 很多人都是讲关于他们大学加实验室，各种蓝桥杯，ACM，获取实验室中的学习内容，关于学习方式等等，说在寝室打游戏什么的。他们很多只能代表他们生活的环境的一个特点，而之后的结果也是根据那个特点去得到的信息。 无论是不是优秀，他们眼里看到的优秀，是实验室，考研，学生会，ACM比赛等等的，说让下届的学弟学妹是去实验室什么。然而大多数的人是不具有这个特点的，不会去进入实验室的。 在我的想法中，如果是座谈会，应该是面对的大多数的普通的学生，如何让他们学得更好，会获取一个好的未来的结果。黄主任是抓住了这个核心的问题的，而大多数是不具有这个核心，而是代表某一块的学生。 在核心观点上，如何让大多数普通学生学习。在座谈会上，大多数人是主推学生的学习兴趣，然后告罪于学生自己的不端正，不学习，没有兴趣。但是很多东西不能一概而论。 所以，在这里，我提出了我的思考，但是没有以说出。 在当前的计算机学院中，大一大二，大三大四，我感觉是两个阶段，对每一个学生而言，在学校和在寝室都是孤立状态，对加实验室的还行，可以找到目标，因为有别人带或者老师带，而一般的学生在这种情况下，是少了一信息渠道，很多的情况下，首先是信息不对等，第二是知识不对等，第三是最后的结果不对等。从大学开始和到之后的大学结束，学生间的拉锯结果，除了爱好，兴趣，有的时候可能就是机缘问题，机缘和学习造成最后的结果。很多资源是给与了在前面奔跑的人，前线自己努力或者在老师眼皮子底下的人，因为他们具有很多的消息，很多普通学生不知道的这些消息，而同样的很多的时候其他人或者老师是没有一个信息渠道去散发的这一些消息。如何这样的呢？是因为每一个学生， 寝室都是一个孤岛，除非面对面，其他的QQ，微信，都是很难作为一个信息交流的渠道，有什么办法能解决这一问题呢？ 我看来，作为一个计算机专业的学生，那么特色点在网络，在软件，在计算机，那么为什么没有一款软件，网站，获取其他于学院的学生有一个交流内容的渠道呢？ 大二，大三会学习一些语言，然后根据语言会有一些课程设计，比如Java的做网站和做软件，C#的做一个asp.net的网站，javaEE的网站，c++的MFC程序，然后呢？大一大二不知道啊，他们从哪里知道这个呢？为什么就觉得他们不需要知道呢？如果当时知道，那么会不会看到大二大三的成果自己去学习一些新的东西。因为不知道，而通过信息了解知道，在面对的时候自己知道选择什么，然后就有兴趣去成长了。而我需要课程中课程结束的课程设计，发一个视频，给一份源码，写一份说明书，放在交流的网站，那么下一届的学生看到了，那么应该有个成长机会在内心深处。 关于计算机的学习，有时候是了解，大概了解，然后有兴趣，然后深入。很多的时候，因为不知道，那么有没有办法去找的解决办法呢？作为一个学计算机的，很多的时候我都是网络上各种百度，各种搜索找解决办法，而相对于上一届经过的学生，是不是上一届的学生知道的更多，说不定上一届就能解决我的问题呢？其他人也有可能，在寝室，在学习的地方，现在学生是没有一个交流渠道的，去找解决办法，只有从网上，我不觉得网上，非学校网去找一定是好的，因为搜索有的时候就是一个花费大量时间的时候，找到解决办法会有一定的过程，而如果有别人带领，那么会快得多。计算机学院，为啥没有像知乎或者论坛这种类型的社区交流网站呢？不喜欢易班，因为易班没有抓住我们需要的要求，而本学校，本学院难道不知道我们需要的要求是什么吗？我们的需求不知道吗？我们学生想要，那么去做就是了，自己写出来不好吗？不够优秀，让更多人参与进来编程不好吗？ 有时候我觉得，考研，工作，实习，学习，也有一些大三大四的学生是待寝室的，如果有老师组织一些在校的希望参与的学生，大家为什么就不能做一个大的对于我们计算机学院的一些软件或者网站呢？这只是一个项目，而学到了大三这个阶段的时候，很多学生都或多或少的会一些东西了，又在老师带领下，其实是可以做东西的？而做出来的东西，为何就不能用呢？做出来给下一届用，到了下一届，又做一个东西给下一届用。那是很完美的。</summary></entry><entry><title type="html">关于outlook日历和手机同步的方法？</title><link href="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8Eoutlook%E6%97%A5%E5%8E%86%E5%92%8C%E6%89%8B%E6%9C%BA%E5%90%8C%E6%AD%A5%E7%9A%84%E6%96%B9%E6%B3%95.html" rel="alternate" type="text/html" title="关于outlook日历和手机同步的方法？" /><published>2019-06-18T20:53:43+08:00</published><updated>2019-06-18T20:53:43+08:00</updated><id>http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8Eoutlook%E6%97%A5%E5%8E%86%E5%92%8C%E6%89%8B%E6%9C%BA%E5%90%8C%E6%AD%A5%E7%9A%84%E6%96%B9%E6%B3%95%3F</id><content type="html" xml:base="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8Eoutlook%E6%97%A5%E5%8E%86%E5%92%8C%E6%89%8B%E6%9C%BA%E5%90%8C%E6%AD%A5%E7%9A%84%E6%96%B9%E6%B3%95.html">&lt;p&gt;关于window电脑，默认的日历功能一般是使用Outlook的日历。过去使用小米4c的时候，小米的日历可以直接和outlook的日历同步，然后当初就可以window和手机日历同步，信息和工作都很方便同步。现在是使用IQOO，今天想到日历的同步问题，但是IQOO的系统，日历是不具有同步性的。&lt;/p&gt;
+
+&lt;h2 id=&quot;同步功能qq邮箱&quot;&gt;同步功能（QQ邮箱）&lt;/h2&gt;
+
+&lt;p&gt;关于QQ邮箱，一直使用，感觉关于邮箱的使用，手机端就QQ邮箱比较好用，而今天又发现一个新的功能，关于日历同步的功能。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;特点：任何的安卓系统，可以登录QQ邮箱的系统都可以实现同步window中的outlook日历&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;首先在QQ邮箱登录outlook的邮箱。&lt;/li&gt;
+  &lt;li&gt;开启日历的功能&lt;/li&gt;
+  &lt;li&gt;在日历的功能中，选择开启outlook邮箱的日历&lt;/li&gt;
+  &lt;li&gt;关闭其他的日历（可能如果有的话，添加日历，不会同步到window里，但是window里会同步到手机）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;419&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="life" /><summary type="html">关于window电脑，默认的日历功能一般是使用Outlook的日历。过去使用小米4c的时候，小米的日历可以直接和outlook的日历同步，然后当初就可以window和手机日历同步，信息和工作都很方便同步。现在是使用IQOO，今天想到日历的同步问题，但是IQOO的系统，日历是不具有同步性的。 同步功能（QQ邮箱） 关于QQ邮箱，一直使用，感觉关于邮箱的使用，手机端就QQ邮箱比较好用，而今天又发现一个新的功能，关于日历同步的功能。 特点：任何的安卓系统，可以登录QQ邮箱的系统都可以实现同步window中的outlook日历 首先在QQ邮箱登录outlook的邮箱。 开启日历的功能 在日历的功能中，选择开启outlook邮箱的日历 关闭其他的日历（可能如果有的话，添加日历，不会同步到window里，但是window里会同步到手机） 419</summary></entry><entry><title type="html">2019年6月18日 关于jekyll静态博客功能需求分析和介绍</title><link href="http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%92%8C%E4%BB%8B%E7%BB%8D.html" rel="alternate" type="text/html" title="2019年6月18日 关于jekyll静态博客功能需求分析和介绍" /><published>2019-06-18T15:46:59+08:00</published><updated>2019-06-18T15:46:59+08:00</updated><id>http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%92%8C%E4%BB%8B%E7%BB%8D</id><content type="html" xml:base="http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E5%92%8C%E4%BB%8B%E7%BB%8D.html">&lt;h2 id=&quot;功能&quot;&gt;功能&lt;/h2&gt;
+
+&lt;h3 id=&quot;菜单级功能&quot;&gt;菜单级功能&lt;/h3&gt;
+
+&lt;h3 id=&quot;文章级功能&quot;&gt;文章级功能&lt;/h3&gt;
+
+&lt;h2 id=&quot;样式&quot;&gt;样式&lt;/h2&gt;
+
+&lt;p&gt;仿Github样式&lt;/p&gt;
+
+&lt;h2 id=&quot;特点&quot;&gt;特点&lt;/h2&gt;</content><author><name>abearxiong</name></author><category term="jekyll" /><category term="life" /><category term="博客" /><summary type="html">功能 菜单级功能 文章级功能 样式 仿Github样式 特点</summary></entry><entry><title type="html">为什么想要用php做一个网页保存的网站</title><link href="http://localhost:4000/php/2019/06/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81%E7%94%A8php%E5%81%9A%E4%B8%80%E4%B8%AA%E7%BD%91%E4%BF%9D%E5%AD%98%E7%9A%84%E7%BD%91%E7%AB%99.html" rel="alternate" type="text/html" title="为什么想要用php做一个网页保存的网站" /><published>2019-06-17T23:09:26+08:00</published><updated>2019-06-17T23:09:26+08:00</updated><id>http://localhost:4000/php/2019/06/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81%E7%94%A8php%E5%81%9A%E4%B8%80%E4%B8%AA%E7%BD%91%E4%BF%9D%E5%AD%98%E7%9A%84%E7%BD%91%E7%AB%99</id><content type="html" xml:base="http://localhost:4000/php/2019/06/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%83%B3%E8%A6%81%E7%94%A8php%E5%81%9A%E4%B8%80%E4%B8%AA%E7%BD%91%E4%BF%9D%E5%AD%98%E7%9A%84%E7%BD%91%E7%AB%99.html">&lt;h2 id=&quot;我想要的&quot;&gt;我想要的&lt;/h2&gt;
+
+&lt;p&gt;很很久一起，沉迷于各种网站的我都想一个问题，我是很想保存下来所有我觉得是有用的网站，因为我可能在下一个的某刻，我可能就需要那些网站去解决相应的问题。浏览器的标签不够好，因为只能保存名字和url地址。有的时候，我们需要的是一篇文章，一览，ioreader订阅，feedy什么的rss订阅，为什么这些功能是没有的呢？&lt;/p&gt;
+
+&lt;p&gt;我就想要这么一个功能？&lt;/p&gt;
+
+&lt;h3 id=&quot;我之前想选择的语言-php&quot;&gt;我之前想选择的语言 PHP&lt;/h3&gt;
+
+&lt;p&gt;今天我就想找到如果用PHP来做的话，他的一个优点是什么？我最终是可以选择PHP的吗？&lt;/p&gt;
+
+&lt;h3 id=&quot;php语言的优势&quot;&gt;PHP语言的优势？&lt;/h3&gt;
+
+&lt;p&gt;免费，开源，跨平台，组件免费，PHP网站利用率高。&lt;/p&gt;
+
+&lt;p&gt;应用范围广泛 成本低 实用性 速度快（CGI脚本语言） 功能强大 支持面向对象 版本更新速度快 可选择性&lt;/p&gt;
+
+&lt;p&gt;PHP不需要编译，易于调试&lt;/p&gt;
+
+&lt;p&gt;丰富的框架&lt;/p&gt;
+
+&lt;p&gt;开源产品多&lt;/p&gt;
+
+&lt;p&gt;容易部署&lt;/p&gt;
+
+&lt;h2 id=&quot;感觉&quot;&gt;感觉&lt;/h2&gt;
+
+&lt;p&gt;知道了这些，但是，并不在自己想象的考虑范围之内。&lt;/p&gt;
+
+&lt;p&gt;vue，react，java sprintboot ssm，django等等再我这开发，都需要一定的启动时间&lt;/p&gt;
+
+&lt;p&gt;那么动态语言开发还是具有一定的优势的，但是我对php，没有对其他java这些后台开发熟悉。&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="网站" /><summary type="html">我想要的 很很久一起，沉迷于各种网站的我都想一个问题，我是很想保存下来所有我觉得是有用的网站，因为我可能在下一个的某刻，我可能就需要那些网站去解决相应的问题。浏览器的标签不够好，因为只能保存名字和url地址。有的时候，我们需要的是一篇文章，一览，ioreader订阅，feedy什么的rss订阅，为什么这些功能是没有的呢？ 我就想要这么一个功能？ 我之前想选择的语言 PHP 今天我就想找到如果用PHP来做的话，他的一个优点是什么？我最终是可以选择PHP的吗？ PHP语言的优势？ 免费，开源，跨平台，组件免费，PHP网站利用率高。 应用范围广泛 成本低 实用性 速度快（CGI脚本语言） 功能强大 支持面向对象 版本更新速度快 可选择性 PHP不需要编译，易于调试 丰富的框架 开源产品多 容易部署 感觉 知道了这些，但是，并不在自己想象的考虑范围之内。 vue，react，java sprintboot ssm，django等等再我这开发，都需要一定的启动时间 那么动态语言开发还是具有一定的优势的，但是我对php，没有对其他java这些后台开发熟悉。</summary></entry><entry><title type="html">关于静态网站设定规则</title><link href="http://localhost:4000/life/2019/06/%E8%A7%84%E5%88%99.html" rel="alternate" type="text/html" title="关于静态网站设定规则" /><published>2019-06-17T20:49:23+08:00</published><updated>2019-06-17T20:49:23+08:00</updated><id>http://localhost:4000/life/2019/06/%E8%A7%84%E5%88%99</id><content type="html" xml:base="http://localhost:4000/life/2019/06/%E8%A7%84%E5%88%99.html">&lt;h1 id=&quot;abearxiong-规则&quot;&gt;abearXiong 规则&lt;/h1&gt;
+
+&lt;p&gt;在这里应该定下关于github page其中使用的规则和技巧，以及方式方法。&lt;/p&gt;
+
+&lt;h2 id=&quot;主要目的&quot;&gt;主要目的&lt;/h2&gt;
+
+&lt;p&gt;我想以github来统计关于我程序员生活中的所有的经过。所有可以在网络上流传的经过经历。没有人会在乎我，除了我自己，平凡的自己人，那么这样就很好了。&lt;/p&gt;
+
+&lt;p&gt;作为一个有力奋斗的我，应该对程序员的生活定下一个基调，明的为博客，暗的为自己的记忆流传，在网络生活的我，那么没有什么需要保存下来的秘密。在整个生活当中，人生是主要目的是生活得很好，奉献自己的能力去让其他人过得很好，那么人生就了无遗憾了。&lt;/p&gt;
+
+&lt;p&gt;为了更好的学习方式，自己去统计自己生活的一切，记录，以及成果。统计生活的事情的发生，那么有些记录是有必要的。&lt;/p&gt;
+
+&lt;p&gt;很多的时候，我想，作为一个人，作为一个在信息交流这么发达的我，我去记下那么多的东西是不是有必要的，我很不喜欢去记东西，我很喜欢去接触那些新的东西，为什么呢？因为去记需要花费时间，而需要记的大部分东西，在网络上很容易找到，除此之外，作为信息技术发展的现在，人只要逻辑足够优秀，那么处理的方式电脑就可以完成了，生活不就更便捷吗？&lt;/p&gt;
+
+&lt;h2 id=&quot;路&quot;&gt;路&lt;/h2&gt;
+
+&lt;h3 id=&quot;生活基调&quot;&gt;生活基调&lt;/h3&gt;
+
+&lt;p&gt;生活需要有什么，基本上，需要的是学习，工作，生活条理，生活的逻辑。&lt;/p&gt;
+
+&lt;h4 id=&quot;学习需要什么&quot;&gt;学习需要什么？&lt;/h4&gt;
+
+&lt;p&gt;学习需要其一书，其二学习视频，其三学习网站，其四学习资料&lt;/p&gt;
+
+&lt;p&gt;我很喜欢读书，过去的我很不喜欢总结，我现在应该作为一个规划性和有目的性的去学习，github如何去管理学习计划，学习总结，学习经过呢？&lt;/p&gt;
+
+&lt;h4 id=&quot;读书&quot;&gt;读书&lt;/h4&gt;
+
+&lt;p&gt;我应该专门为一个读书开一个仓库，书的记录是以issues来操作，每一个章节学到的内容都是以评论的方式给出结果。但是每一个内容是顺序是不能再变的。所以，我还是不知道如何更好的去一个记录读书笔记的地方，总结和学习。所以，读书我还需要去反思和总结用什么样的方式。关联性，如何进行图书关联。&lt;/p&gt;
+
+&lt;p&gt;读书的特点，是一本书一本书的，具有内容的汇集特点。博客不具有，issues只有题和不能改变顺序的尾。所以说，用issues来当作读书笔记，我感觉可能差点什么，除数据库，哪一项网络服务可以达到这一特点？&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;想到的方法，仍旧是使用jekyll，但是对于jekyll文件夹多一个books，里面的内容根据目录分，文件中的内容以&lt;code class=&quot;highlighter-rouge&quot;&gt;/books/name/title&lt;/code&gt;进行有选择性的获得。是可以成立的。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;生活空间life-space&quot;&gt;生活空间（life space)&lt;/h4&gt;
+
+&lt;p&gt;关于前台和后台，可以基于Github的issues实现。前端页面显示，使用GraphQL实现获取issues的功能，根据标签获取对应的内容。我之前是全部以一个标签作为这个的功能，现在我想，不需要，把全部的这一块的issues来作为这个空间的位置，分类内容，评论，等等。还是不错的。&lt;/p&gt;
+
+&lt;h4 id=&quot;关于笔记&quot;&gt;关于笔记&lt;/h4&gt;
+
+&lt;p&gt;用过很多的笔记的软件，主推印象笔记和onenote，但这些都会在将来一两年内被我遗弃。主要原因，印象笔记不够好，onenote不够快。作为一个程序员，一个有思想的程序员，我想要我需要的程序是拥有我想要的那些功能，如果去使用别人的产品，是达不到我想要的需求的。&lt;/p&gt;
+
+&lt;p&gt;我用过有道云，为知免费的用过一月测试，蚂蚁笔记去了解过。关于工程，pocket，nozbe，teambition，wrike,github project,to-do等等。&lt;/p&gt;
+
+&lt;p&gt;在生活中，记录笔记，我很多需要的仅仅还是文字内容的笔记。查找笔记，查看笔记，和保存笔记。在现在，我想我有了新的去完成我的笔记思路的想法，关于在github的地方，我觉得还是主要是作为一个博客的地方，写博客是需要有写草稿的地方。生活是需要笔记的地方，笔记有分别为私有的笔记，或者有效的共享的笔记的内容的地方。现在发现，可能如果在腾讯云cos存储，对象存储是可以实现云端服务的功能，对于每一个人，只需要一个客户端就可以了。存储的位置，每一个人都可以利用腾讯云，那么感觉还是不错的。我能在从现在开始的三年内完成这个有想法的项目吗？我记下来。&lt;/p&gt;
+
+&lt;p&gt;笔记最根本的保存内容的方式是什么？其实应该是MD，markdown，为什么呢？因为markdown,latex等是一个文字保存的，有了限定的存储内容的格式和转化方式，那么是有效的存储，可以很有效的去转化为HTML，而对于HTML是由规定的css样式的显示，可以很好的更新笔记的显示结果。而对于印象笔记的这一块，是封闭的，对程序员不友好，对自定义不友好。而简书的文章保存，github静态博客，coding静态博客，jekyll，hexo，hugo等等，都是以makedown为主，内容保存，转换，转到其他地方等等都是很方便的。既容易转，又容易看，更容易改，那么怎么不好呢？&lt;/p&gt;
+
+&lt;p&gt;在做一个开源笔记需要什么呢，笔记很多的时候都是依赖于编辑器，看好slate，老牌有tinymce。&lt;/p&gt;
+
+&lt;h4 id=&quot;关于产品&quot;&gt;关于产品&lt;/h4&gt;
+
+&lt;p&gt;在这个时间里，大学将近完毕，接近社会的毒打，这个时候，总会思考我需要做什么，做出来，看得到的结果，完成的结果。&lt;/p&gt;
+
+&lt;p&gt;很多的时候去使用一个产品，需要的是什么，美化的界面，好用的功能，方便的快捷键，替用户考虑到很多东西，多端使用，有连贯的使用。&lt;/p&gt;
+
+&lt;p&gt;在多端方面，适配网页浏览器，手机APP，电脑客户端。&lt;/p&gt;
+
+&lt;p&gt;界面 界面 UI&lt;/p&gt;
+
+&lt;h3 id=&quot;编程以及coding&quot;&gt;编程以及coding&lt;/h3&gt;
+
+&lt;p&gt;编程，是需要学习的，编程，是需要手动操作的，编程，是创新设计的。很多的时候我是便编程边设计，没有流程，没有规划，然后也就没有效率。其实不是没有多人分工合作，也是一个人对我自己不够分工合作，我自己也是多个人，没有安排好自己应该做的事情，所以效率低，完成结果不高。我需要安排自己去学习，安排什么时候去做什么，完全分工好每一个模块该完成什么，把所有的组件联合起来，那么就是我自己最终完成的结果了。&lt;/p&gt;
+
+&lt;h4 id=&quot;算法&quot;&gt;算法&lt;/h4&gt;
+
+&lt;p&gt;最近几天，突然发现算法是很有必要去学习的一个东西，过去的几十天，都是以基本会的算法，然后就没有去更新去学习，去完善自己的思路。很多的时候我都是去做一个东西，而不是去完全的去学某个东西，所以我一般是在做的时候去学到很多东西。&lt;/p&gt;
+
+&lt;p&gt;如何去学习算法，我觉得还是去利用issues，但是，我想了许久都不是应该和自己的静态博客所在的位置的issues，而是应该新创一个仓库去得到具体的issues，仓库里面的内容就放些书，关于排序，算法，等等的相应的结构体进行保存，而issues中就是放题，放自己的总结，放自己的思考。这样是很好的。&lt;/p&gt;
+
+&lt;h4 id=&quot;编程书&quot;&gt;编程书&lt;/h4&gt;
+
+&lt;p&gt;要读和读过很多书，都应该和生活基调中的学习，读书差不多。&lt;/p&gt;
+
+&lt;h4 id=&quot;java-网站后台&quot;&gt;java 网站后台&lt;/h4&gt;
+
+&lt;p&gt;springboot-mybatis-thymleaf&lt;/p&gt;
+
+&lt;h4 id=&quot;前端整合&quot;&gt;前端整合&lt;/h4&gt;
+
+&lt;p&gt;html-vue-js-react-nodejs-koa2-electron-css=wxml&lt;/p&gt;
+
+&lt;p&gt;bootstrap-jquery&lt;/p&gt;
+
+&lt;p&gt;es6=es7&lt;/p&gt;
+
+&lt;h4 id=&quot;python-脚本&quot;&gt;python 脚本&lt;/h4&gt;
+
+&lt;p&gt;算法和普通工程脚本&lt;/p&gt;
+
+&lt;h4 id=&quot;c底层应用&quot;&gt;c++底层应用&lt;/h4&gt;
+
+&lt;p&gt;空闲时间&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="me" /><summary type="html">abearXiong 规则 在这里应该定下关于github page其中使用的规则和技巧，以及方式方法。 主要目的 我想以github来统计关于我程序员生活中的所有的经过。所有可以在网络上流传的经过经历。没有人会在乎我，除了我自己，平凡的自己人，那么这样就很好了。 作为一个有力奋斗的我，应该对程序员的生活定下一个基调，明的为博客，暗的为自己的记忆流传，在网络生活的我，那么没有什么需要保存下来的秘密。在整个生活当中，人生是主要目的是生活得很好，奉献自己的能力去让其他人过得很好，那么人生就了无遗憾了。 为了更好的学习方式，自己去统计自己生活的一切，记录，以及成果。统计生活的事情的发生，那么有些记录是有必要的。 很多的时候，我想，作为一个人，作为一个在信息交流这么发达的我，我去记下那么多的东西是不是有必要的，我很不喜欢去记东西，我很喜欢去接触那些新的东西，为什么呢？因为去记需要花费时间，而需要记的大部分东西，在网络上很容易找到，除此之外，作为信息技术发展的现在，人只要逻辑足够优秀，那么处理的方式电脑就可以完成了，生活不就更便捷吗？ 路 生活基调 生活需要有什么，基本上，需要的是学习，工作，生活条理，生活的逻辑。 学习需要什么？ 学习需要其一书，其二学习视频，其三学习网站，其四学习资料 我很喜欢读书，过去的我很不喜欢总结，我现在应该作为一个规划性和有目的性的去学习，github如何去管理学习计划，学习总结，学习经过呢？ 读书 我应该专门为一个读书开一个仓库，书的记录是以issues来操作，每一个章节学到的内容都是以评论的方式给出结果。但是每一个内容是顺序是不能再变的。所以，我还是不知道如何更好的去一个记录读书笔记的地方，总结和学习。所以，读书我还需要去反思和总结用什么样的方式。关联性，如何进行图书关联。 读书的特点，是一本书一本书的，具有内容的汇集特点。博客不具有，issues只有题和不能改变顺序的尾。所以说，用issues来当作读书笔记，我感觉可能差点什么，除数据库，哪一项网络服务可以达到这一特点？ 想到的方法，仍旧是使用jekyll，但是对于jekyll文件夹多一个books，里面的内容根据目录分，文件中的内容以/books/name/title进行有选择性的获得。是可以成立的。 生活空间（life space) 关于前台和后台，可以基于Github的issues实现。前端页面显示，使用GraphQL实现获取issues的功能，根据标签获取对应的内容。我之前是全部以一个标签作为这个的功能，现在我想，不需要，把全部的这一块的issues来作为这个空间的位置，分类内容，评论，等等。还是不错的。 关于笔记 用过很多的笔记的软件，主推印象笔记和onenote，但这些都会在将来一两年内被我遗弃。主要原因，印象笔记不够好，onenote不够快。作为一个程序员，一个有思想的程序员，我想要我需要的程序是拥有我想要的那些功能，如果去使用别人的产品，是达不到我想要的需求的。 我用过有道云，为知免费的用过一月测试，蚂蚁笔记去了解过。关于工程，pocket，nozbe，teambition，wrike,github project,to-do等等。 在生活中，记录笔记，我很多需要的仅仅还是文字内容的笔记。查找笔记，查看笔记，和保存笔记。在现在，我想我有了新的去完成我的笔记思路的想法，关于在github的地方，我觉得还是主要是作为一个博客的地方，写博客是需要有写草稿的地方。生活是需要笔记的地方，笔记有分别为私有的笔记，或者有效的共享的笔记的内容的地方。现在发现，可能如果在腾讯云cos存储，对象存储是可以实现云端服务的功能，对于每一个人，只需要一个客户端就可以了。存储的位置，每一个人都可以利用腾讯云，那么感觉还是不错的。我能在从现在开始的三年内完成这个有想法的项目吗？我记下来。 笔记最根本的保存内容的方式是什么？其实应该是MD，markdown，为什么呢？因为markdown,latex等是一个文字保存的，有了限定的存储内容的格式和转化方式，那么是有效的存储，可以很有效的去转化为HTML，而对于HTML是由规定的css样式的显示，可以很好的更新笔记的显示结果。而对于印象笔记的这一块，是封闭的，对程序员不友好，对自定义不友好。而简书的文章保存，github静态博客，coding静态博客，jekyll，hexo，hugo等等，都是以makedown为主，内容保存，转换，转到其他地方等等都是很方便的。既容易转，又容易看，更容易改，那么怎么不好呢？ 在做一个开源笔记需要什么呢，笔记很多的时候都是依赖于编辑器，看好slate，老牌有tinymce。 关于产品 在这个时间里，大学将近完毕，接近社会的毒打，这个时候，总会思考我需要做什么，做出来，看得到的结果，完成的结果。 很多的时候去使用一个产品，需要的是什么，美化的界面，好用的功能，方便的快捷键，替用户考虑到很多东西，多端使用，有连贯的使用。 在多端方面，适配网页浏览器，手机APP，电脑客户端。 界面 界面 UI 编程以及coding 编程，是需要学习的，编程，是需要手动操作的，编程，是创新设计的。很多的时候我是便编程边设计，没有流程，没有规划，然后也就没有效率。其实不是没有多人分工合作，也是一个人对我自己不够分工合作，我自己也是多个人，没有安排好自己应该做的事情，所以效率低，完成结果不高。我需要安排自己去学习，安排什么时候去做什么，完全分工好每一个模块该完成什么，把所有的组件联合起来，那么就是我自己最终完成的结果了。 算法 最近几天，突然发现算法是很有必要去学习的一个东西，过去的几十天，都是以基本会的算法，然后就没有去更新去学习，去完善自己的思路。很多的时候我都是去做一个东西，而不是去完全的去学某个东西，所以我一般是在做的时候去学到很多东西。 如何去学习算法，我觉得还是去利用issues，但是，我想了许久都不是应该和自己的静态博客所在的位置的issues，而是应该新创一个仓库去得到具体的issues，仓库里面的内容就放些书，关于排序，算法，等等的相应的结构体进行保存，而issues中就是放题，放自己的总结，放自己的思考。这样是很好的。 编程书 要读和读过很多书，都应该和生活基调中的学习，读书差不多。 java 网站后台 springboot-mybatis-thymleaf 前端整合 html-vue-js-react-nodejs-koa2-electron-css=wxml bootstrap-jquery es6=es7 python 脚本 算法和普通工程脚本 c++底层应用 空闲时间</summary></entry><entry><title type="html">关于jekyll汇总</title><link href="http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB.html" rel="alternate" type="text/html" title="关于jekyll汇总" /><published>2019-06-15T11:37:07+08:00</published><updated>2019-06-15T11:37:07+08:00</updated><id>http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB</id><content type="html" xml:base="http://localhost:4000/jekyll/2019/06/%E5%85%B3%E4%BA%8Ejekyll%E6%B1%87%E6%80%BB.html">&lt;h2 id=&quot;我想要做什么&quot;&gt;我想要做什么&lt;/h2&gt;
 
 &lt;p&gt;关于jekyll每一个标签都是有一定的数量。我可以分开所有的标签，并且计数单个的那个标签的个数。获得的内容，进行相应的显示。&lt;/p&gt;
 
 &lt;h2 id=&quot;liquid的unip实现&quot;&gt;liquid的unip实现&lt;/h2&gt;
-&lt;script src=&quot;https://gist.github.com/8ae3caa6728e26565fec4a146344a065.js?file=jekyll-liquid-tags.md&quot;&gt; &lt;/script&gt;</content><author><name>abearxiong</name></author><category term="blog" /><category term="jekyll" /><summary type="html">我想要做什么 关于jekyll每一个标签都是有一定的数量。我可以分开所有的标签，并且计数单个的那个标签的个数。获得的内容，进行相应的显示。 liquid的unip实现</summary></entry><entry><title type="html">关于Jekyll新的样式思考</title><link href="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html" rel="alternate" type="text/html" title="关于Jekyll新的样式思考" /><published>2019-06-14T08:18:09+08:00</published><updated>2019-06-14T08:18:09+08:00</updated><id>http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83</id><content type="html" xml:base="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html">&lt;h3 id=&quot;1-我需要什么&quot;&gt;1. 我需要什么？&lt;/h3&gt;
-&lt;h3 id=&quot;2-我想做什么&quot;&gt;2. 我想做什么？&lt;/h3&gt;
-
-&lt;h2 id=&quot;需要学习liquidjekyll-liquid&quot;&gt;需要学习liquid（Jekyll liquid)&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://liquid.bootcss.com/filters/date/&quot;&gt;liquid网站&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;主要方面&quot;&gt;主要方面&lt;/h3&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;定义变量 assign，类型具有String Number Boolean Nil Array&lt;/li&gt;
-  &lt;li&gt;循环和控制 for 和 case when ，其中for 有The forloop object（循环最后和第一，个数等等），，if和unless&lt;/li&gt;
-  &lt;li&gt;其他都是关于过滤filter的东西&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;过滤filter&quot;&gt;过滤filter&lt;/h3&gt;
-
-&lt;h4 id=&quot;1-date&quot;&gt;1. date&lt;/h4&gt;
-
-&lt;p&gt;关于时间的过滤&lt;/p&gt;
-
-&lt;p&gt;{{ post.date | date: “%b %Y”}} =&amp;gt; May 2019
-{{ post.date }} =&amp;gt; 2019-06-14 08:18:09 +0800
-{{ post.date | date: “%Y-%m-%d %H:%M” }} =&amp;gt; 2018-12-06 04:24
-{{ “now” | date: “%Y-%m-%d %H:%M” }}
-{{ “today” | date: “%Y-%m-%d %H:%M” }}&lt;/p&gt;
-
-&lt;h4 id=&quot;2-join&quot;&gt;2. join&lt;/h4&gt;
-
-&lt;h4 id=&quot;3-default&quot;&gt;3. default&lt;/h4&gt;
-&lt;p&gt;设置默认值&lt;/p&gt;
-&lt;h4 id=&quot;5-strip_html&quot;&gt;5. strip_html&lt;/h4&gt;
-
-&lt;p&gt;删除HTML 的标签&lt;/p&gt;
-
-&lt;h4 id=&quot;7-url_decode-和-url_encode&quot;&gt;7. url_decode 和 url_encode&lt;/h4&gt;
-
-&lt;p&gt;关于内容非URL安全的字符转换为百分号编码&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="life" /><category term="blog" /><summary type="html">1. 我需要什么？ 2. 我想做什么？ 需要学习liquid（Jekyll liquid) liquid网站 主要方面 定义变量 assign，类型具有String Number Boolean Nil Array 循环和控制 for 和 case when ，其中for 有The forloop object（循环最后和第一，个数等等），，if和unless 其他都是关于过滤filter的东西 过滤filter 1. date 关于时间的过滤 {{ post.date | date: “%b %Y”}} =&amp;gt; May 2019 {{ post.date }} =&amp;gt; 2019-06-14 08:18:09 +0800 {{ post.date | date: “%Y-%m-%d %H:%M” }} =&amp;gt; 2018-12-06 04:24 {{ “now” | date: “%Y-%m-%d %H:%M” }} {{ “today” | date: “%Y-%m-%d %H:%M” }} 2. join 3. default 设置默认值 5. strip_html 删除HTML 的标签 7. url_decode 和 url_encode 关于内容非URL安全的字符转换为百分号编码</summary></entry><entry><title type="html">markdown收录设定规则</title><link href="http://localhost:4000/life/2019/06/%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87.html" rel="alternate" type="text/html" title="markdown收录设定规则" /><published>2019-06-13T17:29:13+08:00</published><updated>2019-06-13T17:29:13+08:00</updated><id>http://localhost:4000/life/2019/06/%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87</id><content type="html" xml:base="http://localhost:4000/life/2019/06/%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87.html">&lt;h2 id=&quot;markdown中文名字&quot;&gt;markdown中文名字&lt;/h2&gt;
-
-&lt;p&gt;文件的名字可以是中文的。&lt;/p&gt;
-
-&lt;p&gt;-[x] 关内容一定要有description,行数一定不能超过三行，一定是文章的总结。之前的文件，一定要有描述，而且描述一定在三行一下。规范化页面显示效果。
--[x] 关于ruby中创建新的内容，把设置文件的部分和标题这部分，重构掉，因为中文名是可以的，中文的url地址也是可以访问的
--[x] 把首页的内容，重构。标题 描述 标签 更新时间
--[x] github issues 是草稿纸或者就是属于空间。 随心play..&lt;/p&gt;
-
-&lt;h2 id=&quot;标签分页和其他类型分页实现&quot;&gt;标签分页和其他类型分页实现？&lt;/h2&gt;
-
-&lt;p&gt;归档函数功能即可&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;把整体的标签内容放一起好吗？（可以，前端分页，我不可能写太多，比如上万，因此这么去实现是可以的）&lt;/li&gt;
-  &lt;li&gt;前端分页,获取所有的内容，通过自定义的优化界面显示，是可以的。分页优化显示。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;to do lists&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>abearxiong</name></author><category term="blog" /><category term="life" /><summary type="html">markdown中文名字 文件的名字可以是中文的。 -[x] 关内容一定要有description,行数一定不能超过三行，一定是文章的总结。之前的文件，一定要有描述，而且描述一定在三行一下。规范化页面显示效果。 -[x] 关于ruby中创建新的内容，把设置文件的部分和标题这部分，重构掉，因为中文名是可以的，中文的url地址也是可以访问的 -[x] 把首页的内容，重构。标题 描述 标签 更新时间 -[x] github issues 是草稿纸或者就是属于空间。 随心play.. 标签分页和其他类型分页实现？ 归档函数功能即可 把整体的标签内容放一起好吗？（可以，前端分页，我不可能写太多，比如上万，因此这么去实现是可以的） 前端分页,获取所有的内容，通过自定义的优化界面显示，是可以的。分页优化显示。 to do lists</summary></entry><entry><title type="html">专一和百晓</title><link href="http://localhost:4000/life/2019/05/only-one-for-learning.html" rel="alternate" type="text/html" title="专一和百晓" /><published>2019-05-08T23:34:26+08:00</published><updated>2019-05-08T23:34:26+08:00</updated><id>http://localhost:4000/life/2019/05/only-one-for-learning</id><content type="html" xml:base="http://localhost:4000/life/2019/05/only-one-for-learning.html">&lt;blockquote&gt;
-  &lt;p&gt;关于显示时间快捷键；通过注册快捷键查看系统快捷键，程序快捷键。Jekyll的博客每次更新的时候显示部分的内容。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;大一统生活记录： 生活所用的APP或者程序统一化。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;我需要一个放置我的想法的一个地方&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;昨天和前天我是用了很长的时间去做了一件事，去分析已有的c#的代码来实现python的程序。难点在于合并16进制内容，实现python中的tea算法加密，实现tea算法的解密。基于内容的分析，而这两天因为经常性的超过吃饭时限，就没有吃饭，最终很晚，晚上才去吃了剩菜，也不是在规定时间去吃的，而昨天连晚饭都没有吃，然后下楼去买的泡面吃，敲代码然后忘记吃饭？？厉害了我的天。然后有了以下部分的感悟。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;短内容流内容&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;关于专一的思考&quot;&gt;关于专一的思考&lt;/h1&gt;
-&lt;p&gt;人们常说一件事，如果学习一个东西一万个小时，那么是极擅长那个事务的。我此刻想了想我是生命轨迹，除了必要的学历，其实没有什么是自己唯一去做的超过这个时限长度的内容。人的生命算60年，60&lt;em&gt;365&lt;/em&gt;24 = 525600 个小时；用人生命的1/50去学习一个事务，还是很占用时间的。即使来说，让人会擅长那个方面。&lt;/p&gt;
-
-&lt;p&gt;作为一个人，自己的思绪，思考，每个人都是不一样的，我却是那种想知道所有的东西的人，想做的事情超多，然后知道自己想做的超多的事情都没有做。然后，一次次的让自己思考该怎么做，做什么。盲目做现在做的事情，现在做的事情一次次超过自己计划的的时间，因为本身的能力是有限制的去完成那个事件，也许是天赋，也许是能力。能力如何来，做更多就会了，做更多的要求是什么，花更多的时间。所以，如何让自己擅长的某方面，花更少的时间或者如何去依据思考的想法去实现那个东西呢？办法，办法？&lt;/p&gt;
-
-&lt;p&gt;万事万物都是有其规律的，现在人类的知识量汇总起来是及其庞大的，如何运用起来这些人类的知识呢？很多的内容都是散发在网站上，自己通过网络获取那些东西，解析万物知识，得到相应结果。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;万物接口，程序得到通信内容，做相应的事情。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;突然发现了我人生的使命了，在复杂变化的世界当中，让人类不需要更多的时间去做某个事情，让人类更方便的生活，让人类更多时间去做自己想做的事情，去散发自己的思考。所以，我应该以什么开始去实现我的使命呢？如何才会做到这个事情呢？&lt;/p&gt;
-
-&lt;p&gt;生活就是一场游戏，为了打boss需要让自己去学会很多的内容，而最终的目的是打死boss，如果不是为了享受中途打boss的快感，如何去更快的打倒boss是我们的需求，那么如何让之成为现实嗯。打boss是一个路程，而boss的数量是无止境的。我想什么都知道一点，我想遇到每个boss，我想更快的遇到boss，我想遇到无限boss中的最后的一个boss。而使命，串联所有的知识，最快的实现一个boss的达到。&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;做网站以画画的形式表现出来。烦躁每一个标签的，类的优化显示，为何不更方便呢？&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>abearxiong</name></author><category term="me" /><summary type="html">关于显示时间快捷键；通过注册快捷键查看系统快捷键，程序快捷键。Jekyll的博客每次更新的时候显示部分的内容。 大一统生活记录： 生活所用的APP或者程序统一化。 我需要一个放置我的想法的一个地方 昨天和前天我是用了很长的时间去做了一件事，去分析已有的c#的代码来实现python的程序。难点在于合并16进制内容，实现python中的tea算法加密，实现tea算法的解密。基于内容的分析，而这两天因为经常性的超过吃饭时限，就没有吃饭，最终很晚，晚上才去吃了剩菜，也不是在规定时间去吃的，而昨天连晚饭都没有吃，然后下楼去买的泡面吃，敲代码然后忘记吃饭？？厉害了我的天。然后有了以下部分的感悟。 短内容流内容 关于专一的思考 人们常说一件事，如果学习一个东西一万个小时，那么是极擅长那个事务的。我此刻想了想我是生命轨迹，除了必要的学历，其实没有什么是自己唯一去做的超过这个时限长度的内容。人的生命算60年，6036524 = 525600 个小时；用人生命的1/50去学习一个事务，还是很占用时间的。即使来说，让人会擅长那个方面。 作为一个人，自己的思绪，思考，每个人都是不一样的，我却是那种想知道所有的东西的人，想做的事情超多，然后知道自己想做的超多的事情都没有做。然后，一次次的让自己思考该怎么做，做什么。盲目做现在做的事情，现在做的事情一次次超过自己计划的的时间，因为本身的能力是有限制的去完成那个事件，也许是天赋，也许是能力。能力如何来，做更多就会了，做更多的要求是什么，花更多的时间。所以，如何让自己擅长的某方面，花更少的时间或者如何去依据思考的想法去实现那个东西呢？办法，办法？ 万事万物都是有其规律的，现在人类的知识量汇总起来是及其庞大的，如何运用起来这些人类的知识呢？很多的内容都是散发在网站上，自己通过网络获取那些东西，解析万物知识，得到相应结果。 万物接口，程序得到通信内容，做相应的事情。 突然发现了我人生的使命了，在复杂变化的世界当中，让人类不需要更多的时间去做某个事情，让人类更方便的生活，让人类更多时间去做自己想做的事情，去散发自己的思考。所以，我应该以什么开始去实现我的使命呢？如何才会做到这个事情呢？ 生活就是一场游戏，为了打boss需要让自己去学会很多的内容，而最终的目的是打死boss，如果不是为了享受中途打boss的快感，如何去更快的打倒boss是我们的需求，那么如何让之成为现实嗯。打boss是一个路程，而boss的数量是无止境的。我想什么都知道一点，我想遇到每个boss，我想更快的遇到boss，我想遇到无限boss中的最后的一个boss。而使命，串联所有的知识，最快的实现一个boss的达到。 做网站以画画的形式表现出来。烦躁每一个标签的，类的优化显示，为何不更方便呢？</summary></entry><entry><title type="html">python 类型转换一点点</title><link href="http://localhost:4000/python/2019/05/python-change.html" rel="alternate" type="text/html" title="python 类型转换一点点" /><published>2019-05-06T19:00:39+08:00</published><updated>2019-05-06T19:00:39+08:00</updated><id>http://localhost:4000/python/2019/05/python-change</id><content type="html" xml:base="http://localhost:4000/python/2019/05/python-change.html">&lt;script src=&quot;https://gist.github.com/cbb0967a564ed2df713da17159efe1f3.js?file=util_learing_twohash.md&quot;&gt; &lt;/script&gt;
-
-&lt;script src=&quot;https://gist.github.com/cbb0967a564ed2df713da17159efe1f3.js?file=util_learing_twohash.py&quot;&gt; &lt;/script&gt;</content><author><name>abearxiong</name></author><category term="notags" /><summary type="html"></summary></entry><entry><title type="html">再次陪伴jekyll</title><link href="http://localhost:4000/life/2019/04/new-start-jekyll.html" rel="alternate" type="text/html" title="再次陪伴jekyll" /><published>2019-04-28T17:51:28+08:00</published><updated>2019-04-28T17:51:28+08:00</updated><id>http://localhost:4000/life/2019/04/new-start-jekyll</id><content type="html" xml:base="http://localhost:4000/life/2019/04/new-start-jekyll.html">&lt;h1 id=&quot;重新开发jekyll&quot;&gt;重新开发jekyll&lt;/h1&gt;
-
-&lt;p&gt;今天早上想完善一些东西，然后就一直操作。直到现在的时刻。首先我要记得一点点的需要完善的东西，rake和rakefile,jobs,fk,bg等。&lt;/p&gt;
-
-&lt;p&gt;然后就是接触jekyll遇到的一些小问题，因为使用了分页插件，&lt;strong&gt;发现Jekyll在文档中有配置&lt;code class=&quot;highlighter-rouge&quot;&gt;permalink: /blog/histroy&lt;/code&gt;的情况下，不能够收集posts?&lt;/strong&gt;然后没有内容，我以为是因为添加了permalink问题，结果是因为分页插件问题。&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="jekyll" /><summary type="html">重新开发jekyll 今天早上想完善一些东西，然后就一直操作。直到现在的时刻。首先我要记得一点点的需要完善的东西，rake和rakefile,jobs,fk,bg等。 然后就是接触jekyll遇到的一些小问题，因为使用了分页插件，发现Jekyll在文档中有配置permalink: /blog/histroy的情况下，不能够收集posts?然后没有内容，我以为是因为添加了permalink问题，结果是因为分页插件问题。</summary></entry><entry><title type="html">Ruby用window的子系统</title><link href="http://localhost:4000/me/2019/04/use-window-linux.html" rel="alternate" type="text/html" title="Ruby用window的子系统" /><published>2019-04-27T00:00:00+08:00</published><updated>2019-04-27T00:00:00+08:00</updated><id>http://localhost:4000/me/2019/04/use-window-linux</id><content type="html" xml:base="http://localhost:4000/me/2019/04/use-window-linux.html">&lt;p&gt;之前每次玩Jekyll是使用Ubuntu，然后装的是Ubuntu虚拟机，虚拟机占内存，同时，不能使用中文打字，这样对我是很不友好的，所以很长的时间是没有动这个的。今天重新拾起了，并因为是window的子系统，有中文打字，同时没有装虚拟机，不是很需要占空间，自己也可以并发操作其他的东西，对自己更加的方便了。很开心。&lt;/p&gt;
-
-&lt;p&gt;我想，文章，有文章的好，短文字，有短文字的好。自己应该放一个东西来操作一些短的文字的玩法。&lt;/p&gt;
-
-&lt;p&gt;我好像除了QQ，不太喜欢玩其他的聊天工具，自己也不是某个社区的长占人员，自己生活是在干什么呢？很好奇。&lt;/p&gt;
-
-&lt;p&gt;现在几天的我，很想整合一切自己周围所拥有的一切的事物。&lt;/p&gt;
-
-&lt;p&gt;记得某时候回来，看看，提醒一下自己。&lt;/p&gt;
-
-&lt;p&gt;start: 4-27&lt;/p&gt;
-&lt;div style=&quot;color:red&quot;&gt;红色幸运&lt;/div&gt;</content><author><name>abearxiong</name></author><category term="life" /><summary type="html">之前每次玩Jekyll是使用Ubuntu，然后装的是Ubuntu虚拟机，虚拟机占内存，同时，不能使用中文打字，这样对我是很不友好的，所以很长的时间是没有动这个的。今天重新拾起了，并因为是window的子系统，有中文打字，同时没有装虚拟机，不是很需要占空间，自己也可以并发操作其他的东西，对自己更加的方便了。很开心。 我想，文章，有文章的好，短文字，有短文字的好。自己应该放一个东西来操作一些短的文字的玩法。 我好像除了QQ，不太喜欢玩其他的聊天工具，自己也不是某个社区的长占人员，自己生活是在干什么呢？很好奇。 现在几天的我，很想整合一切自己周围所拥有的一切的事物。 记得某时候回来，看看，提醒一下自己。 start: 4-27 红色幸运</summary></entry><entry><title type="html">Use Ruby to create new article file</title><link href="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html" rel="alternate" type="text/html" title="Use Ruby to create new article file" /><published>2018-10-29T23:00:00+08:00</published><updated>2018-10-29T23:00:00+08:00</updated><id>http://localhost:4000/ruby/2018/10/create-new-article-use-ruby</id><content type="html" xml:base="http://localhost:4000/ruby/2018/10/create-new-article-use-ruby.html">&lt;h4 id=&quot;learn-from-runoobcom&quot;&gt;Learn from &lt;a href=&quot;http://www.runoob.com/ruby/ruby-input-output.html&quot; title=&quot;Runoob learning web&quot;&gt;runoob.com&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;First about File operating is diffierent from C,C++,Java.So I need learn ruby.&lt;/p&gt;
-
-&lt;p&gt;About I/O ruby has read,write,gets puts,readline,getc,printf;In stdin can use &lt;code class=&quot;highlighter-rouge&quot;&gt;str = gets&lt;/code&gt; etc.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;New File is use &lt;code class=&quot;highlighter-rouge&quot;&gt;File.new(&quot;filename&quot;,&quot;mode&quot;)&lt;/code&gt;, mode is &lt;code class=&quot;highlighter-rouge&quot;&gt;r r+ w w+ a a+&lt;/code&gt;. Write File use &lt;code class=&quot;highlighter-rouge&quot;&gt;aFile.write&lt;/code&gt; aFile is File class.Read File by readlines Or other IO.&lt;br /&gt;
-There is create Article file gist:&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/abearxiong/e830331e0872031240a38d32b7f93e8f.js&quot;&gt;&lt;/script&gt;
-
-&lt;h4 id=&quot;edit-history&quot;&gt;Edit History：&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;2018-10-29 First draft. Create articel&lt;/li&gt;
-  &lt;li&gt;2018-11-07 repair gist&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>abearxiong</name></author><category term="ruby" /><summary type="html">Learn from runoob.com First about File operating is diffierent from C,C++,Java.So I need learn ruby. About I/O ruby has read,write,gets puts,readline,getc,printf;In stdin can use str = gets etc.</summary></entry><entry><title type="html">Ubuntu time is not Beijing time</title><link href="http://localhost:4000/ubuntu/2018/10/Ubuntu-change-timezone.html" rel="alternate" type="text/html" title="Ubuntu time is not Beijing time" /><published>2018-10-29T17:00:00+08:00</published><updated>2018-10-29T17:00:00+08:00</updated><id>http://localhost:4000/ubuntu/2018/10/Ubuntu-change-timezone</id><content type="html" xml:base="http://localhost:4000/ubuntu/2018/10/Ubuntu-change-timezone.html">&lt;p&gt;It’s very sad about install ubuntu,and don’t set time in Beijing Time zone,I also don’t install chinese language.I use Ubuntu in vm, everytime I use &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;,and now date’s article is don’t show because of jekyll show that timezone’s article. And when I run my Ruby program, the time is not I want to get.It’s -7000 and I’m in +8000.So I offten make mistakes for use this timezone. So I change my Ubuntu timezone. Before I do this change, I installed Chinese language, but Make ubuntu collapse.It’s very bad for me to use Ubuntu,Maybe is because Ubuntu’s install source is not set chinese source.&lt;/p&gt;
-
-&lt;p&gt;How to change my Ubuntu timezone is learning from &lt;a href=&quot;https://blog.csdn.net/zhengchaooo/article/details/79500032&quot; title=&quot;How to change Ubuntu time&quot;&gt;csdn-zhengchaooo&lt;/a&gt;.&lt;/p&gt;
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# To look my timezone&lt;/span&gt;
- tzselect &lt;span class=&quot;c&quot;&gt;# To change my timezone and choose 4 9 1 1&lt;/span&gt;
- &lt;span class=&quot;nb&quot;&gt;sudo cp&lt;/span&gt; /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime &lt;span class=&quot;c&quot;&gt;#cp file to local&lt;/span&gt;
- &lt;span class=&quot;nb&quot;&gt;sudo date&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; 17:00:00 &lt;span class=&quot;c&quot;&gt;#change Time&lt;/span&gt;
- &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;hwclock &lt;span class=&quot;nt&quot;&gt;--systohc&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#change systohc&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;!-- more --&gt;
-
-&lt;p&gt;Edit History：
-    2018-10-29 First draft&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="ubuntu" /><summary type="html">It’s very sad about install ubuntu,and don’t set time in Beijing Time zone,I also don’t install chinese language.I use Ubuntu in vm, everytime I use bundle exec jekyll serve,and now date’s article is don’t show because of jekyll show that timezone’s article. And when I run my Ruby program, the time is not I want to get.It’s -7000 and I’m in +8000.So I offten make mistakes for use this timezone. So I change my Ubuntu timezone. Before I do this change, I installed Chinese language, but Make ubuntu collapse.It’s very bad for me to use Ubuntu,Maybe is because Ubuntu’s install source is not set chinese source. How to change my Ubuntu timezone is learning from csdn-zhengchaooo. date -R # To look my timezone tzselect # To change my timezone and choose 4 9 1 1 sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime #cp file to local sudo date -s 17:00:00 #change Time sudo hwclock --systohc #change systohc</summary></entry><entry><title type="html">Learn Rake</title><link href="http://localhost:4000/ruby/2018/10/Work-for-rail.html" rel="alternate" type="text/html" title="Learn Rake" /><published>2018-10-28T23:00:00+08:00</published><updated>2018-10-28T23:00:00+08:00</updated><id>http://localhost:4000/ruby/2018/10/Work-for-rail</id><content type="html" xml:base="http://localhost:4000/ruby/2018/10/Work-for-rail.html">&lt;ol&gt;
-  &lt;li&gt;Install rake.&lt;br /&gt;
-I use Ubuntu and I install Gem for Ruby.So I install it by commond &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install rake&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;create the first Rake task.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;some explian language&quot;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:task_name&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# coding &lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;print some in bash&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;use input&quot;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:task_name_input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:a&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# coding &lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;print some in bash:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# t is `task_name_input` args is 'input paramater'&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Rake bash commond
-    &lt;ul&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Rake -T&lt;/code&gt; is show all task. And it can show task description.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Rake task_name&lt;/code&gt; is run task by task name &lt;code class=&quot;highlighter-rouge&quot;&gt;task_name&lt;/code&gt;.&lt;/li&gt;
-      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Rake task_name_intpu[1]&lt;/code&gt; is can input some paramater.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Rake in zsh is very difficult in add parms. Must use &lt;code class=&quot;highlighter-rouge&quot;&gt;test\[&quot;x&quot;\]&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:arg1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-	&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Edit History：
--2018-10-28 First draft
--2018-11-07 add 4th&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="rake" /><summary type="html">Install rake. I use Ubuntu and I install Gem for Ruby.So I install it by commond gem install rake. create the first Rake task. desc &quot;some explian language&quot; task :task_name do # coding puts &quot;print some in bash&quot; end desc &quot;use input&quot; task :task_name_input,:a do|t,args| # coding puts &quot;print some in bash:&quot;,args # t is `task_name_input` args is 'input paramater' end Rake bash commond Rake -T is show all task. And it can show task description. Rake task_name is run task by task name task_name. Rake task_name_intpu[1] is can input some paramater. Rake in zsh is very difficult in add parms. Must use test\[&quot;x&quot;\] task :test,:arg1 do |t,args| puts args end Edit History： -2018-10-28 First draft -2018-11-07 add 4th</summary></entry></feed>
+&lt;script src=&quot;https://gist.github.com/8ae3caa6728e26565fec4a146344a065.js?file=jekyll-liquid-tags.md&quot;&gt; &lt;/script&gt;</content><author><name>abearxiong</name></author><category term="blog" /><category term="jekyll" /><summary type="html">我想要做什么 关于jekyll每一个标签都是有一定的数量。我可以分开所有的标签，并且计数单个的那个标签的个数。获得的内容，进行相应的显示。 liquid的unip实现</summary></entry></feed>

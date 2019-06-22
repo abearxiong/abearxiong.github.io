@@ -17,7 +17,7 @@ task :newartOld,[:article,:title,:categories,:tags,:description,:comments] do |t
 	categories =args["categories"].nil??  "articles" : args["categories"]
 	tags = args["tags"].nil?? "notags" : args["tags"].split(" ")
 	comments = args["comments"].nil?? false: arts["comments"]
-	description = args["description"].nil?? "" : "desctiption: #{args["description"]}\n"
+	description = args["description"].nil?? "" : "description: #{args["description"]}\n"
 	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\ncomments: #{comments}\n#{description}---\n"
 	File.open(newfile,"w+") do |aFile|
 		aFile.write(inputContent)
@@ -30,7 +30,7 @@ task :new,[:article,:categories,:tags,:description,:comments] do |t,args|
 	timeinfos = time.to_s.split(" ")
 	path ="_posts/"
 	filename= args["article"].gsub(" ","-")
-	suffix = ".markdown"
+	suffix = ".md"
 	newfile = path+timeinfos[0]+"-"+filename+suffix
 	
 	title = args["article"]
@@ -38,7 +38,7 @@ task :new,[:article,:categories,:tags,:description,:comments] do |t,args|
 	categories =args["categories"].nil??  "articles" : args["categories"]
 	tags = args["tags"].nil?? "notags" : args["tags"].split(" ")
 	comments = args["comments"].nil?? false : true
-	description ="desctiption: #{args["description"]}\n"
+	description ="description: #{args["description"]}\n"
 	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\ncomments: #{comments}\n#{description}---\n"
 	File.open(newfile,"w+") do |aFile|
 		aFile.write(inputContent)

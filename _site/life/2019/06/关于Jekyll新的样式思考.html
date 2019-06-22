@@ -8,15 +8,15 @@
 <meta property="og:title" content="关于Jekyll新的样式思考" />
 <meta name="author" content="abearxiong" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="思考" />
-<meta property="og:description" content="思考" />
+<meta name="description" content="思考，关于liquid的简单汇总，关于，此刻新的样式的修正方案。" />
+<meta property="og:description" content="思考，关于liquid的简单汇总，关于，此刻新的样式的修正方案。" />
 <link rel="canonical" href="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html" />
 <meta property="og:url" content="http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html" />
 <meta property="og:site_name" content="Abear" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-06-14T08:18:09+08:00" />
 <script type="application/ld+json">
-{"headline":"关于Jekyll新的样式思考","dateModified":"2019-06-14T08:18:09+08:00","datePublished":"2019-06-14T08:18:09+08:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html"},"url":"http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html","author":{"@type":"Person","name":"abearxiong"},"description":"思考","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"关于Jekyll新的样式思考","url":"http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html","dateModified":"2019-06-14T08:18:09+08:00","datePublished":"2019-06-14T08:18:09+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html"},"author":{"@type":"Person","name":"abearxiong"},"description":"思考，关于liquid的简单汇总，关于，此刻新的样式的修正方案。","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- cdn -->  <!-- bootstrap -->
 <link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
@@ -67,16 +67,21 @@
 
 <h3 id="过滤filter">过滤filter</h3>
 
+<p>abs append at_least at_most capitalize ceil compact concat date default divided_by downcase escape escape_once first floor join last lstrip map minus modulo newline_to_br plus prepend remove remove_ifrst replace replace_first reverse round rstrip size slice sort srot_natural split strip strip_html strip_newlines times truncate truncatewords uniq upcase url_decode url_encode</p>
+
+<p>注释 控制 迭代 原始内容 变量</p>
+
 <h4 id="1-date">1. date</h4>
 
 <p>关于时间的过滤</p>
-
-<p>{{ post.date | date: “%b %Y”}} =&gt; May 2019
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{{ post.date | date: "%b %Y"}} =&gt; May 2019
 {{ post.date }} =&gt; 2019-06-14 08:18:09 +0800
-{{ post.date | date: “%Y-%m-%d %H:%M” }} =&gt; 2018-12-06 04:24
-{{ “now” | date: “%Y-%m-%d %H:%M” }}
-{{ “today” | date: “%Y-%m-%d %H:%M” }}</p>
+{{ post.date | date: "%Y-%m-%d %H:%M" }} =&gt; 2018-12-06 04:24
+{{ "now" | date: "%Y-%m-%d %H:%M" }}
+{{ "today" | date: "%Y-%m-%d %H:%M" }}
 
+</code></pre></div></div>
 <h4 id="2-join">2. join</h4>
 
 <h4 id="3-default">3. default</h4>
@@ -88,6 +93,36 @@
 <h4 id="7-url_decode-和-url_encode">7. url_decode 和 url_encode</h4>
 
 <p>关于内容非URL安全的字符转换为百分号编码</p>
+
+<h2 id="关于style内容">关于style内容</h2>
+
+<p>无论是html亦或者md，markdown文档，都可以在内容中添加标签，添加style，添加脚本sript，然后通过这些都可以执行那些样式内容。</p>
+
+<p>比如下面的例子</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;style type="text/css"&gt;
+    .right{
+        position: relative;
+        top: 20px;
+        width: 100%;
+        height: 20px;
+        color: red;
+    }
+&lt;/style&gt;
+&lt;div class="right"&gt;查看一下内容会往左边靠吗？？？&lt;/div&gt;
+
+</code></pre></div></div>
+<style type="text/css">
+    .right{
+        position: relative;
+        top: 20px;
+        width: 100%;
+        height: 20px;
+        color: red;
+    }
+</style>
+
+<div class="right">查看一下内容会往左边靠吗？？？</div>
 
   </div><a class="u-url" href="/life/2019/06/%E5%85%B3%E4%BA%8EJekyll%E6%96%B0%E7%9A%84%E6%A0%B7%E5%BC%8F%E6%80%9D%E8%80%83.html" hidden></a>
 </article>

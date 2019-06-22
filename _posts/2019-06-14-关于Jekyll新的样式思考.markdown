@@ -4,7 +4,7 @@ title: 关于Jekyll新的样式思考
 date: 2019-06-14 08:18:09 +0800 
 categories: life 
 tags: ["life", "blog"]
-description: 思考
+description: 思考，关于liquid的简单汇总，关于，此刻新的样式的修正方案。
 comments: false
 ---
 ### 1. 我需要什么？
@@ -22,10 +22,14 @@ comments: false
 
 ### 过滤filter
 
+abs append at_least at_most capitalize ceil compact concat date default divided_by downcase escape escape_once first floor join last lstrip map minus modulo newline_to_br plus prepend remove remove_ifrst replace replace_first reverse round rstrip size slice sort srot_natural split strip strip_html strip_newlines times truncate truncatewords uniq upcase url_decode url_encode
+
+注释 控制 迭代 原始内容 变量
+
 #### 1. date
 
 关于时间的过滤
-
+```
 {% raw %}
 {{ post.date | date: "%b %Y"}} => May 2019
 {{ post.date }} => 2019-06-14 08:18:09 +0800
@@ -33,7 +37,7 @@ comments: false
 {{ "now" | date: "%Y-%m-%d %H:%M" }}
 {{ "today" | date: "%Y-%m-%d %H:%M" }}
 {% endraw %}
-
+```
 #### 2. join
 
 #### 3. default
@@ -45,3 +49,35 @@ comments: false
 #### 7. url_decode 和 url_encode
 
 关于内容非URL安全的字符转换为百分号编码
+
+
+
+## 关于style内容
+
+无论是html亦或者md，markdown文档，都可以在内容中添加标签，添加style，添加脚本sript，然后通过这些都可以执行那些样式内容。
+
+比如下面的例子
+```
+{% raw %}
+<style type="text/css">
+    .right{
+        position: relative;
+        top: 20px;
+        width: 100%;
+        height: 20px;
+        color: red;
+    }
+</style>
+<div class="right">查看一下内容会往左边靠吗？？？</div>
+{% endraw %}
+```
+<style type="text/css">
+    .right{
+        position: relative;
+        top: 20px;
+        width: 100%;
+        height: 20px;
+        color: red;
+    }
+</style>
+<div class="right">查看一下内容会往左边靠吗？？？</div>
