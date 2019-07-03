@@ -3,25 +3,45 @@ desc "run jekyll server"
 task :serve do |t, args|
 	exec 'bundle exec jekyll serve&'
 end
-desc "old--create new article;"
-task :newartOld,[:article,:title,:categories,:tags,:description,:comments] do |t,args|
-	time = Time.new #Get new time
-	timeinfos = time.to_s.split(" ")
-	path ="_posts/"
-	filename= args["article"].gsub(" ","-")
-	suffix = ".markdown"
-	newfile = path+timeinfos[0]+"-"+filename+suffix
-	
-	title =args["title"].nil?? "title-name" : args["title"]
-	date = time.inspect
-	categories =args["categories"].nil??  "articles" : args["categories"]
-	tags = args["tags"].nil?? "notags" : args["tags"].split(" ")
-	comments = args["comments"].nil?? false: arts["comments"]
-	description = args["description"].nil?? "" : "description: #{args["description"]}\n"
-	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\ncomments: #{comments}\n#{description}---\n"
-	File.open(newfile,"w+") do |aFile|
-		aFile.write(inputContent)
+desc "have directory? if dont have,create a new directory"
+task :have,[:path] do |t,args|
+	path = path.nil?? "gists" : path # default value is gists.
+	unless File.exist?(path)
+		Dir.mkdir(path)
 	end
+end
+
+desc "create gist file and save new info about gist"
+task :gist,[:gist, :name, :title, :description, :tags] =>:have do |t, args|
+	# args.with_defaults(:first_name => "John", :last_name => "Dough")
+	# puts args.inspect
+	title = args['title'].nil?? "gists" : args['title'] 
+	name = args['name'].nil?? "name" : args['name']
+	description = args['description'].nil?? "保存gists" : args['description']
+	gist = args['gist'].nil?? "" : args['gist']
+	tags = args['tags'].nil?? "" : args['tags']
+
+	time = Time.new #Get new time
+    newfile = time.strftime("gists/%Y-%m-gists.md")
+    inputContent = ''
+    copy = "{% raw %}   {% gist #{gist} name %}   {% endraw %}"
+    if File.exist?(newfile)
+		inputContent = "|#{title}|#{gist}\t|#{name}\t|#{tags}\t|#{time.inspect}\t|#{description}\t\t|#{copy}|\n"
+		File.open(newfile, "a+") do |aFile|
+			aFile.write(inputContent)
+		end
+    else 
+    	header = "---\nlayout: default \ntitle: 管理gist #{time.to_s.split(" ")[0]}\ndate: #{time.inspect} \ndescription: #{description}\npermalink: /gists/#{time.year}/#{time.month}\n---\n"
+    	head = "|标题|仓库|文件名|标签|创建时间|脚本描述|复制|\n|---|---|---|---|---|---|\n"
+    	inputContent = "|#{title}|#{gist}\t|#{name}\t|#{tags}\t|#{time.inspect}\t|#{description}\t\t|#{copy}|\n"
+    	File.open(newfile, "w+") do | aFile |
+    		aFile.write(header)
+    		aFile.write(head)
+    		aFile.write(inputContent)
+    	end  
+    end
+	puts "gist库: #{gist},文件名： #{name}，描述：#{description}，标签：#{tags} \n创建时间，#{Time.new}"
+	puts " {% gist #{gist} name %} "
 end
 
 desc "create new article; article is must"
@@ -31,8 +51,7 @@ task :new,[:article,:categories,:tags,:description,:comments] do |t,args|
 	path ="_posts/"
 	filename= args["article"].gsub(" ","-")
 	suffix = ".md"
-	newfile = path+timeinfos[0]+"-"+filename+suffix
-	
+	newfile = path+timeinfos[0]+"-"+filename+suffix	
 	title = args["article"]
 	date = time.inspect
 	categories =args["categories"].nil??  "articles" : args["categories"]
@@ -47,14 +66,10 @@ end
 
 desc "There is rakefile for rake cmd.and Ruby File is in file _rubycmd"
 task :default do
-		#your code goes here				
+	#your code goes here				
 	puts "Thanks use this rakefile.I will Make better."
 end
 
-desc "tow"
-task :me do
-	puts "xixi"
-end
 
 desc "test"
 task :test,[:arg1, :arg2] do |t, args|

@@ -3,7 +3,7 @@ layout: post
 title: Github Oauth App登录模块 
 date: 2019-06-22 23:32:45 +0800 
 categories: github 
-tags: ["github", "life"]
+tags: ["github", "life","HTML","JavaScript","xx-space"]
 comments: false
 description: GitHub Oauth App在html页面实现第三方登录，得到access_token，实现获取GitHub中的一些有趣的内容。感觉非要后端不可，因为Github的地址，用ajax或者fetch，都会有跨域问题。
 ---
@@ -93,3 +93,9 @@ OAuth Apps第三方登录是一个很简单的事情。条理顺序是
 ### 问题
 
 各种跨域问题？ fetch cors，ajax跨域有问题。所以非要服务器，本html是利用直接访问url，就没有跨域问题，但是获取的内容，下到了电脑里面呀？？？？？
+
+
+推想： 自己填access_token是安全的，没问题的！
+
+- 6月22日 初始
+- 2019年6月29日 23：50 完成
