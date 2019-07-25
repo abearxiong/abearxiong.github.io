@@ -46,7 +46,7 @@ end
 
 desc "create new article"
 task :new,[:title,:categories,:tags,:description,:comments] do |t,args|
-	args.with_defaults(:title => "文章的名字", :categories => "文章的类型", :tags=>"未设置标签", :description=>"对内容的描述")
+	args.with_defaults(:title => "文章的名字", :categories => "传说之旅", :tags=>"传说之旅", :description=>"对内容的描述")
 	time = Time.new #Get new time
 	timeinfos = time.to_s.split(" ")
 	path ="_posts/"
