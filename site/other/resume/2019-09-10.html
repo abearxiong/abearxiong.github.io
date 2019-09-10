@@ -1,0 +1,135 @@
+---
+layout: style/blank
+title: 简历
+date: 2019-09-09 23:50:09 +0800
+description: "简历能力/热更新，想弥补之前所有的简历的写法。 一行一行下去，然后显示不同的效果图出来。"
+links: ['
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" href="/assets/css/resume-2019-09-10.css">
+']
+scripts: ['
+<!--Bootstrap js-->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script><!-- Script -->
+</script>
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+<script src="/assets/js/resume-2019-09-10.js"></script>
+'
+]
+permalink: /resume/
+---
+
+<div class=" animated bounce delay-2s" id="resume-nav" hidden>
+    <span>过去的简历制作</span>
+    <ul>
+        <li><a class="resume-nav-item" href="./1">first</a></li>
+        <li><a class="resume-nav-item" href="./2">two</a></li>
+        <li><a class="resume-nav-item" href="./3">three</a></li>
+    </ul>
+    <span id="hideResumeNav">隐藏&lt;</span>
+</div>
+<div class="container">
+
+    <div id="resume-title">熊潇程序员简历 <img id="show-nav" src="/assets/images/2019-09-10/show-nav.png" alt="显示过去简历"
+            title="显示过去的简历的列表"> </div>
+
+    <label for="my-contack-way">联系方式</label>
+    <div id="my-contact-way" class="animated bounceInDown">
+        <div class="my-contact-way-item">
+            <label>手机:</label>
+            <div id="my-phone" class="item">15511717219</div>
+        </div>
+        <div class="my-contact-way-item">
+            <label>住址:</label>
+            <div id="my-address" class="item">余杭-待租</div>
+        </div>
+        <div class="my-contact-way-item">
+            <label>Email：</label>
+            <div id="my-email" class="item">xiongxiaotest@gmail.com</div>
+        </div>
+        <div class="my-contact-way-item">
+            <label>QQ/微信号:</label>
+            <div id="my-qq" class="item">1010443290/test1015</div>
+        </div>
+    </div>
+
+    <label for="my-self-info">个人信息</label>
+    <div id="my-self-info" class="animated bounceInLeft">
+        <div class="my-self-info-item">
+            <label>名字：</label>
+            <div id="my-name" class="item">熊潇 abearxiong</div>
+        </div>
+        <div class="my-self-info-item">
+            <label>本科：</label>
+            <div id="my-college" class="item">西华大学本科计算机系</div>
+        </div>
+        <div class="my-self-info-item">
+            <label>毕业时间：</label>
+            <div id="my-graduate-time" class="item">2019-06-27</div>
+        </div>
+        <div class="my-self-info-item">
+            <label>Github：</label>
+            <div id="my-website" class="item">http://github.com/abearxiong</div>
+        </div>
+        <div class="my-self-info-item">
+            <label>期望职位：</label>
+            <div id="my-work" class="item">程序员Java，前端Vue，React</div>
+        </div>
+        <div class="my-self-info-item">
+            <label>期望薪资：</label>
+            <div id="my-salary" class="item">面议</div>
+        </div>
+    </div>
+
+    <label for="my-compus-story">校园经历</label>
+    <div id="my-compus-story" class="animated bounceInRight">
+        <div class="my-compus-story-item">
+            <label>蓝桥杯：</label>
+            <div id="my-lanqiao" class="item">三等奖</div>
+        </div>
+        <div class="my-compus-story-item">
+            <label>英语四级</label>
+            <div id="my-lanqiao" class="item">2017</div>
+        </div>
+        <div class="my-compus-story-item">
+            <label>计算机设计</label>
+            <div id="my-lanqiao" class="item">二等奖 微信答题系统2018</div>
+        </div>
+        <div class="my-compus-story-item">
+            <label>点击网络</label>
+            <div id="my-lanqiao" class="item">学校组织，网管中心</div>
+        </div>
+    </div>
+    # 项目经历
+
+    ## 微信答题系统（2018-5）
+
+    是以SSM为开发，thymeleaf渲染，前后端半分离，和队友的协作开发。在前期主要是对数据库的设计和项目规划，中期对后台进行编程，前端页面是LayUI进行开发。前端获取thymeleaf渲染的模块，然后通过ajax局部刷新的形式进行局部动态更新内容。
+
+    <div id="my-cofing-for">我热爱的编程呀!</div>
+    <div id="my-coding-skill" class="animated">
+        <div class="my-coding-skill-item">
+            <label>后端</label>
+            <div id="my-rear-end" class="item">
+                内容
+            </div>
+        </div>
+    </div>
+
+
+    # 技能清单
+
+    - 前端框架：Vue/React/Bootstrap/JQuery
+    - 后台：Spring Boot，NodeJS
+    - 数据库相关：MySQL
+    - 工具：Git
+    
+    # 自我评价
+    
+    喜欢网络和计算机，具有编程思维，对问题很容易通过网络搜索去解决问题。喜欢接触网络上的新的知识。
+    
+</div>

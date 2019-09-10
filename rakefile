@@ -45,7 +45,7 @@ task :gist,[:gist, :name, :title, :description, :tags] =>:have do |t, args|
 end
 
 desc "create new article"
-task :new,[:title,:categories,:tags,:description,:comments] do |t,args|
+task :new,[:title,:categories,:tags,:description,:disqus] do |t,args|
 	args.with_defaults(:title => "文章的名字", :categories => "传说之旅", :tags=>"传说之旅", :description=>"对内容的描述")
 	time = Time.new #Get new time
 	timeinfos = time.to_s.split(" ")
@@ -57,10 +57,10 @@ task :new,[:title,:categories,:tags,:description,:comments] do |t,args|
 	title = args["title"]
 	categories = args["categories"]
 	tags = args["tags"].split(" ")
-	comments = args["comments"].nil?? false : true
+	disqus = args["disqus"].nil?? false : true
 	description =args["description"]
 	notebook = categories == "传说之旅" ? "☞☞传说之旅☜☜" : categories
-	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\nnotebook: #{notebook}\ncomments: #{comments}\ndescription: #{description}\n---\n"
+	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\nnotebook: #{notebook}\ncomments:  true\ndisqus: #{disqus}\ngitalk: true\ndescription: #{description}\n---\n"
 	File.open(newfile,"w+") do |aFile|
 		aFile.write(inputContent)
 	end
@@ -70,6 +70,10 @@ desc "There is rakefile for rake cmd.and Ruby File is in file _rubycmd"
 task :default do
 	#your code goes here				
 	puts "Thanks use this rakefile.I will Make better."
+	time = Time.new #Get new time
+	timeinfos = time.to_s.split(" ")
+	date = time.inspect
+	puts date
 end
 
 

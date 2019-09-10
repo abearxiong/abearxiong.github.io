@@ -1,0 +1,98 @@
+li {
+    float: left;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+}
+#resume-nav{
+    margin: 0 0 0 0;
+    width: 100%;
+    background-color: coral;
+}
+#resume-nav li{  
+    border: 1px solid black;
+    width: 60px;
+    margin: 0 0 0 10px;
+    text-align: center;
+}
+.resume-nav-item{
+    color: rgb(177, 36, 36);
+
+}
+.container{
+    border: 1px solid;
+}
+#resume-title{
+    color: red;
+    font-size:  2rem;
+    text-align: center;
+}
+#resume-title{
+    margin-top: 2px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+#my-contact-way{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+.my-contact-way-item{
+    /* margin-left: 10px; */
+    border: 1px solid;
+    width: 340px;
+    float: left;
+}
+.my-contact-way-item label{
+    float: left;
+    text-align: center;
+    width: 100px;
+}
+.my-contact-way-item .item{
+    text-align: left;
+}
+#my-self-info{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.my-self-info-item{
+    border: 1px solid;
+    width: 340px;
+    float: left;
+}
+.my-self-info-item label{
+    float: left;
+    text-align: center;
+    width: 100px;
+}
+.my-self-info-item .item{
+    text-align: left;
+}
+
+#my-compus-story{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.my-compus-story-item{
+    border: 1px solid;
+    width: 340px;
+    float: left;
+}
+.my-compus-story-item label{
+    float: left;
+    text-align: center;
+    width: 100px;
+}
+.my-compus-story-item .item{
+    text-align: left;
+}

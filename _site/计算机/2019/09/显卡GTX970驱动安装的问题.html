@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>显卡GTX970驱动安装的问题? | Abear</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="显卡GTX970驱动安装的问题?" />
+<meta name="author" content="abearxiong" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="9月1号星期一，买了一个电脑，对过去一个月所思考的内容，开始进行一个实践。昨天装显卡驱动，安装windows10之后多次安装系统都不能够成功安装上，出现的问题是，安装win10后，安装显卡驱动，无论是鲁大师，官网下的，驱动精灵以及其他重装，都不能成功，具体在文章。" />
+<meta property="og:description" content="9月1号星期一，买了一个电脑，对过去一个月所思考的内容，开始进行一个实践。昨天装显卡驱动，安装windows10之后多次安装系统都不能够成功安装上，出现的问题是，安装win10后，安装显卡驱动，无论是鲁大师，官网下的，驱动精灵以及其他重装，都不能成功，具体在文章。" />
+<link rel="canonical" href="http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html" />
+<meta property="og:site_name" content="Abear" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-03T11:17:44+08:00" />
+<script type="application/ld+json">
+{"description":"9月1号星期一，买了一个电脑，对过去一个月所思考的内容，开始进行一个实践。昨天装显卡驱动，安装windows10之后多次安装系统都不能够成功安装上，出现的问题是，安装win10后，安装显卡驱动，无论是鲁大师，官网下的，驱动精灵以及其他重装，都不能成功，具体在文章。","@type":"BlogPosting","url":"http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html","headline":"显卡GTX970驱动安装的问题?","dateModified":"2019-09-03T11:17:44+08:00","datePublished":"2019-09-03T11:17:44+08:00","author":{"@type":"Person","name":"abearxiong"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- cdn -->  <!-- bootstrap -->
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Abear" />
+  </head>
+  <body>  <div class="header-wraper">
+      <header class="Header">
+        <div class="Header-item">
+          <a class="Header-link" href="/">
+            <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+          </a>
+        </div>
+        <div class="Header-item"><input type="text"  /></div>
+        <div class="Header-item">
+          <a class="Header-link" href="/article">文章</a>
+          <a class="Header-link" href="/space">空间</a>
+          <a class="Header-link" href="/draft">草稿</a>
+          <a class="Header-link" href="/project">计划</a>
+          <a class="Header-link" href="/feed.xml">RSS</a>
+          <a class="Header-link" href="/lolChessHelper/">L自走棋</a>
+        </div>
+      </header>
+  </div><div class="container">
+      <div class="home">
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">显卡GTX970驱动安装的问题?</h1>
+      <p class="post-meta">
+        <time class="dt-published" datetime="2019-09-03T11:17:44+08:00" itemprop="datePublished">Sep 3, 2019
+        </time></p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      <p>在安装系统后，win10会自动带有驱动的，在查看设备管理器的时候，会看到GTX970的设备是显示感叹号的！点开查看显示是设备错误，错误码是43。第一次装的是1903系统。</p>
+
+<p>使用过鲁大师安装驱动，安装完就黑屏。重启之后，桌面的分辨率是800*800，不能修改。用驱动精灵依旧是这样的问题。</p>
+
+<p>重装了win10 1809，问题依旧，发现把GTX970的驱动禁用后，重启可以看到分辨率正确。</p>
+
+<p>一直思考，如果显卡出了问题，为什么，作为一个独显，能够显示，而不是无信号或者黑屏，而只有在安装完驱动，禁用启用才会出现黑屏。</p>
+
+<p>之后反复装系统，最后装了一次win7，打算测试win是否可行，但是依旧不行，于是用GPU-Z查看显卡，在官网下载的GPU-Z，查看Graphics Card显卡，发现关于Pixel Filrate,关于GPU Clock等等的一些不是为0就是不显示，查看Sensors的菜单，只显示四行，更多的应该有的比如显示器的状态PerfCap Reason等等很多都不显示。所以在大量重装的过程中，到底是显卡，驱动，还是主板出了问题呢？我一直在查询资料。</p>
+
+<p>偶然查看到了一篇文章<a href="https://www.bilibili.com/read/cv2353553/">记一次显卡故障解决日志</a>,我然后就尝试重装bios，这时，我已经把系统又安装为了win10 1903，win10系统不需要安装鲁大师等等，我发现只要有网络，那么win10可以在设备管理器哪里右键更新驱动程序，自动搜索更新的驱动程序软件进行下载和安装网上的驱动。</p>
+
+<p>经过BIOS的重新安装，我解决了我两天的系统安装经过。</p>
+
+<h3 id="在这里描述一下我是独显能够显示但是驱动安装不上设备管理器显示设备错误43分辨率不对而且不能调整分辨率作为独显能够把驱动禁用正确显示而且用鲁大师可以跑fps为0-3跑分1000gpu-z能识别但是有一些数据不显示这都是我当时的显卡不显示的一些情况">在这里描述一下，我是独显，能够显示，但是驱动安装不上，设备管理器显示设备错误43，分辨率不对，而且不能调整分辨率。作为独显，能够把驱动禁用，正确显示，而且用鲁大师可以跑，FPS为0-3，跑分1000，GPU-Z能识别，但是有一些数据不显示。这都是我当时的显卡不显示的一些情况。</h3>
+
+<h3 id="我刷bios刷的是同一个和自己本身安装的是一样的rom相当于是更新了一下我用nvidia-nvflash刷bios的不能保存bios不能备份我就直接刷了">我刷bios，刷的是同一个，和自己本身安装的是一样的rom，相当于是更新了一下，我用nvidia nvflash刷bios的，不能保存bios？？？？不能备份，我就直接刷了。</h3>
+
+<h1 id="显卡bios重刷">显卡BIOS重刷</h1>
+
+<ol>
+  <li>找到是在那个网站<a href="https://www.techpowerup.com">techpowerup</a>，无论是amd还是nvdia都是那个网站，下载的东西都在这个网站。刷显卡bios的软件和biso的rom文件。</li>
+  <li>位置1. downloads里面tewaking导航的BIOS flashing刷新bios软件的地方。位置2.首页最上面的导航栏DATABASES中vga bios collection中，查找自己的显卡和bios适应的rom。</li>
+</ol>
+
+<p>bios的rom的地方，查找自己需要的，<a href="https://www.techpowerup.com/vgabios/">https://www.techpowerup.com/vgabios/</a></p>
+
+<p>刷rom的软件,<a href="https://www.techpowerup.com/download/bios-flashing/">https://www.techpowerup.com/download/bios-flashing/</a></p>
+
+<p>amd的有ui，nvidia nvflash没有ui，直接双击打开的是帮助文档。使用方式，在下载的那个文件，在路径栏输入cmd，点击ctrl进入命令提示符，<code class="highlighter-rouge">nvflash64 -b beifen.rom</code>备份,<code class="highlighter-rouge">nvflash64 download.rom</code>download是下载的rom文件，放同一个目录，运行一下，执行成功，重启。完成刷。</p>
+
+
+    </div><div id="disqus_thread"></div> 
+ <script>
+    var disqus_config = function () {
+      this.page.url = 'http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html';
+      this.page.identifier = 'http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://abearxiong.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<div id="gitalk-container"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: 'd209733bda586b697c41',
+        clientSecret: 'efd35ea6ff910b44fb9fbbc29d6ec8240ac196a2',
+        repo: 'reviews',
+        owner: 'abearxiong',
+        admin: ['abearxiong'],
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    })
+    gitalk.render('gitalk-container')
+</script><a class="u-url" href="/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html" hidden></a>
+  </article>
+</div>
+    </div><div class="footer">
+
+</div><!--Bootstrap js-->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- Script -->
+<script src="/assets/js/main.js"></script>
+
+  </body>
+
+</html>

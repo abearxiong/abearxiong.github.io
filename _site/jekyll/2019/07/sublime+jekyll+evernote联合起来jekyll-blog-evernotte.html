@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>sublime+jekyll+evernote联合起来 | Abear</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="sublime+jekyll+evernote联合起来" />
+<meta name="author" content="abearxiong" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="在使用印象笔记记录我的传说之旅的时候，并我使用sublime编写我的jekyll文档的时候，发现evernote的一个插件很好的替我完成了一个复制粘贴到印象笔记的过程。但是转发过去有一些不得不修正的一些格式，或者其他要求。sublime+jekyll+evernote完美的实现了我的部分需求。若有机会，自己去阅读源码，进行更深入的个性化定制功能。" />
+<meta property="og:description" content="在使用印象笔记记录我的传说之旅的时候，并我使用sublime编写我的jekyll文档的时候，发现evernote的一个插件很好的替我完成了一个复制粘贴到印象笔记的过程。但是转发过去有一些不得不修正的一些格式，或者其他要求。sublime+jekyll+evernote完美的实现了我的部分需求。若有机会，自己去阅读源码，进行更深入的个性化定制功能。" />
+<link rel="canonical" href="http://0.0.0.0:4000/jekyll/2019/07/sublime+jekyll+evernote%E8%81%94%E5%90%88%E8%B5%B7%E6%9D%A5jekyll-blog-evernotte.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/jekyll/2019/07/sublime+jekyll+evernote%E8%81%94%E5%90%88%E8%B5%B7%E6%9D%A5jekyll-blog-evernotte.html" />
+<meta property="og:site_name" content="Abear" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-07-05T11:17:50+08:00" />
+<script type="application/ld+json">
+{"description":"在使用印象笔记记录我的传说之旅的时候，并我使用sublime编写我的jekyll文档的时候，发现evernote的一个插件很好的替我完成了一个复制粘贴到印象笔记的过程。但是转发过去有一些不得不修正的一些格式，或者其他要求。sublime+jekyll+evernote完美的实现了我的部分需求。若有机会，自己去阅读源码，进行更深入的个性化定制功能。","@type":"BlogPosting","url":"http://0.0.0.0:4000/jekyll/2019/07/sublime+jekyll+evernote%E8%81%94%E5%90%88%E8%B5%B7%E6%9D%A5jekyll-blog-evernotte.html","headline":"sublime+jekyll+evernote联合起来","dateModified":"2019-07-05T11:17:50+08:00","datePublished":"2019-07-05T11:17:50+08:00","author":{"@type":"Person","name":"abearxiong"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/jekyll/2019/07/sublime+jekyll+evernote%E8%81%94%E5%90%88%E8%B5%B7%E6%9D%A5jekyll-blog-evernotte.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- cdn -->  <!-- bootstrap -->
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Abear" />
+  </head>
+  <body>  <div class="header-wraper">
+      <header class="Header">
+        <div class="Header-item">
+          <a class="Header-link" href="/">
+            <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+          </a>
+        </div>
+        <div class="Header-item"><input type="text"  /></div>
+        <div class="Header-item">
+          <a class="Header-link" href="/article">文章</a>
+          <a class="Header-link" href="/space">空间</a>
+          <a class="Header-link" href="/draft">草稿</a>
+          <a class="Header-link" href="/project">计划</a>
+          <a class="Header-link" href="/feed.xml">RSS</a>
+          <a class="Header-link" href="/lolChessHelper/">L自走棋</a>
+        </div>
+      </header>
+  </div><div class="container">
+      <div class="home">
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">sublime+jekyll+evernote联合起来</h1>
+      <p class="post-meta">
+        <time class="dt-published" datetime="2019-07-05T11:17:50+08:00" itemprop="datePublished">Jul 5, 2019
+        </time></p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      <p>使用了sublime和他的插件</p>
+
+<p><a href="http://www.sublimetext.com/3">Sublime Text</a> plugin for <a href="http://www.evernote.com">Evernote</a></p>
+
+<p><a href="https://github.com/jamiesun/SublimeEvernote">SublimeEvernote</a></p>
+
+<p>需要的内容是获取印象笔记token：<a href="https://app.yinxiang.com/api/DeveloperToken.action">https://app.yinxiang.com/api/DeveloperToken.action</a></p>
+
+<p>使用的技巧：</p>
+
+<p>ctrl+e,s是发送内容到印象笔记</p>
+
+<h2 id="大体印象笔记的yml和jekyll的yml可以通用并可以通用部分markdown">大体印象笔记的yml和jekyll的yml可以通用，并可以通用部分markdown</h2>
+
+<h2 id="copy-commands">copy Commands</h2>
+
+<p>The plugin does not install keymaps, if you wish you may add a variation of the following to your user keymaps:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{ "keys": ["super+e"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Evernote: "} },
+{ "keys": ["ctrl+e", "ctrl+s"], "command": "send_to_evernote" },
+{ "keys": ["ctrl+e", "ctrl+o"], "command": "open_evernote_note" },
+{ "keys": ["ctrl+e", "ctrl+u"], "command": "save_evernote_note" },
+</code></pre></div></div>
+
+<h2 id="copy-metadata">copy metadata</h2>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">My Note's Title</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="s">misc, sublime</span>
+<span class="na">notebook</span><span class="pi">:</span> <span class="s">My Notebook</span> 
+<span class="nn">---</span>
+</code></pre></div></div>
+
+<h2 id="copy-settings">copy Settings</h2>
+
+<p>The <code class="highlighter-rouge">Evernote.sublime-settings</code> can be accessed from <code class="highlighter-rouge">Preferences &gt; Package Settings &gt; Evernote</code>.</p>
+
+<p>The two settings <code class="highlighter-rouge">token</code> and <code class="highlighter-rouge">noteStoreUrl</code> are set by the plugin in the <a href="#first-use">first use</a>.</p>
+
+<p>The following settings can be customised:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Setting</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">md_syntax</code></td>
+      <td>a string pointing to a <code class="highlighter-rouge">tmLanguage</code> file which you want to associate with notes opened from Evernote.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">inline_css</code></td>
+      <td>a dictionary associating some HTML element names to inline CSS styles; this setting is documented in the <a href="https://github.com/bordaigorl/sublime-evernote/wiki/Styling">wiki</a>. The markdown of a note can contain (almost) arbitrary HTML blocks <em>but</em> Evernote only accepts a subset of the elements and attributes (<code class="highlighter-rouge">class</code> and <code class="highlighter-rouge">id</code> are disallowed). See <a href="http://dev.evernote.com/doc/articles/enml.php">here</a> for details.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">code_highlighting_style</code></td>
+      <td>a pygments style among <code class="highlighter-rouge">autumn</code>, <code class="highlighter-rouge">default</code>, <code class="highlighter-rouge">github</code>, <code class="highlighter-rouge">monokai</code>, <code class="highlighter-rouge">perldoc</code>, <code class="highlighter-rouge">vim</code>, <code class="highlighter-rouge">borland</code>, <code class="highlighter-rouge">emacs</code>, <code class="highlighter-rouge">igor</code>, <code class="highlighter-rouge">murphy</code>, <code class="highlighter-rouge">rrt</code>, <code class="highlighter-rouge">vs</code>,   <code class="highlighter-rouge">bw</code>, <code class="highlighter-rouge">friendly</code>, <code class="highlighter-rouge">native</code>, <code class="highlighter-rouge">tango</code>, <code class="highlighter-rouge">xcode</code>,   <code class="highlighter-rouge">colorful</code>, <code class="highlighter-rouge">fruity</code>, <code class="highlighter-rouge">manni</code>, <code class="highlighter-rouge">pastie</code>, <code class="highlighter-rouge">trac</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">code_friendly</code></td>
+      <td>if <code class="highlighter-rouge">true</code> the <code class="highlighter-rouge">code-friendly</code> extra of markdown2 is enabled</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">evernote_autocomplete</code></td>
+      <td>when this setting is true, suggestions will be offered for autocompletion of the <code class="highlighter-rouge">notebook</code> and <code class="highlighter-rouge">tags</code> fields in metadata. Default is true.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">emphasis_mark</code></td>
+      <td>when converting from HTML to markdown, use this as emphasis markup. Valid values are <code class="highlighter-rouge">"*"</code> or <code class="highlighter-rouge">"_"</code> (default). It is set to <code class="highlighter-rouge">"*"</code> when <code class="highlighter-rouge">code_friendly</code> is true.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">strong_mark</code></td>
+      <td>when converting from HTML to markdown, use this as emphasis markup. Valid values are <code class="highlighter-rouge">"__"</code> or <code class="highlighter-rouge">"**"</code> (default)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">item_mark</code></td>
+      <td>when converting from HTML to markdown, use this as unordered list item markup. Valid values are <code class="highlighter-rouge">"+"</code>, <code class="highlighter-rouge">"-"</code> or <code class="highlighter-rouge">"*"</code> (default)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">notes_order</code></td>
+      <td>how to sort the notes in the panels; possible values: <code class="highlighter-rouge">created</code>, <code class="highlighter-rouge">updated</code>, <code class="highlighter-rouge">relevance</code>, <code class="highlighter-rouge">update_sequence_number</code>, <code class="highlighter-rouge">title</code>. Set the <code class="highlighter-rouge">notes_order_ascending</code> setting to <code class="highlighter-rouge">true</code> to reverse the selected order.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">max_notes</code></td>
+      <td>maximum number of notes in a panel; default is 100.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">update_on_save</code></td>
+      <td>when this setting is true, saving a file containing a note will also update (overwriting it) the online version. Default is false.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sort_notebooks</code></td>
+      <td>sorts notebooks alphabetically in palette</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">show_stacks</code></td>
+      <td>shows the stack of notebooks in palette</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">open_single_result</code></td>
+      <td>when a search returns only one note open it directly skipping the results palette (defaults to <code class="highlighter-rouge">true</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">warn_on_close</code></td>
+      <td>when closing a modified note without saving to Evernote, offer a choice to save or discard changes (defaults to <code class="highlighter-rouge">true</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">gfm_tables</code></td>
+      <td>enable GFM table syntax (default <code class="highlighter-rouge">true</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">default_template</code></td>
+      <td>a file with a Markdown template for new notes (example: <code class="highlighter-rouge">"Packages/User/EvernoteNote.md"</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">tab_prefix</code></td>
+      <td>a string used as a prefix in tabs for notes (default <code class="highlighter-rouge">"Evernote: "</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">wiki_tables</code></td>
+      <td>enable Wiki table syntax (default <code class="highlighter-rouge">false</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">debug</code></td>
+      <td>enables logging in the console</td>
+    </tr>
+  </tbody>
+</table>
+
+    </div><a class="u-url" href="/jekyll/2019/07/sublime+jekyll+evernote%E8%81%94%E5%90%88%E8%B5%B7%E6%9D%A5jekyll-blog-evernotte.html" hidden></a>
+  </article>
+</div>
+    </div><div class="footer">
+
+</div><!--Bootstrap js-->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- Script -->
+<script src="/assets/js/main.js"></script>
+
+  </body>
+
+</html>

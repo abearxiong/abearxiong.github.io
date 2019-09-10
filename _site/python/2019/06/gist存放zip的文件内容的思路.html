@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>gist存放zip的文件内容的思路！ | Abear</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="gist存放zip的文件内容的思路！" />
+<meta name="author" content="abearxiong" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="gist是可以存放代码的，但是如果是文件的话，那么应该是怎么存取呢？之前存储python爬取代码的时候，也想顺便把我的代码所有的内容打包，然后放到zip，把内容存放到gist中，设想，zip文件可以是用文本来显示，比如二进制文件，而二进制文件可以用文本的来显示，通过转换可以转换为二进制。所以理论成立。" />
+<meta property="og:description" content="gist是可以存放代码的，但是如果是文件的话，那么应该是怎么存取呢？之前存储python爬取代码的时候，也想顺便把我的代码所有的内容打包，然后放到zip，把内容存放到gist中，设想，zip文件可以是用文本来显示，比如二进制文件，而二进制文件可以用文本的来显示，通过转换可以转换为二进制。所以理论成立。" />
+<link rel="canonical" href="http://0.0.0.0:4000/python/2019/06/gist%E5%AD%98%E6%94%BEzip%E7%9A%84%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E7%9A%84%E6%80%9D%E8%B7%AF.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/python/2019/06/gist%E5%AD%98%E6%94%BEzip%E7%9A%84%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E7%9A%84%E6%80%9D%E8%B7%AF.html" />
+<meta property="og:site_name" content="Abear" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-29T23:52:40+08:00" />
+<script type="application/ld+json">
+{"description":"gist是可以存放代码的，但是如果是文件的话，那么应该是怎么存取呢？之前存储python爬取代码的时候，也想顺便把我的代码所有的内容打包，然后放到zip，把内容存放到gist中，设想，zip文件可以是用文本来显示，比如二进制文件，而二进制文件可以用文本的来显示，通过转换可以转换为二进制。所以理论成立。","@type":"BlogPosting","url":"http://0.0.0.0:4000/python/2019/06/gist%E5%AD%98%E6%94%BEzip%E7%9A%84%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E7%9A%84%E6%80%9D%E8%B7%AF.html","headline":"gist存放zip的文件内容的思路！","dateModified":"2019-06-29T23:52:40+08:00","datePublished":"2019-06-29T23:52:40+08:00","author":{"@type":"Person","name":"abearxiong"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/python/2019/06/gist%E5%AD%98%E6%94%BEzip%E7%9A%84%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E7%9A%84%E6%80%9D%E8%B7%AF.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- cdn -->  <!-- bootstrap -->
+<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Abear" />
+  </head>
+  <body>  <div class="header-wraper">
+      <header class="Header">
+        <div class="Header-item">
+          <a class="Header-link" href="/">
+            <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+          </a>
+        </div>
+        <div class="Header-item"><input type="text"  /></div>
+        <div class="Header-item">
+          <a class="Header-link" href="/article">文章</a>
+          <a class="Header-link" href="/space">空间</a>
+          <a class="Header-link" href="/draft">草稿</a>
+          <a class="Header-link" href="/project">计划</a>
+          <a class="Header-link" href="/feed.xml">RSS</a>
+          <a class="Header-link" href="/lolChessHelper/">L自走棋</a>
+        </div>
+      </header>
+  </div><div class="container">
+      <div class="home">
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">gist存放zip的文件内容的思路！</h1>
+      <p class="post-meta">
+        <time class="dt-published" datetime="2019-06-29T23:52:40+08:00" itemprop="datePublished">Jun 29, 2019
+        </time></p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      <h2 id="设想原理">设想原理</h2>
+
+<p>所有的图片，照片，zip文件，获取任何视频等等，只要是电脑上的东西都是可以转为二进制文本的。把所有内容转换为二进制，通过文本的显示把二进制内容以可以显示的方式保存，比如txt，但是通过转换后缀的时候，打开会出现乱码，因为是二进制。所以我想，把二进制转换为16进制，第二，把内容输入txt文本保存，然后把16进制内容放到gist中或者其他保存文本类型的。</p>
+
+<p>可以下载文本类型，通过转换为原后缀，可以得到原本的内容，也是一种存储内容的方式。</p>
+
+<h2 id="解决目标">解决目标</h2>
+
+<p>gist中只能存储代码内容，只能是文本类型的，不能是zip等等的文件，但是我想把我所在的内容保存在同一个gist的仓库里面，那么我就需要实现一个功能，转换为可以显示，把可以显示转化为原内容的目标。</p>
+
+<p>使用Python是更好的一种方式。然后把内容放到剪贴板，粘贴即可。不能手动，因为太慢了，所以需要一个程序进行检测。</p>
+
+<h2 id="转二进制">转二进制</h2>
+
+<p>把读取的文件直接转为二进制，把二进制内容可视化就行了。</p>
+
+<h2 id="转内容">转内容</h2>
+
+<p>把读取的二进制转换为内容。</p>
+
+<h2 id="模拟代码">模拟代码</h2>
+
+<p>把读取的内容打印出来，然后写入另一个文本的形式。实际日常不可用。<strong>更可用的方法是利用剪贴板的功能。获得剪贴板内容，然后快捷键操作，粘贴可视化文本。复制可视化文本，快捷键操作，粘贴具体的内容。</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># -*- coding: UTF-8 -*-
+# f = open("one.zip", "r", encoding="utf-8")
+f = open("one.zip", "rb")  # 打开并读取文件，读取二进制的形式
+a = f.read()  # 读出内容
+print(a)
+# print(f.readlines())
+# b = a.decode(encoding="utf-8")
+b = a.hex()  # 转化为16进制内容
+print(b)
+# bytes.fromhex(b)
+f.close()
+
+f = open("two.zip", "wb")  #  打开要写的文件，写入二进制的内容
+f.write(a)
+f.close()
+</code></pre></div></div>
+
+<ul>
+  <li>2019年7月2日 完成</li>
+</ul>
+
+    </div><a class="u-url" href="/python/2019/06/gist%E5%AD%98%E6%94%BEzip%E7%9A%84%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9%E7%9A%84%E6%80%9D%E8%B7%AF.html" hidden></a>
+  </article>
+</div>
+    </div><div class="footer">
+
+</div><!--Bootstrap js-->
+<script src="/assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- Script -->
+<script src="/assets/js/main.js"></script>
+
+  </body>
+
+</html>

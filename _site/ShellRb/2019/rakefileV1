@@ -1,0 +1,84 @@
+require 'rake'
+desc "run jekyll server"
+task :serve do |t, args|
+	exec 'bundle exec jekyll serve&'
+end
+desc "old--create new article;"
+task :newartOld,[:article,:title,:categories,:tags,:description,:comments] do |t,args|
+	time = Time.new #Get new time
+	timeinfos = time.to_s.split(" ")
+	path ="_posts/"
+	filename= args["article"].gsub(" ","-")
+	suffix = ".markdown"
+	newfile = path+timeinfos[0]+"-"+filename+suffix
+	
+	title =args["title"].nil?? "title-name" : args["title"]
+	date = time.inspect
+	categories =args["categories"].nil??  "articles" : args["categories"]
+	tags = args["tags"].nil?? "notags" : args["tags"].split(" ")
+	comments = args["comments"].nil?? false: arts["comments"]
+	description = args["description"].nil?? "" : "description: #{args["description"]}\n"
+	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\ncomments: #{comments}\n#{description}---\n"
+	File.open(newfile,"w+") do |aFile|
+		aFile.write(inputContent)
+	end
+end
+
+desc "create new article; article is must"
+task :new,[:article,:categories,:tags,:description,:comments] do |t,args|
+	time = Time.new #Get new time
+	timeinfos = time.to_s.split(" ")
+	path ="_posts/"
+	filename= args["article"].gsub(" ","-")
+	suffix = ".md"
+	newfile = path+timeinfos[0]+"-"+filename+suffix
+	
+	title = args["article"]
+	date = time.inspect
+	categories =args["categories"].nil??  "articles" : args["categories"]
+	tags = args["tags"].nil?? "notags" : args["tags"].split(" ")
+	comments = args["comments"].nil?? false : true
+	description ="description: #{args["description"]}\n"
+	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\ncomments: #{comments}\n#{description}---\n"
+	File.open(newfile,"w+") do |aFile|
+		aFile.write(inputContent)
+	end
+end
+
+desc "There is rakefile for rake cmd.and Ruby File is in file _rubycmd"
+task :default do
+		#your code goes here				
+	puts "Thanks use this rakefile.I will Make better."
+end
+
+
+desc "gist 管理增加后在这里记下一笔，然后知道他存放的位置是在哪里。用表格的形式，存放。"
+task :gist,[:orgin, :categories, :tags, :title] do |t, args|
+	# Tasks
+	time = Time.new #Get new time 
+	timeinfos = time.strftime("%Y-%m-")
+	newfile = 'gists/' + timeinfos + 'gists.md' # 文件名
+	# 如果文件名存在只添加内容，如果文件名不存在，那么添加 头
+	# 如果文件名不存在，则新增内容
+	File.open(newfile, "w+") do |aFile|
+		aFile.write(inputContent)
+	end
+end
+
+
+desc "tow"
+task :me do
+	puts "xixi"
+end
+
+desc "test"
+task :test,[:arg1, :arg2] do |t, args|
+	# Tasks
+	#coding: utf-8 
+	a="sss"
+	puts args
+	puts args['arg1'].nil?
+	puts "#{args['arg1']}="
+	#Dir.mkdir("new")#创建一个新文件夹
+	#Dir.rmdir("new")#删除指定的文件夹
+end
