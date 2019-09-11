@@ -27,7 +27,6 @@ body{
     border: 1px solid;
 }
 #resume-title{
-    color: red;
     font-size:  2rem;
     text-align: center;
 }
@@ -95,4 +94,7 @@ body{
 }
 .my-compus-story-item .item{
     text-align: left;
+}
+.code-skill{
+    color: green;
 }
