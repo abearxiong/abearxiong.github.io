@@ -4,17 +4,23 @@ title: 简历
 date: 2019-09-09 23:50:09 +0800
 description: "简历能力/热更新，想弥补之前所有的简历的写法。 一行一行下去，然后显示不同的效果图出来。"
 links: ['
-<link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <link rel="stylesheet" href="/assets/css/resume-2019-09-10.css">
 ']
 scripts: ['
 <!--Bootstrap js-->
 <script src="/assets/js/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-<script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script><!-- Script -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </script>
 <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
 <script src="/assets/js/resume-2019-09-10.js"></script>
@@ -23,7 +29,7 @@ scripts: ['
 permalink: /resume/
 ---
 
-<div class=" animated bounce delay-2s" id="resume-nav" hidden>
+<div class=" animated bounce delay-2s" id="resume-nav" style="display: none;">
     <span>过去的简历制作</span>
     <ul>
         <li><a class="resume-nav-item" href="./1">first</a></li>
@@ -33,9 +39,8 @@ permalink: /resume/
     <span id="hideResumeNav">隐藏&lt;</span>
 </div>
 <div class="container">
-
-    <div id="resume-title" class="animated bounce">熊潇程序员简历 <img id="show-nav" src="/assets/images/2019-09-10/show-nav.png" alt="显示过去简历"
-            title="显示过去的简历的列表"> </div>
+    <div id="resume-title" class="animated bounce">熊潇程序员简历 <img id="show-nav"
+            src="/assets/images/resume/2019-09-10/show-nav.png" alt="显示过去简历" title="显示过去的简历的列表"> </div>
 
     <label for="my-contack-way">联系方式</label>
     <div id="my-contact-way" class="animated bounceInDown">
@@ -73,11 +78,12 @@ permalink: /resume/
         </div>
         <div class="my-self-info-item">
             <label>Github：</label>
-            <div id="my-website" class="item">http://github.com/abearxiong</div>
+            <div id="my-website" class="item"><a href="https://abearxiong.github.io/">https://abearxiong.github.io/</a>
+            </div>
         </div>
         <div class="my-self-info-item">
             <label>期望职位：</label>
-            <div id="my-work" class="item">程序员Java，前端Vue，React</div>
+            <div id="my-work" class="item">IT后端Java，前端Vue，React</div>
         </div>
         <div class="my-self-info-item">
             <label>期望薪资：</label>
@@ -118,7 +124,7 @@ permalink: /resume/
     <div id="my-cofing-for">我热爱的编程呀! 2019-09-11</div>
     <div id="my-coding-skill" class="animated">
         <div class="my-coding-skill-item">
-            <label>后端</label>
+            <label>服务器后端</label>
             <div id="my-rear-end" class="item">
                 <div class="my-rear-end-skill" class="animated">
                     <div class="my-rear-end-skill-item">
@@ -153,7 +159,7 @@ permalink: /resume/
         </div>
     </div>
     <div class="my-coding-skill-item">
-        <label for="">前端</label>
+        <label for="">前端(早前html css js)</label>
         <div id="my-front-end" class="item">
             <div id="my-work-react" class="my-front-end-tools-item">
                 <label for="">React</label>
@@ -185,18 +191,46 @@ permalink: /resume/
             </div>
         </div>
     </div>
+    <div class="my-coding-skill-item">
+        <label for="">桌面</label>
+        <div id="my-desktop-develop" class="item animated">
+            <div id="my-work-csharp" class="my-desktop-develop-item">
+                <label for="">c# wpf winfom xmal</label>
+                <div class="item code-skill">熟悉程度（5） ---对于日常有时候需要进行开发桌面小工具。</div>
+                <div class="item">通过hook，msdn的api进行获取鼠标移动，键盘案件，关闭电脑，关闭屏幕的功能等等。</div>
+            </div>
+            <div id="my-work-other" class="my-desktop-develop-item">
+                <label for="">electron</label>
+                <div class="item code-kill">熟悉程度（3） ---因为向往别人做的，所以去接触了一下</div>
+                <div class="item">使用Vue或者React开发网站应用，把打包的内容通过electron加载，实现获得桌面应用。但是不好用hook这些功能。</div>
+            </div>
+        </div>
+    </div>
 
-    <h2>
-        自我评价
-    </h2> 
-    <p>
-        喜欢网络和计算机，具有编程思维，对问题很容易通过网络搜索去解决问题。喜欢接触网络上的新的知识。
-    </p>
-    <p>
-    我叫熊潇，2019.6.27毕业于西华大学，计算机科学技术专业，现居于杭州。
-    </p>
-    <p>
-    大学期间，个人喜欢网络和计算机，不仅通过专业课堂丰富了自己的专业知识，还自学过其他编程语言，因为自己的兴趣，所以接触较广。2018年通过选拔到杭州代表学校参加过全国计算机设计大赛取得二等奖，微信答题系统，系统使用ssm框架，前端使用layUI开发，主要负责后端服务开发。
-    我具有编程思维，对面临的问题会沉迷式的搜索，百度谷歌解决问题的办法，不是为了编程，工作而去编程，是因为自己喜欢编程这门技术而去实现编程，并通过坚韧不拔沉迷性的状态去解决难题。对于所面临的问题，我一直觉得只有足够的时间，我能解决所有问题。
-    我是一个坚韧不拔，不怕艰苦，忘我编程的程序员，我认为计算机是一件很有趣的事物，我有很多思想等你开发，期待能与你进一步沟通。</p>
+    <div id="my-coding-self-evaluation">
+        <h2>自我评价</h2>
+        <p>喜欢网络和计算机，具有编程思维，对问题很容易通过网络搜索去解决问题。喜欢接触网络上的新的知识。</p>
+        <p>我叫熊潇，2019.6.27毕业于西华大学，计算机科学技术专业，现居于杭州。</p>
+        <p>大学期间，个人喜欢网络和计算机，不仅通过专业课堂丰富了自己的专业知识，还自学过其他编程语言，因为自己的兴趣，所以接触较广。2018年通过选拔到杭州代表学校参加过全国计算机设计大赛取得二等奖，微信答题系统，系统使用ssm框架，前端使用layUI开发，主要负责后端服务开发。
+            我具有编程思维，对面临的问题会沉迷式的搜索，百度谷歌解决问题的办法，不是为了编程，工作而去编程，是因为自己喜欢编程这门技术而去实现编程，并通过坚韧不拔沉迷性的状态去解决难题。对于所面临的问题，我一直觉得只有足够的时间，我能解决所有问题。
+            我是一个坚韧不拔，不怕艰苦，忘我编程的程序员，我认为计算机是一件很有趣的事物，我有很多思想等你开发，期待能与你进一步沟通。</p>
+    </div>
+
+
+    <label for="">编程语言</label>
+    <div id="my-code" class="card-group">
+        <div class="card my-code-item">
+            <div class="card-body">
+                <h5 class="card-title">Java</h5>
+                <p class="card-text">基础</p>
+            </div>
+        </div>
+        <div class="card my-code-item">
+            <div class="card-body">
+                <h5 class="card-title">Nodejs</h5>
+                <p class="card-text">基础</p>
+            </div>
+        </div>
+    </div>
+
 </div>

@@ -4,6 +4,10 @@ li {
 }
 a{
     text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: lawngreen;
 }
 body{
     margin: 0;
@@ -97,4 +101,33 @@ body{
 }
 .code-skill{
     color: green;
+}
+
+#my-compus-story{
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+#my-cofing-for{
+    margin-top: 5px;
+    padding-top: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+}
+#my-coding-skill{
+    display: block;
+}
+.my-coding-skill-item:not(:first-child):not(:last-child){
+    margin-top: 20px;
+    padding-top: 4px;
+    border-top: 1px dashed black;
+}
+.my-code-item{
+    width: 18rem;
+}
+
+#my-coding-self-evaluation{
+    margin-top: 20px;
+    padding-top: 5px;
+    border-top: 1px solid black;
 }
