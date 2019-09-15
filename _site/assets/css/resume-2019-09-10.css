@@ -131,3 +131,35 @@ body{
     padding-top: 5px;
     border-top: 1px solid black;
 }
+#my-work-web-tools{
+    margin-top: 20px;
+    padding-top: 4px;
+    border-top: 1px dashed black;
+}
+#my-front-end-tools{
+    /* border: 0.1px solid black; */
+    display: black;
+}
+#my-front-end-repos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+#my-front-end-repos > label{
+    display: block;
+    /* background-color: red; */
+    width: 1080px;
+}
+#my-front-end-repos .my-front-end-repos-item{
+    margin-top: 4px;    
+    margin-left: 10px;
+    font-size: small;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#my-coding-self-evaluation{
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}

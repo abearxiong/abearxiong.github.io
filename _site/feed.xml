@@ -1,4 +1,219 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2019-09-14T21:24:13+08:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。</subtitle><author><name>abearxiong</name></author><entry><title type="html">显卡GTX970驱动安装的问题?</title><link href="http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html" rel="alternate" type="text/html" title="显卡GTX970驱动安装的问题?" /><published>2019-09-03T11:17:44+08:00</published><updated>2019-09-03T11:17:44+08:00</updated><id>http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98</id><content type="html" xml:base="http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html">&lt;p&gt;在安装系统后，win10会自动带有驱动的，在查看设备管理器的时候，会看到GTX970的设备是显示感叹号的！点开查看显示是设备错误，错误码是43。第一次装的是1903系统。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2019-09-16T00:50:56+08:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。</subtitle><author><name>abearxiong</name></author><entry><title type="html">Electron C# dll hook获取活动窗口的进程和路径</title><link href="http://0.0.0.0:4000/eelectron/2019/09/Electron+C-dll-hook%E8%8E%B7%E5%8F%96%E6%B4%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E8%B7%AF%E5%BE%84.html" rel="alternate" type="text/html" title="Electron C# dll hook获取活动窗口的进程和路径" /><published>2019-09-15T15:57:52+08:00</published><updated>2019-09-15T15:57:52+08:00</updated><id>http://0.0.0.0:4000/eelectron/2019/09/Electron+C#-dll-hook%E8%8E%B7%E5%8F%96%E6%B4%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E8%B7%AF%E5%BE%84</id><content type="html" xml:base="http://0.0.0.0:4000/eelectron/2019/09/Electron+C-dll-hook%E8%8E%B7%E5%8F%96%E6%B4%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E8%B7%AF%E5%BE%84.html">&lt;p&gt;在实现这个要求前，需要有node-gyp，node-gyp需要有python2.7,visual studio2015的什么动态链接库。为了简便方法的安装，我安装的的方法是直接安装windows-build-tools的包。&lt;/p&gt;
+
+&lt;h2 id=&quot;windows的环境&quot;&gt;Windows的环境&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-安装gyp&quot;&gt;1. 安装gyp&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-npm&quot;&gt;npm i -g node-gyp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;2-安装扩展包&quot;&gt;2. 安装扩展包&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install --global --production windows-build-tools
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;3-配置python路径&quot;&gt;3. 配置python路径&lt;/h3&gt;
+
+&lt;p&gt;路径的位置是在系统用户的文件夹下的.windows-build-tools里面。c:/user/用户/.windows-build-tools&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-node&quot;&gt;node-gyp python --python /path/to/python27
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;安装electron&quot;&gt;安装Electron&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm i -g electron@latest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;1-建立工程&quot;&gt;1. 建立工程&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-npm&quot;&gt;mkdir electron-demo
+npm init
+npm i electron
+npm i electron-edge-js
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;2-初始化indexhtml和indexjs&quot;&gt;2. 初始化&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;index.js&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;index.html&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+   测试&amp;lt;input type=&quot;text&quot; /&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index.js&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-JS&quot;&gt;const { app,BrowserWindow } = require('electron')
+var edge = require('electron-edge-js')
+// let createWindow =  () =&amp;gt;{
+//     let win = new BrowserWindow ({
+//         nodeIntegration: true
+//     })
+//     win.loadFile(&quot;index.html&quot;)
+//     console.log(&quot;启动&quot;,Number.parseInt('256')) //发现的程序内的hook
+//     win.hookWindowMessage(Number.parseInt('256'),( wParm, lParm)=&amp;gt;{
+//         let eventName = null
+//         console.log(wParm,&quot;参数&quot;)
+//     }) //Number.parseInt('0xD')
+//     let isHook = win.isWindowMessageHooked(Number.parseInt('256'))
+//     console.log(isHook)
+//     let fileName = win.getRepresentedFilename()
+// }
+
+let createWindow = () =&amp;gt; {
+    let win = new BrowserWindow({
+        nodeIntegration: true
+    })
+    win.loadFile(&quot;index.html&quot;) // 加载HTML
+    console.log(&quot;启动&quot;)
+    let HelloDll = edge.func({
+        assemblyFile: 'winkey.dll',
+        typeName: 'winkey.GetActivity',
+        methodName: 'HelloDll'
+    }) // 测试DLL
+    let HookStart = edge.func({
+        assemblyFile: 'winkey.dll',
+        typeName: 'winkey.GetActivity',
+        methodName: 'HookStart'
+    }) // 开始进程
+    let GetData = edge.func({
+        assemblyFile: 'winkey.dll',
+        typeName: 'winkey.GetActivity',
+        methodName: 'GetData'
+    }) // 获取进程的变量
+    HelloDll(1, 2, function (err, result) {
+        if (err) {
+            console.log(&quot;err&quot;, err)
+        } else {
+            console.log(&quot;result&quot;, result)
+        }
+
+    })
+    HookStart(1,function(err,result){
+        if (err) {
+            console.log(&quot;err&quot;, err)
+        } else {
+            console.log(&quot;HookStart result&quot;, result)
+        }
+    })
+    setInterval(() =&amp;gt; {
+       GetData(1,function(err,result){
+        if (err) {
+            console.log(&quot;err&quot;, err)
+        } else {
+            console.log(&quot;result&quot;, result)
+        }
+       })
+    }, 2000);   // 每隔两秒进行打印所激活窗口的一些值，进程名字，进程ID，进程的路径
+
+}
+
+app.on('ready', createWindow)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;3-c-创建dll建立hook窗口的程序&quot;&gt;3. C# 创建DLL，建立Hook窗口的程序&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;使用Visual Studio创建工程&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;新建，选择类库（.Net FrameWork),自己创建自己的工程，我创建的是winkey,修改文件名类的名字GetActivity,和Electron的对应。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+
+
+namespace winkey
+{
+    public class GetActivity
+    {
+        private System.Threading.Timer threadTimer;
+        private Process myProcess;
+        volatile public static String Data =&quot;内容&quot;;
+        public async Task&amp;lt;object&amp;gt; HelloDll(object input)
+        {
+            Console.WriteLine(&quot;输入HelloDLL&quot;);
+            Console.WriteLine(input);
+            return &quot;helloDll&quot;;
+        }
+        public async Task&amp;lt;object&amp;gt; GetData(object input)
+        {
+            Console.WriteLine(&quot;Data---&quot;+ GetActivity.Data);
+            return GetActivity.Data;
+        }
+        public async Task&amp;lt;object&amp;gt; HookStart(object input)
+        {
+            threadTimer = new System.Threading.Timer(new System.Threading.TimerCallback(GetValue), null, 0, 2000);
+            return &quot;start&quot;;
+        }
+        public async Task&amp;lt;object&amp;gt; HookEnd(object input)
+        {
+            threadTimer.Dispose();
+            return &quot;0&quot;;
+        }
+        [DllImport(&quot;User32.dll&quot;)]
+        public static extern IntPtr GetForegroundWindow(); //获取活动窗口句柄
+
+        [DllImport(&quot;User32.dll&quot;)]
+        public static extern int GetWindowThreadProcessId(IntPtr hwnd, out int ID); //获取线程ID
+
+        /// &amp;lt;summary&amp;gt;
+        /// 获取进程的内容
+        /// &amp;lt;/summary&amp;gt;
+        /// &amp;lt;param name=&quot;state&quot;&amp;gt;&amp;lt;/param&amp;gt;
+        private void GetValue(Object state)
+        {
+            //Thread.Sleep(3000);    //睡眠3s，用来选择活动窗口
+            IntPtr hWnd = GetForegroundWindow();    //获取活动窗口句柄
+            int calcID = 0;    //进程ID
+            int calcTD = 0;    //线程ID
+            calcTD = GetWindowThreadProcessId(hWnd, out calcID);
+            myProcess = Process.GetProcessById(calcID);
+            String getInfo;
+            try
+            {
+                getInfo = &quot;进程名：&quot; + myProcess.ProcessName + &quot;\n&quot; + &quot;进程ID：&quot; + calcID + &quot;\n&quot; + &quot;程序路径：&quot; + myProcess.MainModule.FileName;
+                //Console.WriteLine(getInfo);  //在MessageBox中显示获取的信息
+                GetActivity.Data = getInfo;
+            }
+            catch
+            {
+                getInfo = &quot;程序不能读取路径&quot; + &quot;进程名：&quot; + myProcess.ProcessName + &quot;\n&quot; + &quot;进程ID：&quot; + calcID + &quot;\n&quot;; // 不能获取类似于cmd的路径，所以就try catch
+                //Console.WriteLine(getInfo);
+                GetActivity.Data = getInfo;
+            }
+
+        }
+    }
+}
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;生成DLL文件&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;在自己的bin/debug里面&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;复制到Electron的根目录，根据自己Electron读取的路径进行自定义&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在Electron的路径运行 &lt;code class=&quot;highlighter-rouge&quot;&gt;electron . &lt;/code&gt; 因为安装了全局的electron，所以直接运行就好了。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;执行的结果如图 electron-hook.gif&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://res.cloudinary.com/xiongxiao/image/upload/v1568537455/github/images/electron-hook.gif&quot; alt=&quot;elctron-hook&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/abearxiong/databank/blob/master/Super%20Desktop/electron-hook-demo.zip&quot;&gt;代码地址&lt;/a&gt;&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="Electron" /><category term="Nodejs" /><category term="C#" /><category term="dll" /><summary type="html">在实现这个要求前，需要有node-gyp，node-gyp需要有python2.7,visual studio2015的什么动态链接库。为了简便方法的安装，我安装的的方法是直接安装windows-build-tools的包。 Windows的环境 1. 安装gyp npm i -g node-gyp 2. 安装扩展包 npm install --global --production windows-build-tools 3. 配置python路径 路径的位置是在系统用户的文件夹下的.windows-build-tools里面。c:/user/用户/.windows-build-tools node-gyp python --python /path/to/python27 安装Electron npm i -g electron@latest 1. 建立工程 mkdir electron-demo npm init npm i electron npm i electron-edge-js 2. 初始化index.html和index.js index.html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; 测试&amp;lt;input type=&quot;text&quot; /&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; index.js const { app,BrowserWindow } = require('electron') var edge = require('electron-edge-js') // let createWindow = () =&amp;gt;{ // let win = new BrowserWindow ({ // nodeIntegration: true // }) // win.loadFile(&quot;index.html&quot;) // console.log(&quot;启动&quot;,Number.parseInt('256')) //发现的程序内的hook // win.hookWindowMessage(Number.parseInt('256'),( wParm, lParm)=&amp;gt;{ // let eventName = null // console.log(wParm,&quot;参数&quot;) // }) //Number.parseInt('0xD') // let isHook = win.isWindowMessageHooked(Number.parseInt('256')) // console.log(isHook) // let fileName = win.getRepresentedFilename() // } let createWindow = () =&amp;gt; { let win = new BrowserWindow({ nodeIntegration: true }) win.loadFile(&quot;index.html&quot;) // 加载HTML console.log(&quot;启动&quot;) let HelloDll = edge.func({ assemblyFile: 'winkey.dll', typeName: 'winkey.GetActivity', methodName: 'HelloDll' }) // 测试DLL let HookStart = edge.func({ assemblyFile: 'winkey.dll', typeName: 'winkey.GetActivity', methodName: 'HookStart' }) // 开始进程 let GetData = edge.func({ assemblyFile: 'winkey.dll', typeName: 'winkey.GetActivity', methodName: 'GetData' }) // 获取进程的变量 HelloDll(1, 2, function (err, result) { if (err) { console.log(&quot;err&quot;, err) } else { console.log(&quot;result&quot;, result) } }) HookStart(1,function(err,result){ if (err) { console.log(&quot;err&quot;, err) } else { console.log(&quot;HookStart result&quot;, result) } }) setInterval(() =&amp;gt; { GetData(1,function(err,result){ if (err) { console.log(&quot;err&quot;, err) } else { console.log(&quot;result&quot;, result) } }) }, 2000); // 每隔两秒进行打印所激活窗口的一些值，进程名字，进程ID，进程的路径 } app.on('ready', createWindow) 3. C# 创建DLL，建立Hook窗口的程序 使用Visual Studio创建工程 新建，选择类库（.Net FrameWork),自己创建自己的工程，我创建的是winkey,修改文件名类的名字GetActivity,和Electron的对应。 using System; using System.Collections.Generic; using System.Diagnostics; using System.Linq; using System.Runtime.InteropServices; using System.Text; using System.Threading.Tasks; using System.Windows; namespace winkey { public class GetActivity { private System.Threading.Timer threadTimer; private Process myProcess; volatile public static String Data =&quot;内容&quot;; public async Task&amp;lt;object&amp;gt; HelloDll(object input) { Console.WriteLine(&quot;输入HelloDLL&quot;); Console.WriteLine(input); return &quot;helloDll&quot;; } public async Task&amp;lt;object&amp;gt; GetData(object input) { Console.WriteLine(&quot;Data---&quot;+ GetActivity.Data); return GetActivity.Data; } public async Task&amp;lt;object&amp;gt; HookStart(object input) { threadTimer = new System.Threading.Timer(new System.Threading.TimerCallback(GetValue), null, 0, 2000); return &quot;start&quot;; } public async Task&amp;lt;object&amp;gt; HookEnd(object input) { threadTimer.Dispose(); return &quot;0&quot;; } [DllImport(&quot;User32.dll&quot;)] public static extern IntPtr GetForegroundWindow(); //获取活动窗口句柄 [DllImport(&quot;User32.dll&quot;)] public static extern int GetWindowThreadProcessId(IntPtr hwnd, out int ID); //获取线程ID /// &amp;lt;summary&amp;gt; /// 获取进程的内容 /// &amp;lt;/summary&amp;gt; /// &amp;lt;param name=&quot;state&quot;&amp;gt;&amp;lt;/param&amp;gt; private void GetValue(Object state) { //Thread.Sleep(3000); //睡眠3s，用来选择活动窗口 IntPtr hWnd = GetForegroundWindow(); //获取活动窗口句柄 int calcID = 0; //进程ID int calcTD = 0; //线程ID calcTD = GetWindowThreadProcessId(hWnd, out calcID); myProcess = Process.GetProcessById(calcID); String getInfo; try { getInfo = &quot;进程名：&quot; + myProcess.ProcessName + &quot;\n&quot; + &quot;进程ID：&quot; + calcID + &quot;\n&quot; + &quot;程序路径：&quot; + myProcess.MainModule.FileName; //Console.WriteLine(getInfo); //在MessageBox中显示获取的信息 GetActivity.Data = getInfo; } catch { getInfo = &quot;程序不能读取路径&quot; + &quot;进程名：&quot; + myProcess.ProcessName + &quot;\n&quot; + &quot;进程ID：&quot; + calcID + &quot;\n&quot;; // 不能获取类似于cmd的路径，所以就try catch //Console.WriteLine(getInfo); GetActivity.Data = getInfo; } } } } 生成DLL文件 在自己的bin/debug里面 复制到Electron的根目录，根据自己Electron读取的路径进行自定义 在Electron的路径运行 electron . 因为安装了全局的electron，所以直接运行就好了。 执行的结果如图 electron-hook.gif 代码地址</summary></entry><entry><title type="html">显卡GTX970驱动安装的问题?</title><link href="http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html" rel="alternate" type="text/html" title="显卡GTX970驱动安装的问题?" /><published>2019-09-03T11:17:44+08:00</published><updated>2019-09-03T11:17:44+08:00</updated><id>http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98</id><content type="html" xml:base="http://0.0.0.0:4000/%E8%AE%A1%E7%AE%97%E6%9C%BA/2019/09/%E6%98%BE%E5%8D%A1GTX970%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98.html">&lt;p&gt;在安装系统后，win10会自动带有驱动的，在查看设备管理器的时候，会看到GTX970的设备是显示感叹号的！点开查看显示是设备错误，错误码是43。第一次装的是1903系统。&lt;/p&gt;
 
 &lt;p&gt;使用过鲁大师安装驱动，安装完就黑屏。重启之后，桌面的分辨率是800*800，不能修改。用驱动精灵依旧是这样的问题。&lt;/p&gt;
 
@@ -87,4 +302,4 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;在xml引入模块&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;van-button type=&quot;primary&quot;&amp;gt;按钮&amp;lt;van-button&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>abearxiong</name></author><category term="微信小程序" /><summary type="html">初始引入 miniprogram右键打开终端输入npm i vant-weapp -S –production 出现package-lock.json 之后输入npm init -y =》出现package.json 查看package.json详情，本地设置，“使用npm模块”勾选 在“工具”，选择”构建npm“ 出现miniprogram_npm 使用方式，在页面json中使用引入 { &quot;usingComponents&quot;:{ &quot;van-button&quot;: &quot;vant-weapp/button&quot; } } 在xml引入模块 &amp;lt;van-button type=&quot;primary&quot;&amp;gt;按钮&amp;lt;van-button&amp;gt;</summary></entry><entry><title type="html">传说之旅1403 星期二 技术博客要有技术博客的样子</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90.html" rel="alternate" type="text/html" title="传说之旅1403 星期二 技术博客要有技术博客的样子" /><published>2019-07-30T23:56:20+08:00</published><updated>2019-07-30T23:56:20+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry><entry><title type="html">传说之旅1402 星期一 观一拳超人</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851402-%E6%98%9F%E6%9C%9F%E4%B8%80-%E8%A7%82%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA.html" rel="alternate" type="text/html" title="传说之旅1402 星期一 观一拳超人" /><published>2019-07-29T22:50:52+08:00</published><updated>2019-07-29T22:50:52+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851402-%E6%98%9F%E6%9C%9F%E4%B8%80-%E8%A7%82%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851402-%E6%98%9F%E6%9C%9F%E4%B8%80-%E8%A7%82%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry><entry><title type="html">传说之旅1401 星期天 小程序</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851401-%E6%98%9F%E6%9C%9F%E5%A4%A9-%E5%B0%8F%E7%A8%8B%E5%BA%8F.html" rel="alternate" type="text/html" title="传说之旅1401 星期天 小程序" /><published>2019-07-28T21:24:06+08:00</published><updated>2019-07-28T21:24:06+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851401-%E6%98%9F%E6%9C%9F%E5%A4%A9-%E5%B0%8F%E7%A8%8B%E5%BA%8F</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851401-%E6%98%9F%E6%9C%9F%E5%A4%A9-%E5%B0%8F%E7%A8%8B%E5%BA%8F.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>abearxiong</name></author><category term="微信小程序" /><summary type="html">初始引入 miniprogram右键打开终端输入npm i vant-weapp -S –production 出现package-lock.json 之后输入npm init -y =》出现package.json 查看package.json详情，本地设置，“使用npm模块”勾选 在“工具”，选择”构建npm“ 出现miniprogram_npm 使用方式，在页面json中使用引入 { &quot;usingComponents&quot;:{ &quot;van-button&quot;: &quot;vant-weapp/button&quot; } } 在xml引入模块 &amp;lt;van-button type=&quot;primary&quot;&amp;gt;按钮&amp;lt;van-button&amp;gt;</summary></entry><entry><title type="html">传说之旅1403 星期二 技术博客要有技术博客的样子</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90.html" rel="alternate" type="text/html" title="传说之旅1403 星期二 技术博客要有技术博客的样子" /><published>2019-07-30T23:56:20+08:00</published><updated>2019-07-30T23:56:20+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry><entry><title type="html">传说之旅1402 星期一 观一拳超人</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851402-%E6%98%9F%E6%9C%9F%E4%B8%80-%E8%A7%82%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA.html" rel="alternate" type="text/html" title="传说之旅1402 星期一 观一拳超人" /><published>2019-07-29T22:50:52+08:00</published><updated>2019-07-29T22:50:52+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851402-%E6%98%9F%E6%9C%9F%E4%B8%80-%E8%A7%82%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851402-%E6%98%9F%E6%9C%9F%E4%B8%80-%E8%A7%82%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry></feed>

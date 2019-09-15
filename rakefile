@@ -60,7 +60,7 @@ task :new,[:title,:categories,:tags,:description,:disqus] do |t,args|
 	disqus = args["disqus"].nil?? false : true
 	description =args["description"]
 	notebook = categories == "传说之旅" ? "☞☞传说之旅☜☜" : categories
-	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\nnotebook: #{notebook}\ncomments:  true\ndisqus: #{disqus}\ngitalk: true\ndescription: #{description}\n---\n"
+	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\nnotebook: #{notebook}\ndisqus: #{disqus}\ngitalk: true\ndescription: #{description}\n---\n"
 	File.open(newfile,"w+") do |aFile|
 		aFile.write(inputContent)
 	end

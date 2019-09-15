@@ -26,6 +26,7 @@ introduce: 进行显示文章的内容，有articles和post的区别。articles�
     {%- if site.disqus.shortname and page.disqus -%}
     {%- include plugins/comments-provider/disqus_comments.html -%}
     {%- endif -%}
+    
     {%- if page.gitalk -%}
     {%- include plugins/comments-provider/gitalk_comments.html -%}
     {%- endif -%}
