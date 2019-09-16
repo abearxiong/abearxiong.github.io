@@ -49,7 +49,8 @@ npm i electron-edge-js
 ### 2. 初始化`index.html`和`index.js`
 
 index.html
-```HTML
+
+```
 <!DOCTYPE html>
 <html><head></head>
 <body>
@@ -59,7 +60,8 @@ index.html
 ```
 
 `index.js`
-```JS
+
+```
 const { app,BrowserWindow } = require('electron')
 var edge = require('electron-edge-js')
 // let createWindow =  () =>{
@@ -104,7 +106,6 @@ let createWindow = () => {
         } else {
             console.log("result", result)
         }
-
     })
     HookStart(1,function(err,result){
         if (err) {
@@ -122,9 +123,7 @@ let createWindow = () => {
         }
        })
     }, 2000);   // 每隔两秒进行打印所激活窗口的一些值，进程名字，进程ID，进程的路径
-
 }
-
 app.on('ready', createWindow)
 ```
 
@@ -133,6 +132,7 @@ app.on('ready', createWindow)
 1. 使用Visual Studio创建工程
 
 新建，选择类库（.Net FrameWork),自己创建自己的工程，我创建的是winkey,修改文件名类的名字GetActivity,和Electron的对应。
+
 ```
 using System;
 using System.Collections.Generic;
