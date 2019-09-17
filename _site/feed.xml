@@ -1,4 +1,146 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2019-09-16T00:50:56+08:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。</subtitle><author><name>abearxiong</name></author><entry><title type="html">Electron C# dll hook获取活动窗口的进程和路径</title><link href="http://0.0.0.0:4000/eelectron/2019/09/Electron+C-dll-hook%E8%8E%B7%E5%8F%96%E6%B4%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E8%B7%AF%E5%BE%84.html" rel="alternate" type="text/html" title="Electron C# dll hook获取活动窗口的进程和路径" /><published>2019-09-15T15:57:52+08:00</published><updated>2019-09-15T15:57:52+08:00</updated><id>http://0.0.0.0:4000/eelectron/2019/09/Electron+C#-dll-hook%E8%8E%B7%E5%8F%96%E6%B4%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E8%B7%AF%E5%BE%84</id><content type="html" xml:base="http://0.0.0.0:4000/eelectron/2019/09/Electron+C-dll-hook%E8%8E%B7%E5%8F%96%E6%B4%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E8%B7%AF%E5%BE%84.html">&lt;p&gt;在实现这个要求前，需要有node-gyp，node-gyp需要有python2.7,visual studio2015的什么动态链接库。为了简便方法的安装，我安装的的方法是直接安装windows-build-tools的包。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2019-09-17T17:18:13+08:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Abear</title><subtitle>每一天都是一个新的开始，今天与明天最大的不同，今天我还活着，明天却毫无感觉。所以时刻注重今天的美好时光，热爱生活，热爱创造。</subtitle><author><name>abearxiong</name></author><entry><title type="html">关于sublime Text 3增加功能插件开发</title><link href="http://0.0.0.0:4000/sublime/text/3/2019/09/%E5%85%B3%E4%BA%8Esublime-Text-3%E5%A2%9E%E5%8A%A0%E5%8A%9F%E8%83%BD%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91.html" rel="alternate" type="text/html" title="关于sublime Text 3增加功能插件开发" /><published>2019-09-16T23:18:49+08:00</published><updated>2019-09-16T23:18:49+08:00</updated><id>http://0.0.0.0:4000/sublime/text/3/2019/09/%E5%85%B3%E4%BA%8Esublime-Text-3%E5%A2%9E%E5%8A%A0%E5%8A%9F%E8%83%BD%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91</id><content type="html" xml:base="http://0.0.0.0:4000/sublime/text/3/2019/09/%E5%85%B3%E4%BA%8Esublime-Text-3%E5%A2%9E%E5%8A%A0%E5%8A%9F%E8%83%BD%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91.html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import sublime
+import sublime_plugin
+import threading
+import time
+
+class ExampleCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        self.view.insert(edit, 0, &quot;Hello, World!&quot;)
+
+i=0
+
+class timer(threading.Thread): #The timer class is derived from the class threading.Thread  
+    def __init__(self, num, interval):
+        threading.Thread.__init__(self)
+        self.thread_num = num
+        self.interval = interval
+        self.thread_stop = False 
+    def run(self): #Overwrite run() method, put what you want the thread do here
+        global i
+        while not self.thread_stop:
+            sublime.set_timeout(write_time,1)
+            i+=1  
+            time.sleep(self.interval)          
+    def pause(self):        
+        self.thread_stop = True
+    
+    def zero(self):
+        global i
+        i=0    
+
+
+
+thread1 = timer(1, 1)
+class gtimerCommand(sublime_plugin.TextCommand):    
+    def run(self, edit):
+        global thread1
+        thread=timer(1,1) 
+        if thread1.isAlive():
+            live=True
+        else:                               
+            thread.start()
+            thread1=thread
+
+class gtimerpauseCommand(sublime_plugin.TextCommand):    
+    def run(self, edit):         
+        global thread1
+        thread1.pause()
+
+class gtimerzeroCommand(sublime_plugin.TextCommand):    
+    def run(self, edit):
+        global thread1         
+        thread1.zero()
+        
+   
+def write_time():
+    sublime.status_message(time_manage(i))
+
+def time_manage(time_number):
+    time_str=' time: '+str(int(time_number/60))+'min '+str(time_number%60)+'s'
+    return time_str
+
+# ---
+# layout: post
+# title: 关于sublime Text 3增加功能插件开发 
+# date: 2019-09-16 23:18:49 +0800 
+# categories: Sublime Text 3 
+# tags: [&quot;plugin&quot;, &quot;插件&quot;, &quot;Sublime&quot;]
+# notebook: Sublime Text 3
+# disqus: false
+# gitalk: true
+# description: 对内容的描述
+# ---
+
+class ToltCommand(sublime_plugin.TextCommand):
+    '''
+    格式化&amp;lt;&amp;gt;标签进行转义
+    '''
+    def run(self, edit):
+        for region in reversed(self.view.find_all(&quot;&amp;lt;&quot;)): 
+            if not region.empty(): 
+                self.view.replace(edit, region, &quot;&amp;amp;lt;&quot;) 
+        for region in reversed(self.view.find_all(&quot;&amp;gt;&quot;)):
+            if not region.empty():
+                self.view.replace(edit, region, &quot;&amp;amp;gt;&quot;)
+
+class NltCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for region in reversed(self.view.find_all(&quot;&amp;amp;lt;&quot;)):
+            if not region.empty():
+                self.view.replace(edit, region, &quot;&amp;lt;&quot;)        
+        for region in reversed(self.view.find_all(&quot;&amp;amp;gt;&quot;)):
+            if not region.empty():
+                self.view.replace(edit, region, &quot;&amp;gt;&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;以上是源码，搜索资料研究的关于状态栏的运行时间，关于转义标签的问题。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.sublimetext.com/docs/3/api_reference.html&quot;&gt;api文档 english&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://feliving.github.io/Sublime-Text-3-Documentation/api_reference.html&quot;&gt;api document chinese&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://sublime-text.readthedocs.io/en/latest/intro.html&quot;&gt;文档&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;命令面板&quot;&gt;命令面板&lt;/h3&gt;
+
+&lt;p&gt;是一个绑定到键盘 Ctrl+Shift+P 的交互列表，其目的在意执行命令。命令面板 与命令文件相互联系。通常，命令不保证产生一个按键绑定，可以在 .sublime-commands 中作为一些很好的候选。&lt;/p&gt;
+
+&lt;p&gt;Defult.sublime-commonds&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
+    { &quot;caption&quot;: &quot;Time Start&quot;, &quot;command&quot;: &quot;gtimer&quot; },
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>abearxiong</name></author><category term="plugin" /><category term="插件" /><category term="Sublime" /><summary type="html">import sublime import sublime_plugin import threading import time class ExampleCommand(sublime_plugin.TextCommand): def run(self, edit): self.view.insert(edit, 0, &quot;Hello, World!&quot;) i=0 class timer(threading.Thread): #The timer class is derived from the class threading.Thread def __init__(self, num, interval): threading.Thread.__init__(self) self.thread_num = num self.interval = interval self.thread_stop = False def run(self): #Overwrite run() method, put what you want the thread do here global i while not self.thread_stop: sublime.set_timeout(write_time,1) i+=1 time.sleep(self.interval) def pause(self): self.thread_stop = True def zero(self): global i i=0 thread1 = timer(1, 1) class gtimerCommand(sublime_plugin.TextCommand): def run(self, edit): global thread1 thread=timer(1,1) if thread1.isAlive(): live=True else: thread.start() thread1=thread class gtimerpauseCommand(sublime_plugin.TextCommand): def run(self, edit): global thread1 thread1.pause() class gtimerzeroCommand(sublime_plugin.TextCommand): def run(self, edit): global thread1 thread1.zero() def write_time(): sublime.status_message(time_manage(i)) def time_manage(time_number): time_str=' time: '+str(int(time_number/60))+'min '+str(time_number%60)+'s' return time_str # --- # layout: post # title: 关于sublime Text 3增加功能插件开发 # date: 2019-09-16 23:18:49 +0800 # categories: Sublime Text 3 # tags: [&quot;plugin&quot;, &quot;插件&quot;, &quot;Sublime&quot;] # notebook: Sublime Text 3 # disqus: false # gitalk: true # description: 对内容的描述 # --- class ToltCommand(sublime_plugin.TextCommand): ''' 格式化&amp;lt;&amp;gt;标签进行转义 ''' def run(self, edit): for region in reversed(self.view.find_all(&quot;&amp;lt;&quot;)): if not region.empty(): self.view.replace(edit, region, &quot;&amp;amp;lt;&quot;) for region in reversed(self.view.find_all(&quot;&amp;gt;&quot;)): if not region.empty(): self.view.replace(edit, region, &quot;&amp;amp;gt;&quot;) class NltCommand(sublime_plugin.TextCommand): def run(self, edit): for region in reversed(self.view.find_all(&quot;&amp;amp;lt;&quot;)): if not region.empty(): self.view.replace(edit, region, &quot;&amp;lt;&quot;) for region in reversed(self.view.find_all(&quot;&amp;amp;gt;&quot;)): if not region.empty(): self.view.replace(edit, region, &quot;&amp;gt;&quot;) 以上是源码，搜索资料研究的关于状态栏的运行时间，关于转义标签的问题。 api文档 english api document chinese 文档 命令面板 是一个绑定到键盘 Ctrl+Shift+P 的交互列表，其目的在意执行命令。命令面板 与命令文件相互联系。通常，命令不保证产生一个按键绑定，可以在 .sublime-commands 中作为一些很好的候选。 Defult.sublime-commonds [ { &quot;caption&quot;: &quot;Time Start&quot;, &quot;command&quot;: &quot;gtimer&quot; }, ]</summary></entry><entry><title type="html">关于tarojs的微信小程序的了解和学习?</title><link href="http://0.0.0.0:4000/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/2019/09/%E5%85%B3%E4%BA%8Etarojs%E7%9A%84%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E4%BA%86%E8%A7%A3%E5%92%8C%E5%AD%A6%E4%B9%A0.html" rel="alternate" type="text/html" title="关于tarojs的微信小程序的了解和学习?" /><published>2019-09-16T21:02:09+08:00</published><updated>2019-09-16T21:02:09+08:00</updated><id>http://0.0.0.0:4000/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/2019/09/%E5%85%B3%E4%BA%8Etarojs%E7%9A%84%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E4%BA%86%E8%A7%A3%E5%92%8C%E5%AD%A6%E4%B9%A0</id><content type="html" xml:base="http://0.0.0.0:4000/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/2019/09/%E5%85%B3%E4%BA%8Etarojs%E7%9A%84%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E4%BA%86%E8%A7%A3%E5%92%8C%E5%AD%A6%E4%B9%A0.html">&lt;h2 id=&quot;主要记录安装方式和一些坑&quot;&gt;主要记录安装方式和一些坑&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;我是先在原生微信小程序做了一个页面，然后又从taro做了一个页面，我做整理的时候发现，&lt;code class=&quot;highlighter-rouge&quot;&gt;taro convert&lt;/code&gt;可以直接转换&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;安装taro的过程&quot;&gt;安装taro的过程&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;全局安装 &lt;code class=&quot;highlighter-rouge&quot;&gt;npm i -g @tarojs/cli&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;taro初始化应用 &lt;code class=&quot;highlighter-rouge&quot;&gt;taro init myApp &lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;安装依赖 &lt;code class=&quot;highlighter-rouge&quot;&gt;yarn&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;运行 &lt;code class=&quot;highlighter-rouge&quot;&gt;yarn dev:weapp&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;运行其他雷士的小程序就是改dev，看package.json&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;其他的开发过程，类似于普通的React开发&lt;/p&gt;
+
+&lt;h3 id=&quot;坑&quot;&gt;坑&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;在&lt;code class=&quot;highlighter-rouge&quot;&gt;config:Config={navigationBarTitleText: '首页'}&lt;/code&gt;配置标题&lt;/li&gt;
+  &lt;li&gt;在app.tsx中的config配置页面和window的模块，navigationStyle配置custom隐藏默认的微信小程序的样式结构。然后全自定义微信小程序的标题页面。&lt;/li&gt;
+  &lt;li&gt;构置SCSS的样式，可以直接转css到SCSS，网上有网页工具。&lt;/li&gt;
+  &lt;li&gt;微信小程序预览模式，要关闭ES6转ES5，关闭上传代码自动补全，关闭代码压缩上传。&lt;/li&gt;
+  &lt;li&gt;关于静态资源，感觉需要放在pages的同级目录下面，css全局样式也是。&lt;/li&gt;
+  &lt;li&gt;不能使用id选择器。关于外部样式的一些问题&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;在了解到taro后&quot;&gt;在了解到taro后&lt;/h3&gt;
+
+&lt;p&gt;我感觉到开发小程序，在同步多个不同的小程序，是可以通过这个来实现应有的需求的。&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="taro" /><category term="React" /><category term="tarojs" /><category term="微信小程序" /><summary type="html">主要记录安装方式和一些坑 我是先在原生微信小程序做了一个页面，然后又从taro做了一个页面，我做整理的时候发现，taro convert可以直接转换 安装taro的过程 全局安装 npm i -g @tarojs/cli taro初始化应用 taro init myApp 安装依赖 yarn 运行 yarn dev:weapp 运行其他雷士的小程序就是改dev，看package.json 其他的开发过程，类似于普通的React开发 坑 在config:Config={navigationBarTitleText: '首页'}配置标题 在app.tsx中的config配置页面和window的模块，navigationStyle配置custom隐藏默认的微信小程序的样式结构。然后全自定义微信小程序的标题页面。 构置SCSS的样式，可以直接转css到SCSS，网上有网页工具。 微信小程序预览模式，要关闭ES6转ES5，关闭上传代码自动补全，关闭代码压缩上传。 关于静态资源，感觉需要放在pages的同级目录下面，css全局样式也是。 不能使用id选择器。关于外部样式的一些问题 在了解到taro后 我感觉到开发小程序，在同步多个不同的小程序，是可以通过这个来实现应有的需求的。</summary></entry><entry><title type="html">Electron C# dll hook获取活动窗口的进程和路径</title><link href="http://0.0.0.0:4000/eelectron/2019/09/Electron+C-dll-hook%E8%8E%B7%E5%8F%96%E6%B4%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E8%B7%AF%E5%BE%84.html" rel="alternate" type="text/html" title="Electron C# dll hook获取活动窗口的进程和路径" /><published>2019-09-15T15:57:52+08:00</published><updated>2019-09-15T15:57:52+08:00</updated><id>http://0.0.0.0:4000/eelectron/2019/09/Electron+C#-dll-hook%E8%8E%B7%E5%8F%96%E6%B4%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E8%B7%AF%E5%BE%84</id><content type="html" xml:base="http://0.0.0.0:4000/eelectron/2019/09/Electron+C-dll-hook%E8%8E%B7%E5%8F%96%E6%B4%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E8%B7%AF%E5%BE%84.html">&lt;p&gt;在实现这个要求前，需要有node-gyp，node-gyp需要有python2.7,visual studio2015的什么动态链接库。为了简便方法的安装，我安装的的方法是直接安装windows-build-tools的包。&lt;/p&gt;
 
 &lt;h2 id=&quot;windows的环境&quot;&gt;Windows的环境&lt;/h2&gt;
 
@@ -33,16 +175,18 @@ npm i electron-edge-js
 &lt;h3 id=&quot;2-初始化indexhtml和indexjs&quot;&gt;2. 初始化&lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;index.js&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;index.html&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-   测试&amp;lt;input type=&quot;text&quot; /&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+   测试&lt;span class=&quot;nt&quot;&gt;&amp;lt;input&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;index.js&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-JS&quot;&gt;const { app,BrowserWindow } = require('electron')
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const { app,BrowserWindow } = require('electron')
 var edge = require('electron-edge-js')
 // let createWindow =  () =&amp;gt;{
 //     let win = new BrowserWindow ({
@@ -86,7 +230,6 @@ let createWindow = () =&amp;gt; {
         } else {
             console.log(&quot;result&quot;, result)
         }
-
     })
     HookStart(1,function(err,result){
         if (err) {
@@ -104,11 +247,9 @@ let createWindow = () =&amp;gt; {
         }
        })
     }, 2000);   // 每隔两秒进行打印所激活窗口的一些值，进程名字，进程ID，进程的路径
-
 }
-
 app.on('ready', createWindow)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;3-c-创建dll建立hook窗口的程序&quot;&gt;3. C# 创建DLL，建立Hook窗口的程序&lt;/h3&gt;
 
@@ -117,6 +258,7 @@ app.on('ready', createWindow)
 &lt;/ol&gt;
 
 &lt;p&gt;新建，选择类库（.Net FrameWork),自己创建自己的工程，我创建的是winkey,修改文件名类的名字GetActivity,和Electron的对应。&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -262,7 +404,7 @@ namespace winkey
 
 &lt;p&gt;AtomicInteger s = new AtomicInteger();&lt;/p&gt;
 
-&lt;p&gt;s.getAndIncrement();//或者其他&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="多线程" /><category term="java" /><summary type="html">关于内存的可见性，如果单纯的使用线程，会出现线程间的共享变量是不可见的，所以共享数据其中一个线程变了，但是显示是不能够的显示的。每一个线程都有独立的一个缓存进行提高效率，但是为了让线程中的共享数据的显示，需要有其他解决办法。 如果加锁是可以解决问题的，但是会出现消耗，而对线程中的共享变量使用volatile的关键字会使得变量共享可见。 volatile保证了不同的线程对这个变量进行操作时的可见性，即一个线程修改对其他线程来说是立即可见的。禁止进行指令重排序。 volatile无法保证对变量操作的原子性，不具有互斥性。 轻量级的内容原子性 什么是内存的不可见性 当多个线程操作共享数据时，彼此不可见。 同步锁是每次刷新缓存，效率低。多个线程访问的话，会出现多个线程判断，阻塞问题。 cas算法保证原子性 AtomicInteger s = new AtomicInteger(); s.getAndIncrement();//或者其他</summary></entry><entry><title type="html">传说之旅1406 星期五 模块</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851406-%E6%98%9F%E6%9C%9F%E4%BA%94-%E6%A8%A1%E5%9D%97.html" rel="alternate" type="text/html" title="传说之旅1406 星期五 模块" /><published>2019-08-02T23:03:33+08:00</published><updated>2019-08-02T23:03:33+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851406-%E6%98%9F%E6%9C%9F%E4%BA%94-%E6%A8%A1%E5%9D%97</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851406-%E6%98%9F%E6%9C%9F%E4%BA%94-%E6%A8%A1%E5%9D%97.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry><entry><title type="html">传说之旅1405 星期四 实践能力</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851405-%E6%98%9F%E6%9C%9F%E5%9B%9B-%E5%AE%9E%E8%B7%B5%E8%83%BD%E5%8A%9B.html" rel="alternate" type="text/html" title="传说之旅1405 星期四 实践能力" /><published>2019-08-01T23:57:24+08:00</published><updated>2019-08-01T23:57:24+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851405-%E6%98%9F%E6%9C%9F%E5%9B%9B-%E5%AE%9E%E8%B7%B5%E8%83%BD%E5%8A%9B</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851405-%E6%98%9F%E6%9C%9F%E5%9B%9B-%E5%AE%9E%E8%B7%B5%E8%83%BD%E5%8A%9B.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry><entry><title type="html">传说之旅1404 星期三 旅</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851404-%E6%98%9F%E6%9C%9F%E4%B8%89-%E6%97%85.html" rel="alternate" type="text/html" title="传说之旅1404 星期三 旅" /><published>2019-08-01T23:57:07+08:00</published><updated>2019-08-01T23:57:07+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851404-%E6%98%9F%E6%9C%9F%E4%B8%89-%E6%97%85</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851404-%E6%98%9F%E6%9C%9F%E4%B8%89-%E6%97%85.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry><entry><title type="html">小程序使用vant-weapp UI</title><link href="http://0.0.0.0:4000/%E5%89%8D%E7%AB%AF/2019/08/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8vant-weapp-UI.html" rel="alternate" type="text/html" title="小程序使用vant-weapp UI" /><published>2019-08-01T11:13:21+08:00</published><updated>2019-08-01T11:13:21+08:00</updated><id>http://0.0.0.0:4000/%E5%89%8D%E7%AB%AF/2019/08/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8vant-weapp-UI</id><content type="html" xml:base="http://0.0.0.0:4000/%E5%89%8D%E7%AB%AF/2019/08/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8vant-weapp-UI.html">&lt;p&gt;初始引入&lt;/p&gt;
+&lt;p&gt;s.getAndIncrement();//或者其他&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="多线程" /><category term="java" /><summary type="html">关于内存的可见性，如果单纯的使用线程，会出现线程间的共享变量是不可见的，所以共享数据其中一个线程变了，但是显示是不能够的显示的。每一个线程都有独立的一个缓存进行提高效率，但是为了让线程中的共享数据的显示，需要有其他解决办法。 如果加锁是可以解决问题的，但是会出现消耗，而对线程中的共享变量使用volatile的关键字会使得变量共享可见。 volatile保证了不同的线程对这个变量进行操作时的可见性，即一个线程修改对其他线程来说是立即可见的。禁止进行指令重排序。 volatile无法保证对变量操作的原子性，不具有互斥性。 轻量级的内容原子性 什么是内存的不可见性 当多个线程操作共享数据时，彼此不可见。 同步锁是每次刷新缓存，效率低。多个线程访问的话，会出现多个线程判断，阻塞问题。 cas算法保证原子性 AtomicInteger s = new AtomicInteger(); s.getAndIncrement();//或者其他</summary></entry><entry><title type="html">传说之旅1406 星期五 模块</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851406-%E6%98%9F%E6%9C%9F%E4%BA%94-%E6%A8%A1%E5%9D%97.html" rel="alternate" type="text/html" title="传说之旅1406 星期五 模块" /><published>2019-08-02T23:03:33+08:00</published><updated>2019-08-02T23:03:33+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851406-%E6%98%9F%E6%9C%9F%E4%BA%94-%E6%A8%A1%E5%9D%97</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851406-%E6%98%9F%E6%9C%9F%E4%BA%94-%E6%A8%A1%E5%9D%97.html">&lt;p&gt;如何把小程序模块化和小程序使用方式和编程方式更快。&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html">如何把小程序模块化和小程序使用方式和编程方式更快。</summary></entry><entry><title type="html">传说之旅1405 星期四 实践能力</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851405-%E6%98%9F%E6%9C%9F%E5%9B%9B-%E5%AE%9E%E8%B7%B5%E8%83%BD%E5%8A%9B.html" rel="alternate" type="text/html" title="传说之旅1405 星期四 实践能力" /><published>2019-08-01T23:57:24+08:00</published><updated>2019-08-01T23:57:24+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851405-%E6%98%9F%E6%9C%9F%E5%9B%9B-%E5%AE%9E%E8%B7%B5%E8%83%BD%E5%8A%9B</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851405-%E6%98%9F%E6%9C%9F%E5%9B%9B-%E5%AE%9E%E8%B7%B5%E8%83%BD%E5%8A%9B.html">&lt;p&gt;敲代码？？？？&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html">敲代码？？？？</summary></entry><entry><title type="html">传说之旅1404 星期三 旅</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851404-%E6%98%9F%E6%9C%9F%E4%B8%89-%E6%97%85.html" rel="alternate" type="text/html" title="传说之旅1404 星期三 旅" /><published>2019-08-01T23:57:07+08:00</published><updated>2019-08-01T23:57:07+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851404-%E6%98%9F%E6%9C%9F%E4%B8%89-%E6%97%85</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/08/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851404-%E6%98%9F%E6%9C%9F%E4%B8%89-%E6%97%85.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry><entry><title type="html">小程序使用vant-weapp UI</title><link href="http://0.0.0.0:4000/%E5%89%8D%E7%AB%AF/2019/08/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8vant-weapp-UI.html" rel="alternate" type="text/html" title="小程序使用vant-weapp UI" /><published>2019-08-01T11:13:21+08:00</published><updated>2019-08-01T11:13:21+08:00</updated><id>http://0.0.0.0:4000/%E5%89%8D%E7%AB%AF/2019/08/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8vant-weapp-UI</id><content type="html" xml:base="http://0.0.0.0:4000/%E5%89%8D%E7%AB%AF/2019/08/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8vant-weapp-UI.html">&lt;p&gt;初始引入&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;miniprogram右键打开终端输入npm i vant-weapp -S –production 出现package-lock.json&lt;/li&gt;
@@ -282,24 +424,12 @@ namespace winkey
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;在xml引入模块&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;van-button type=&quot;primary&quot;&amp;gt;按钮&amp;lt;van-button&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>abearxiong</name></author><category term="微信小程序" /><summary type="html">初始引入 miniprogram右键打开终端输入npm i vant-weapp -S –production 出现package-lock.json 之后输入npm init -y =》出现package.json 查看package.json详情，本地设置，“使用npm模块”勾选 在“工具”，选择”构建npm“ 出现miniprogram_npm 使用方式，在页面json中使用引入 { &quot;usingComponents&quot;:{ &quot;van-button&quot;: &quot;vant-weapp/button&quot; } } 在xml引入模块 &amp;lt;van-button type=&quot;primary&quot;&amp;gt;按钮&amp;lt;van-button&amp;gt;</summary></entry><entry><title type="html">小程序使用vant-weapp UI</title><link href="http://0.0.0.0:4000/%E5%89%8D%E7%AB%AF/2019/08/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8vant-weapp-UI.html" rel="alternate" type="text/html" title="小程序使用vant-weapp UI" /><published>2019-08-01T11:13:21+08:00</published><updated>2019-08-01T11:13:21+08:00</updated><id>http://0.0.0.0:4000/%E5%89%8D%E7%AB%AF/2019/08/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8vant-weapp-UI</id><content type="html" xml:base="http://0.0.0.0:4000/%E5%89%8D%E7%AB%AF/2019/08/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8vant-weapp-UI.html">&lt;p&gt;初始引入&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>abearxiong</name></author><category term="微信小程序" /><summary type="html">初始引入 miniprogram右键打开终端输入npm i vant-weapp -S –production 出现package-lock.json 之后输入npm init -y =》出现package.json 查看package.json详情，本地设置，“使用npm模块”勾选 在“工具”，选择”构建npm“ 出现miniprogram_npm 使用方式，在页面json中使用引入 { &quot;usingComponents&quot;:{ &quot;van-button&quot;: &quot;vant-weapp/button&quot; } } 在xml引入模块 &amp;lt;van-button type=&quot;primary&quot;&amp;gt;按钮&amp;lt;van-button&amp;gt;</summary></entry><entry><title type="html">传说之旅1403 星期二 技术博客要有技术博客的样子</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90.html" rel="alternate" type="text/html" title="传说之旅1403 星期二 技术博客要有技术博客的样子" /><published>2019-07-30T23:56:20+08:00</published><updated>2019-07-30T23:56:20+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90.html">&lt;p&gt;在8月这段时间，我在学习一些其他的东西，cheatEngine和lol，因为cheatEngine是关于汇编的知识，所以我去学习和了解了一大部分关于汇编的知识，小甲鱼汇编，cheatEngine使用方式，空闲时间就自己闲逛。&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;miniprogram右键打开终端输入npm i vant-weapp -S –production 出现package-lock.json&lt;/li&gt;
-  &lt;li&gt;之后输入npm init -y =》出现package.json&lt;/li&gt;
-  &lt;li&gt;查看package.json详情，本地设置，“使用npm模块”勾选&lt;/li&gt;
-  &lt;li&gt;在“工具”，选择”构建npm“&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;9月16日记录：&lt;/p&gt;
 
-&lt;p&gt;出现miniprogram_npm&lt;/p&gt;
+&lt;p&gt;冷静完成了，在之前自己只有笔记本电脑，自己敲代码的方式就是笔记本，而我的笔记本无论是运行速度，还是打开软件的速度都是很慢的，所以我就需要花费更多的时间去实现我想要的功能。&lt;/p&gt;
 
-&lt;p&gt;使用方式，在页面json中使用引入&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-    &quot;usingComponents&quot;:{
-        &quot;van-button&quot;: &quot;vant-weapp/button&quot;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;在xml引入模块&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;van-button type=&quot;primary&quot;&amp;gt;按钮&amp;lt;van-button&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>abearxiong</name></author><category term="微信小程序" /><summary type="html">初始引入 miniprogram右键打开终端输入npm i vant-weapp -S –production 出现package-lock.json 之后输入npm init -y =》出现package.json 查看package.json详情，本地设置，“使用npm模块”勾选 在“工具”，选择”构建npm“ 出现miniprogram_npm 使用方式，在页面json中使用引入 { &quot;usingComponents&quot;:{ &quot;van-button&quot;: &quot;vant-weapp/button&quot; } } 在xml引入模块 &amp;lt;van-button type=&quot;primary&quot;&amp;gt;按钮&amp;lt;van-button&amp;gt;</summary></entry><entry><title type="html">传说之旅1403 星期二 技术博客要有技术博客的样子</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90.html" rel="alternate" type="text/html" title="传说之旅1403 星期二 技术博客要有技术博客的样子" /><published>2019-07-30T23:56:20+08:00</published><updated>2019-07-30T23:56:20+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry><entry><title type="html">传说之旅1402 星期一 观一拳超人</title><link href="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851402-%E6%98%9F%E6%9C%9F%E4%B8%80-%E8%A7%82%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA.html" rel="alternate" type="text/html" title="传说之旅1402 星期一 观一拳超人" /><published>2019-07-29T22:50:52+08:00</published><updated>2019-07-29T22:50:52+08:00</updated><id>http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851402-%E6%98%9F%E6%9C%9F%E4%B8%80-%E8%A7%82%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA</id><content type="html" xml:base="http://0.0.0.0:4000/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851402-%E6%98%9F%E6%9C%9F%E4%B8%80-%E8%A7%82%E4%B8%80%E6%8B%B3%E8%B6%85%E4%BA%BA.html"></content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;我在9月2日附件的时候买的一个新的二手电脑电脑，实现了敲代码更快的方法，使得我的编程过程更加的快捷。所以我把之前的笔记本把运行很慢的一些程序进行删除，在台式电脑上安装，这样很舒适，而二者之间的同步方式使用onedrive，在9月10附近，我在v2ex查看到一个家庭版的office365合用，实现了我的onenote的同步和onedrive的1T的同步，感觉很舒服。&lt;/p&gt;
+
+&lt;p&gt;在这个拿到二手台式的时间范围内，我除了安装双系统，安装软件之外，自己去做关于小程序的编程和关于快捷键的编程。为了实现更方便的的生活，我打算加大力度完善我需要的关于快捷键的功能。&lt;/p&gt;</content><author><name>abearxiong</name></author><category term="传说之旅" /><summary type="html">在8月这段时间，我在学习一些其他的东西，cheatEngine和lol，因为cheatEngine是关于汇编的知识，所以我去学习和了解了一大部分关于汇编的知识，小甲鱼汇编，cheatEngine使用方式，空闲时间就自己闲逛。 9月16日记录： 冷静完成了，在之前自己只有笔记本电脑，自己敲代码的方式就是笔记本，而我的笔记本无论是运行速度，还是打开软件的速度都是很慢的，所以我就需要花费更多的时间去实现我想要的功能。 我在9月2日附件的时候买的一个新的二手电脑电脑，实现了敲代码更快的方法，使得我的编程过程更加的快捷。所以我把之前的笔记本把运行很慢的一些程序进行删除，在台式电脑上安装，这样很舒适，而二者之间的同步方式使用onedrive，在9月10附近，我在v2ex查看到一个家庭版的office365合用，实现了我的onenote的同步和onedrive的1T的同步，感觉很舒服。 在这个拿到二手台式的时间范围内，我除了安装双系统，安装软件之外，自己去做关于小程序的编程和关于快捷键的编程。为了实现更方便的的生活，我打算加大力度完善我需要的关于快捷键的功能。</summary></entry></feed>

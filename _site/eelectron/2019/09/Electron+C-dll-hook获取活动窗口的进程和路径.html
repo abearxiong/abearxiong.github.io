@@ -32,7 +32,7 @@
         <div class="Header-item"><input type="text"  /></div>
         <div class="Header-item">
           <a class="Header-link" href="/article">文章</a>
-          <a class="Header-link" href="/space">空间</a>
+          <a class="Header-link" href="/xx-space">空间</a>
           <a class="Header-link" href="/draft">草稿</a>
           <a class="Header-link" href="/project">计划</a>
           <a class="Header-link" href="/feed.xml">RSS</a>
@@ -86,16 +86,18 @@ npm i electron-edge-js
 <h3 id="2-初始化indexhtml和indexjs">2. 初始化<code class="highlighter-rouge">index.html</code>和<code class="highlighter-rouge">index.js</code></h3>
 
 <p>index.html</p>
-<pre><code class="language-HTML">&lt;!DOCTYPE html&gt;
-&lt;html&gt;&lt;head&gt;&lt;/head&gt;
-&lt;body&gt;
-   测试&lt;input type="text" /&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;&lt;head&gt;&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+   测试<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
 
 <p><code class="highlighter-rouge">index.js</code></p>
-<pre><code class="language-JS">const { app,BrowserWindow } = require('electron')
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const { app,BrowserWindow } = require('electron')
 var edge = require('electron-edge-js')
 // let createWindow =  () =&gt;{
 //     let win = new BrowserWindow ({
@@ -139,7 +141,6 @@ let createWindow = () =&gt; {
         } else {
             console.log("result", result)
         }
-
     })
     HookStart(1,function(err,result){
         if (err) {
@@ -157,11 +158,9 @@ let createWindow = () =&gt; {
         }
        })
     }, 2000);   // 每隔两秒进行打印所激活窗口的一些值，进程名字，进程ID，进程的路径
-
 }
-
 app.on('ready', createWindow)
-</code></pre>
+</code></pre></div></div>
 
 <h3 id="3-c-创建dll建立hook窗口的程序">3. C# 创建DLL，建立Hook窗口的程序</h3>
 
@@ -170,6 +169,7 @@ app.on('ready', createWindow)
 </ol>
 
 <p>新建，选择类库（.Net FrameWork),自己创建自己的工程，我创建的是winkey,修改文件名类的名字GetActivity,和Electron的对应。</p>
+
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>using System;
 using System.Collections.Generic;
 using System.Diagnostics;

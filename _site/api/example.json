@@ -1,6 +1,24 @@
 <p>[</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "title": "关于sublime Text 3增加功能插件开发",
+    "url": "/sublime/text/3/2019/09/%E5%85%B3%E4%BA%8Esublime-Text-3%E5%A2%9E%E5%8A%A0%E5%8A%9F%E8%83%BD%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91.html",
+    "categories": ["Sublime","Text","3"],
+    "date": "September 16, 2019",
+    "tags": ["plugin","插件","Sublime"],
+"description": 根据对插件的学习，创建了一个插件，理解了插件的功能模块，对之后sublime text的插件编写做了一个开头。并记下我，想做什么插件。
+},
+
+{
+    "title": "关于tarojs的微信小程序的了解和学习?",
+    "url": "/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/2019/09/%E5%85%B3%E4%BA%8Etarojs%E7%9A%84%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E7%9A%84%E4%BA%86%E8%A7%A3%E5%92%8C%E5%AD%A6%E4%B9%A0.html",
+    "categories": ["微信小程序"],
+    "date": "September 16, 2019",
+    "tags": ["taro","React","tarojs","微信小程序"],
+"description": 因为Boss直聘的一家公司，我去接触了tarojs,去把原生的一个页面用tarojs展现出来。
+},
+
+{
     "title": "Electron C# dll hook获取活动窗口的进程和路径",
     "url": "/eelectron/2019/09/Electron+C-dll-hook%E8%8E%B7%E5%8F%96%E6%B4%BB%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E8%BF%9B%E7%A8%8B%E5%92%8C%E8%B7%AF%E5%BE%84.html",
     "categories": ["EElectron"],
@@ -64,21 +82,12 @@
 },
 
 {
-    "title": "小程序使用vant-weapp UI",
-    "url": "/%E5%89%8D%E7%AB%AF/2019/08/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8vant-weapp-UI.html",
-    "categories": ["前端"],
-    "date": "August 01, 2019",
-    "tags": ["微信小程序"],
-"description": 使用vant-weapp的构建方式。
-},
-
-{
     "title": "传说之旅1403 星期二 技术博客要有技术博客的样子",
     "url": "/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%85/2019/07/%E4%BC%A0%E8%AF%B4%E4%B9%8B%E6%97%851403-%E6%98%9F%E6%9C%9F%E4%BA%8C-%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E8%A6%81%E6%9C%89%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%B7%E5%AD%90.html",
     "categories": ["传说之旅"],
     "date": "July 30, 2019",
     "tags": ["传说之旅"],
-"description": 
+"description": 为什么说技术博客要有技术博客的样子，因为我觉得，作为一个博客，是一个应该表现自己的能力和解决办法的一个地方。而我没有去做到，因此我打算去冷静一下。
 },
 
 {
@@ -132,7 +141,7 @@
     "categories": ["传说之旅"],
     "date": "July 25, 2019",
     "tags": ["传说之旅"],
-"description": 对内容的描述
+"description": 久了没管，忘记内容了，我擦？？？？？
 },
 
 {
@@ -267,7 +276,7 @@
     "categories": ["前端"],
     "date": "July 13, 2019",
     "tags": ["HTML","springboot"],
-"description": 对内容的描述
+"description": 在springboot中form-data上传内容乱码，文件读取解码。
 },
 
 {
