@@ -99,6 +99,12 @@ body{
 .my-compus-story-item .item{
     text-align: left;
 }
+#my-want-to{
+    margin-top: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    border-top: 1px solid;
+}
 .code-skill{
     color: green;
 }
@@ -165,4 +171,7 @@ body{
 }
 #my-code{
     margin-bottom: 10px;
+}
+.my-reviews-show{
+    text-align: center;
 }

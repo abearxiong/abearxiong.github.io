@@ -50,6 +50,7 @@ comment:
 # There is for disqus setting
 disqus:
         shortname: abearxiong
+google_analytics: 'UA-143586782-1'
 # There is for paginate
 paginate: 10
 paginate_path: "page:num"

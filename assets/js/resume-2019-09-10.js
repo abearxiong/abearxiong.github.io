@@ -19,3 +19,9 @@ hideResumeNav.click(function(){
 showNav.click(function(){
     resumeNav.toggle()
 })
+
+let reviewsShow = $(".my-reviews-show")
+let reviewsContent = $("#gitalk-container")
+reviewsShow.click(function(){
+	reviewsContent.toggle()
+})
