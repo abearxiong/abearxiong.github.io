@@ -88,7 +88,7 @@ springboot-mybatis-thymleaf
 
 #### 前端整合
 
-html-vue-js-react-nodejs-koa2-electron-css=wxml
+html-vue-js-react-nodejs-koa2-electron-css-wxml
 
 bootstrap-jquery
 
