@@ -2,9 +2,9 @@
 <html lang="zh">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Github Oauth App登录模块 | Abear</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v3.8.6" />
 <meta property="og:title" content="Github Oauth App登录模块" />
 <meta name="author" content="abearxiong" />
 <meta property="og:locale" content="en_US" />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-06-22T23:32:45+08:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Github Oauth App登录模块","url":"http://0.0.0.0:4000/github/2019/06/Github-Oauth-App%E7%99%BB%E5%BD%95%E6%A8%A1%E5%9D%97.html","dateModified":"2019-06-22T23:32:45+08:00","datePublished":"2019-06-22T23:32:45+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/github/2019/06/Github-Oauth-App%E7%99%BB%E5%BD%95%E6%A8%A1%E5%9D%97.html"},"author":{"@type":"Person","name":"abearxiong"},"description":"GitHub Oauth App在html页面实现第三方登录，得到access_token，实现获取GitHub中的一些有趣的内容。感觉非要后端不可，因为Github的地址，用ajax或者fetch，都会有跨域问题。","@context":"https://schema.org"}</script>
+{"description":"GitHub Oauth App在html页面实现第三方登录，得到access_token，实现获取GitHub中的一些有趣的内容。感觉非要后端不可，因为Github的地址，用ajax或者fetch，都会有跨域问题。","@type":"BlogPosting","url":"http://0.0.0.0:4000/github/2019/06/Github-Oauth-App%E7%99%BB%E5%BD%95%E6%A8%A1%E5%9D%97.html","dateModified":"2019-06-22T23:32:45+08:00","datePublished":"2019-06-22T23:32:45+08:00","headline":"Github Oauth App登录模块","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/github/2019/06/Github-Oauth-App%E7%99%BB%E5%BD%95%E6%A8%A1%E5%9D%97.html"},"author":{"@type":"Person","name":"abearxiong"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- cdn -->  <!-- bootstrap -->
 <link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
@@ -100,7 +100,7 @@
 
 <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
     <span class="p">(()</span><span class="o">=&gt;</span><span class="p">{</span>
-        <span class="kd">let</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">"https://github.com/login/oauth/authorize"</span>
+        <span class="kd">let</span> <span class="nx">url</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">https://github.com/login/oauth/authorize</span><span class="dl">"</span>
         <span class="c1">// let client_id = `ccf21c3104b11fcd9219` // xx-space</span>
         <span class="kd">let</span> <span class="nx">client_id</span> <span class="o">=</span> <span class="s2">`6d1f0f1a67b21e729050`</span> <span class="c1">//xx-space-local-dev</span>
         <span class="kd">let</span> <span class="nx">client_secret</span> <span class="o">=</span> <span class="s2">`22cbbe70c70edb70097236f0b8e51c46b8ac460e`</span>
@@ -108,21 +108,21 @@
         <span class="c1">// let redirect_uri = encodeURIComponent("https://abearxiong.github.io/space")</span>
         <span class="c1">// fetch(`${url}?client_id=${client_id}&amp;redirect_uri=${redirect_uri}&amp;scope=public_repo`)</span>
         <span class="kd">let</span> <span class="nx">loginLink</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="nx">url</span><span class="p">}</span><span class="s2">?client_id=</span><span class="p">${</span><span class="nx">client_id</span><span class="p">}</span><span class="s2">&amp;redirect_uri=</span><span class="p">${</span><span class="nx">redirect_uri</span><span class="p">}</span><span class="s2">&amp;scope=public_repo`</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"login"</span><span class="p">,</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">login</span><span class="dl">"</span><span class="p">,</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">)</span>
         <span class="kd">let</span> <span class="nx">nowHref</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span>
         <span class="kd">let</span> <span class="nx">hasCode</span> <span class="o">=</span> <span class="sr">/code/</span>
         <span class="kd">let</span> <span class="nx">hasAccesssCode</span> <span class="o">=</span> <span class="sr">/access_token/</span>
         <span class="k">if</span><span class="p">(</span><span class="nx">hasCode</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">nowHref</span><span class="p">)){</span>
-            <span class="kd">let</span> <span class="nx">code</span> <span class="o">=</span> <span class="nx">nowHref</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s2">"="</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"获得code"</span><span class="p">,</span><span class="nx">code</span><span class="p">)</span>
-            <span class="kd">let</span> <span class="nx">url_token</span> <span class="o">=</span> <span class="s2">"https://github.com/login/oauth/access_token"</span>
+            <span class="kd">let</span> <span class="nx">code</span> <span class="o">=</span> <span class="nx">nowHref</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">"</span><span class="s2">=</span><span class="dl">"</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">获得code</span><span class="dl">"</span><span class="p">,</span><span class="nx">code</span><span class="p">)</span>
+            <span class="kd">let</span> <span class="nx">url_token</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">https://github.com/login/oauth/access_token</span><span class="dl">"</span>
             <span class="kd">let</span> <span class="nx">getTokenUrl</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="nx">url_token</span><span class="p">}</span><span class="s2">?client_id=</span><span class="p">${</span><span class="nx">client_id</span><span class="p">}</span><span class="s2">&amp;client_secret=</span><span class="p">${</span><span class="nx">client_secret</span><span class="p">}</span><span class="s2">&amp;code=</span><span class="p">${</span><span class="nx">code</span><span class="p">}</span><span class="s2">&amp;redirect_uri=</span><span class="p">${</span><span class="nx">redirect_uri</span><span class="p">}</span><span class="s2">&amp;scope=public_repo`</span> 
             <span class="kd">let</span> <span class="nx">getTokenUrl2</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="nx">url_token</span><span class="p">}</span><span class="s2">?client_id=</span><span class="p">${</span><span class="nx">client_id</span><span class="p">}</span><span class="s2">&amp;client_secret=</span><span class="p">${</span><span class="nx">client_secret</span><span class="p">}</span><span class="s2">&amp;code=</span><span class="p">${</span><span class="nx">code</span><span class="p">}</span><span class="s2">&amp;scope=public_repo`</span> 
-            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"请求的url："</span><span class="p">,</span><span class="nx">getTokenUrl</span><span class="p">)</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">请求的url：</span><span class="dl">"</span><span class="p">,</span><span class="nx">getTokenUrl</span><span class="p">)</span>
             <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">getTokenUrl</span>
         <span class="p">}</span>
         <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">hasAccesssCode</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="nx">nowHref</span><span class="p">)){</span>
-            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"获得access token"</span><span class="p">)</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">获得access token</span><span class="dl">"</span><span class="p">)</span>
         <span class="p">}</span>
         <span class="k">else</span><span class="p">{</span>
             <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">loginLink</span>
@@ -147,8 +147,9 @@
     </div><a class="u-url" href="/github/2019/06/Github-Oauth-App%E7%99%BB%E5%BD%95%E6%A8%A1%E5%9D%97.html" hidden></a>
   </article>
 </div>
-    </div><div class="footer">
-
+    </div><div class="footer" style="text-align: center;">
+    <span class="">蜀ICP备16031039号</span>
+    <span class="">©️2019 Abearxiong</span>
 </div><!--Bootstrap js-->
 <script src="/assets/js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
