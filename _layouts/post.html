@@ -17,15 +17,15 @@ introduce: 进行显示文章的内容，有articles和post的区别。articles�
             itemprop="name">{{ page.author }}</span></span>
         {%- endif -%}</p>
     </header>
-
+    <div class="post-description">
+       {{page.description}}
+    </div>
     <div class="post-content e-content" itemprop="articleBody">
       {{ content }}
     </div>
 
 
-    {%- if site.disqus.shortname and page.disqus -%}
     {%- include plugins/comments-provider/disqus_comments.html -%}
-    {%- endif -%}
     
     {%- if page.gitalk -%}
     {%- include plugins/comments-provider/gitalk_comments.html -%}

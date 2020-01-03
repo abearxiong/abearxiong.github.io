@@ -32,6 +32,11 @@ group :jekyll_plugins do
   gem 'jekyll-gist', '~> 1.5'
   gem 'jekyll-coffeescript', '~> 1.1', '>= 1.1.1'
   gem 'jekyll-paginate', '~> 1.1'
+  gem 'jekyll-compose',"~> 0.11.0"
+  gem 'jekyll-mentions', '~> 1.5', '>= 1.5.1'
+  gem 'jekyll-archives'
+  gem 'jekyll-redirect-from'
+  gem 'jemoji'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

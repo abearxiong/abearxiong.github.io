@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-03T19:40:42+08:00" />
 <script type="application/ld+json">
-{"description":"网上复制的一个好文章，放在要背的，关于原生和jQuery的区分。","@type":"BlogPosting","url":"http://0.0.0.0:4000/javascript/2019/10/You-Dont-Need-jQuery.html","dateModified":"2019-10-03T19:40:42+08:00","datePublished":"2019-10-03T19:40:42+08:00","headline":"You Dont Need jQuery","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/javascript/2019/10/You-Dont-Need-jQuery.html"},"author":{"@type":"Person","name":"abearxiong"},"@context":"https://schema.org"}</script>
+{"description":"网上复制的一个好文章，放在要背的，关于原生和jQuery的区分。","@type":"BlogPosting","url":"http://0.0.0.0:4000/javascript/2019/10/You-Dont-Need-jQuery.html","headline":"You Dont Need jQuery","datePublished":"2019-10-03T19:40:42+08:00","dateModified":"2019-10-03T19:40:42+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/javascript/2019/10/You-Dont-Need-jQuery.html"},"author":{"@type":"Person","name":"abearxiong"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <!-- cdn -->  <!-- bootstrap -->
 <link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,9 @@
         <time class="dt-published" datetime="2019-10-03T19:40:42+08:00" itemprop="datePublished">Oct 3, 2019
         </time></p>
     </header>
-
+    <div class="post-description">
+       网上复制的一个好文章，放在要背的，关于原生和jQuery的区分。
+    </div>
     <div class="post-content e-content" itemprop="articleBody">
       <h2 id="you-might-dont-need-jquery-">You (Might) Don’t Need jQuery <a href="https://travis-ci.org/nefe/You-Dont-Need-jQuery"><img src="https://api.travis-ci.org/nefe/You-Dont-Need-jQuery.svg" alt="Build Status" /></a></h2>
 
@@ -712,7 +714,24 @@
   </li>
 </ul>
 
-    </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    </div><div id="disqus_thread"></div> 
+ <script>
+    var disqus_config = function () {
+      this.page.url = 'http://0.0.0.0:4000/javascript/2019/10/You-Dont-Need-jQuery.html';
+      this.page.identifier = 'http://0.0.0.0:4000/javascript/2019/10/You-Dont-Need-jQuery.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://abearxiong.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 
 <div id="gitalk-container"></div>
 
@@ -724,6 +743,7 @@
         repo: 'reviews',
         owner: 'abearxiong',
         admin: ['abearxiong'],
+        method: 'POST',
         id: location.pathname,      // Ensure uniqueness and length less than 50
         distractionFreeMode: false  // Facebook-like distraction free mode
     })

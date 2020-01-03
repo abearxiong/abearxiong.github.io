@@ -1,21 +1,33 @@
 require 'rake'
-task :my_task, [:arg1, :arg2] do |t, args|
-	  puts "Args were: #{args}"
+desc "run jekyll server"
+task :serve do |t, args|
+	exec 'bundle exec jekyll serve&'
 end
-task :invoke_my_task do
-	  Rake.application.invoke_task("my_task[1, 2]")
+desc "have directory? if dont have,create a new directory"
+task :have,[:path] do |t,args|
+	path = path.nil?? "gists" : path # default value is gists.
+	unless File.exist?(path)
+		Dir.mkdir(path)
+	end
 end
-# or if you prefer this syntax...
-# task :invoke_my_task_2 do
-#   Rake::Task[:my_task].invoke(3, 4)
-#   end
-#   # a task with prerequisites passes its 
-#   # arguments to it prerequisites
-#   task :with_prerequisite, [:arg1, :arg2] => :my_task #<- name of prerequisite task
-#   # to specify default values, 
-#   # we take advantage of args being a Rake::TaskArguments object
-#   task :with_defaults, :arg1, :arg2 do |t, args|
-#     args.with_defaults(:arg1 => :default_1, :arg2 => :default_2)
-#       puts "Args with defaults were: #{args}"
-#       end
-#
+
+desc "create new article"
+task :new,[:title,:categories,:tags,:description] do |t,args|
+	args.with_defaults(:title => "文章的名字", :categories => "传说之旅", :tags=>"传说之旅", :description=>"对内容的描述")
+	time = Time.new #Get new time
+	timeinfos = time.to_s.split(" ")
+	path ="_posts/"
+	filename= args["title"].gsub(" ","-")
+	suffix = ".md"
+	newfile = path+timeinfos[0]+"-"+filename+suffix	
+	date = time.inspect
+	title = args["title"]
+	categories = args["categories"]
+	tags = args["tags"].split(" ")
+	description =args["description"]
+	notebook = "GitHub博客"
+	inputContent = "---\nlayout: post\ntitle: #{title} \ndate: #{date} \ncategories: #{categories} \ntags: #{tags}\nnotebook: #{notebook}\ndescription: #{description}\n---\n"
+	File.open(newfile,"w+") do |aFile|
+		aFile.write(inputContent)
+	end
+end
