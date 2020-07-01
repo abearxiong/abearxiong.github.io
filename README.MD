@@ -30,4 +30,10 @@
 二级功能-工具
 
 - relate brain: 千网图，大脑风暴
- 
+
+
+restart:
+
+record:
+
+- [lol](https://think.xiongxiao.me/lolChessHelper/dist/)
